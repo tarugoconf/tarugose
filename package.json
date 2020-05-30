@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "rm -rf dist && concurrently npm:start:site npm:start:css",
+    "start:site": "eleventy --serve",
+    "start:css": "postcss ./site/css/styles.css -o dist/css/styles.css --watch",
+    "build": "rm -rf dist && eleventy && postcss ./site/css/styles.css -o dist/css/styles.css",
+    "prettier": "prettier config/** ./*.js .eleventy.js site/**/*.{md,js,css} --write"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "concurrently": "^5.2.0",
+    "postcss": "^7.0.17",
+    "postcss-cli": "^7.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-url": "^8.0.0",
+    "prettier": "^2.0.5",
+    "date-fns": "^2.12.0",
+    "markdown-it-attrs": "^3.0.2",
+    "normalize.css": "^8.0.1"
+  },
+  "prettier": {
+    "tabWidth": 4,
+    "printWidth": 120,
+    "singleQuote": true
+  }
+}

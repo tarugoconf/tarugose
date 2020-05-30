@@ -1,0 +1,16 @@
+:root {
+    /* Colors */
+    --color-black: #222;
+    --color-white: #fff;
+
+    /* Fonts */
+    --font-family: system-ui, sans-serif;
+
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    --font-size-normal: 1rem;
+
+    --font-normal: var(--font-weight-normal) var(--font-size-normal) / 1.45 var(--font-family);
+    --font-normal-bold: var(--font-weight-bold) var(--font-size-normal) / 1.45 var(--font-family);
+}

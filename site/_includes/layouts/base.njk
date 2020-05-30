@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="{{ lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+
+    <link href="{{ '/css/styles.css' | url }}" rel="stylesheet">
+    <link href="{{ '/apple-touch-icon.png' | url }}" rel="apple-touch-icon" sizes="180x180">
+    <link href="{{ '/favicon-32x32.png' | url }}" rel="icon" type="image/png" sizes="32x32">
+    <link href="{{ '/favicon-16x16.png' | url }}" rel="icon" type="image/png" sizes="16x16">
+
+    <meta property="og:title" content="{{ title }}" />
+    <meta name="author" content="{{ site.author }}" />
+    <meta property="og:locale" content="{{ lang }}" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <link rel="canonical" href="{{ url | url }}" />
+
+    <meta property="og:url" content="{{ url | url }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+  </head>
+
+  <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
+    <div class="container">
+      {{ content | safe }}
+    </div>
+  </body>
+</html>
