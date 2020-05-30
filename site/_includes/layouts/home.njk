@@ -3,4 +3,12 @@ layout: layouts/base.njk
 bodyClass: home
 ---
 
-{{ content | safe }}
+{% include "templates/navbar.njk" %}
+{% include "templates/header.njk" %}
+{% include "templates/what.njk" %}
+{% include "templates/why.njk" %}
+{% include "templates/calendar.njk" %}
+{% include "templates/speakers.njk" %}
+{% include "templates/tickets.njk" %}
+{% include "templates/partners.njk" %}
+{% include "templates/contact.njk" %}

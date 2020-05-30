@@ -1,0 +1,20 @@
+<section>
+    <header>
+        <h1>{{ what.title }}</h1>
+    </header>
+
+    {{ what.text | md | type | safe }}
+
+    <aside>
+        {{ what.metrics | md | safe }}
+    </aside>
+
+    <ul>
+    {% for item in what.features %}
+        <li>
+            <img src="//placehold.it/100x100">
+            {{ item.title | md | safe }}
+        </li>
+    {% endfor %}
+    </ul>
+</section>

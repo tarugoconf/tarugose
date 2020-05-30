@@ -1,0 +1,33 @@
+{% import "components.njk" as comp %}
+
+<section>
+    <header>
+        <h1>{{ tickets.title }}</h1>
+    </header>
+
+    {{ tickets.text | md | safe }}
+
+    <ul>
+        {% for ticket in tickets.types %}
+        <li>
+            <h4>{{ ticket.title }}</h4>
+
+            {% if ticket.subtitle %}
+                <p>{{ ticket.subtitle }}</p>
+            {% endif %}
+
+            <ul>
+            {% for item in ticket.features %}
+                <li>
+                    {{ item }}
+                </li>
+            {% endfor %}
+            </ul>
+
+            {{ ticket.price | md | safe }}
+
+            {{ comp.button(ticket.btn) }}
+        </li>
+        {% endfor %}
+    </ul>
+</section>

@@ -1,0 +1,16 @@
+{% macro button(data) %}
+    <a href="{{ data.url }}">
+        {{ data.text }}
+    </a>
+{% endmacro %}
+
+{% macro img(data) %}
+
+    {% if data.url %}
+        <a href="{{ data.url }}" target="_blank">
+            <img src="{{ data.src }}" alt="{{ data.alt }}">
+        </a>
+    {% endif %}
+
+    <img src="{{ data.src }}" alt="{{ data.alt }}">
+{% endmacro %}

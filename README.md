@@ -1,10 +1,6 @@
-# Static site
+# Tarugo Sofa Edition
 
-Basic template to build static site with [11ty](https://www.11ty.dev/)
-
-- Postcss
-- ES5 modules (no babel or webpack)
-- Prettier
+Built with [11ty](https://www.11ty.dev/)
 
 ```sh
 npm install

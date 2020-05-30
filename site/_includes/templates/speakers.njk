@@ -1,0 +1,13 @@
+<section>
+    <header>
+        <h1>{{ speakers.title }}</h1>
+    </header>
+
+    <ul>
+        {% for speaker in speakers.speakers %}
+        <li>
+            <h4>{{ speaker }}</h4>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

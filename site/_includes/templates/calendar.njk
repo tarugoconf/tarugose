@@ -1,0 +1,29 @@
+<section>
+    <header>
+        <h1>{{ calendar.title }}</h1>
+    </header>
+
+    {{ calendar.text | md | safe }}
+
+    <ul>
+        {% for day in calendar.days %}
+        <li>
+            <h4>{{ day.title }}</h4>
+
+            <ul>
+                {% for event in day.events %}
+                <li>
+                    <article>
+                        {{ event.hour }}
+                        {{ event.speakers }}
+
+                        <h5>{{ event.title }}</h5>
+                        {{ event.text | md | safe }}
+                    </article>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

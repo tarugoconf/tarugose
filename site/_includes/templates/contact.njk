@@ -1,0 +1,27 @@
+{% import "components.njk" as comp %}
+
+<section>
+    <header>
+        <h2>{{ contact.title }}</h2>
+    </header>
+
+    <div>
+        <strong>{{ contact.manager.name }}</strong>
+        <em>{{ contact.manager.position }}</em>
+
+        <address>
+            {{ comp.button(contact.manager.email) }}
+            {{ comp.button(contact.manager.twitter) }}
+        </address>
+    </div>
+
+    <div>
+        {{ contact.address | md | safe }}
+
+        <address>
+            {{ comp.button(contact.map) }}
+            {{ comp.button(contact.slack) }}
+            {{ comp.button(contact.twitter) }}
+        </address>
+    </div>
+</section>

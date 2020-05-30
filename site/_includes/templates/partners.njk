@@ -1,0 +1,44 @@
+{% import "components.njk" as comp %}
+
+<section>
+    <header>
+        <h2>{{ partners.title }}</h2>
+    </header>
+
+    {{ partners.text | md | safe }}
+
+    <figure>
+        {{ comp.img(partners.main) }}
+
+        <figcaption>
+        {{ partners.main.text | md | safe }}
+        </figcaption>
+    </figure>
+
+    <ul>
+    {% for partner in partners.standard %}
+        <li>
+        <figure>
+            {{ comp.img(partner) }}
+
+            <figcaption>
+            {{ partner.text | md | safe }}
+            </figcaption>
+        </figure>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <ul>
+    {% for partner in partners.patrons %}
+        <li>
+            {{ comp.img(partner) }}
+        </li>
+    {% endfor %}
+    </ul>
+
+    <h3>{{ partners.sponsor.title }}</h3>
+    {{ partners.sponsor.text | md | safe }}
+
+    {{ comp.button(partners.sponsor.btn) }}
+</section>
