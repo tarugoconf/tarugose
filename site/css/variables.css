@@ -9,8 +9,24 @@
     --font-weight-normal: 400;
     --font-weight-bold: 700;
 
+    --font-size-small: .85rem;
     --font-size-normal: 1rem;
+    --font-size-medium: 1.5rem;
+    --font-size-big: 2rem;
+
+    --font-small: var(--font-weight-normal) var(--font-size-small) / 1.45 var(--font-family);
+    --font-small-bold: var(--font-weight-bold) var(--font-size-small) / 1.45 var(--font-family);
 
     --font-normal: var(--font-weight-normal) var(--font-size-normal) / 1.45 var(--font-family);
     --font-normal-bold: var(--font-weight-bold) var(--font-size-normal) / 1.45 var(--font-family);
+
+    --font-medium: var(--font-weight-normal) var(--font-size-medium) / 1.45 var(--font-family);
+    --font-medium-bold: var(--font-weight-bold) var(--font-size-medium) / 1.45 var(--font-family);
+
+    --font-big: var(--font-weight-normal) var(--font-size-big) / 1.45 var(--font-family);
+    --font-big-bold: var(--font-weight-bold) var(--font-size-big) / 1.45 var(--font-family);
+
+    /* Spacing */
+    --column-gap: 5vw;
+    --row-gap: 5vh;
 }

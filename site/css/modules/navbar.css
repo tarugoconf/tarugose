@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    padding: 0 var(--column-gap);
+    align-items: center;
+    height: 70px;
+    border-bottom: solid 1px;
+    position: sticky;
+    top: 0;
+    background: var(--color-white);
+}
+.navbar-logo {
+    margin-right: var(--column-gap);
+}
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.navbar-buttons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: auto;
+}

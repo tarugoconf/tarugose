@@ -1,0 +1,19 @@
+.ly-section {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+    grid-column-gap: var(--column-gap);
+
+    & > * {
+        grid-column: 2;
+    }
+}
+
+.ly-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+    grid-column-gap: var(--column-gap);
+    grid-row-gap: var(--row-gap);
+}

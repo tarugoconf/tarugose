@@ -1,13 +1,13 @@
 {% import "components.njk" as comp %}
 
-<section>
+<section class="ly-section">
     <header>
         <h1>{{ tickets.title }}</h1>
     </header>
 
-    {{ tickets.text | md | safe }}
+    {{ tickets.text | md | type | safe }}
 
-    <ul>
+    <ul class="ly-grid">
         {% for ticket in tickets.types %}
         <li>
             <h4>{{ ticket.title }}</h4>
@@ -24,7 +24,7 @@
             {% endfor %}
             </ul>
 
-            {{ ticket.price | md | safe }}
+            {{ ticket.price | md | type | safe }}
 
             {{ comp.button(ticket.btn) }}
         </li>

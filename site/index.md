@@ -23,30 +23,32 @@ what:
 
         Organizada con un único objetivo: cuidar cada detalle del evento forma enfermiza --desde las acreditaciones hasta la oferta gastronómica-- para **transformar la asistencia en una experiencia,** sin olvidar nunca que lo más importante de la Tarugoconf, lo que verdaderamente la diferencia, son sus charlas.
 
-        - ![](//placehold.it/100x100)
-          **Util**
-
+    descriptions:
+      - src: //placehold.it/100x100
+        title: Util
+        text: |
           Problemas reales y las soluciones aplicadas para superarlos, que podrás incorporar a tu caja de herramientas y aplicar en tu día a día.
 
-        - ![](//placehold.it/100x100)
-          **Práctica**
-
+      - src: //placehold.it/100x100
+        title: Práctica
+        text: |
           Un speaker de la Tarugoconf no habla de lo que ha leído sino de lo que ha vivido.
 
-        - ![](//placehold.it/100x100)
-          **Divertida**
-
+      - src: //placehold.it/100x100
+        title: Divertida
+        text: |
           Lo contrario de «divertido» no es «serio» sino «aburrido» y lo único que está prohibido en la Tarugoconf es aburrirse.
-
-        - ![](//placehold.it/100x100)
-          **Awesómica**
-
+        
+      - src: //placehold.it/100x100
+        title: Awesómica
+        text: |
           Las charlas de la Tarugoconf se trabajan durante meses para que duren unos pocos minutos y se recuerden durante años.
 
-        ### <del>El problema</del> La oportunidad
+    subtitle: <del>El problema</del> La oportunidad
+    subimg: 
+        src: //placehold.it/300x300
 
-        ![](//placehold.it/300x300)
-
+    subtext: |
         El coronavirus nos ha obligado a que esta edición tenga que celebrarse online, pero **online no significa tener que tragarse 8 horas de charlas de gente hablando en un plano fijo desde su dormitorio.**
 
         La #tarugose se grabará en un auténtico plató de TV con varias cámaras e iluminación de cine; y en vez de limitarnos a retransmitir charlas pensadas para un evento offline, **crearemos contenido adaptado al online y que aproveche todas las ventajas del medio:** interacción con ponentes y asistentes, concursos y sorteos en directo, reportajes pregrabados, la posibilidad de que el público retrasmita su propio contenido (y consuma el creado por otros) y de que el que quiera haga networking REAL desde el sofá de tu casa, gracias a un montón de dínamicas y juegos.

@@ -4,3 +4,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
+
+figure {
+    margin: 0;
+    padding: 0;
+}

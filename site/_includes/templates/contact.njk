@@ -1,6 +1,6 @@
 {% import "components.njk" as comp %}
 
-<section>
+<section class="ly-section">
     <header>
         <h2>{{ contact.title }}</h2>
     </header>
@@ -16,7 +16,7 @@
     </div>
 
     <div>
-        {{ contact.address | md | safe }}
+        {{ contact.address | md | type | safe }}
 
         <address>
             {{ comp.button(contact.map) }}

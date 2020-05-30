@@ -1,19 +1,33 @@
-<section>
+<section class="ly-section">
     <header>
-        <h1>{{ what.title }}</h1>
+        <h2>{{ what.title }}</h2>
     </header>
 
     {{ what.text | md | type | safe }}
 
     <aside>
-        {{ what.metrics | md | safe }}
+        {{ what.metrics | md | type | safe }}
     </aside>
 
-    <ul>
+    <ul class="ly-grid">
+    {% for item in what.descriptions %}
+        <li>
+            <img src="//placehold.it/100x100">
+            <strong>{{ item.title | safe }}</strong>
+            {{ item.text | md | type | safe }}
+        </li>
+    {% endfor %}
+    </ul>
+
+    <h3>{{ what.subtitle | safe }}</h3>
+
+    {{ what.subtext | md | type | safe }}
+
+    <ul class="ly-grid">
     {% for item in what.features %}
         <li>
             <img src="//placehold.it/100x100">
-            {{ item.title | md | safe }}
+            {{ item.title | md | type | safe }}
         </li>
     {% endfor %}
     </ul>

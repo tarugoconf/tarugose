@@ -1,11 +1,11 @@
-<section>
+<section class="ly-section">
     <header>
         <h1>{{ calendar.title }}</h1>
     </header>
 
-    {{ calendar.text | md | safe }}
+    {{ calendar.text | md | type | safe }}
 
-    <ul>
+    <ul class="ly-grid">
         {% for day in calendar.days %}
         <li>
             <h4>{{ day.title }}</h4>
@@ -18,7 +18,7 @@
                         {{ event.speakers }}
 
                         <h5>{{ event.title }}</h5>
-                        {{ event.text | md | safe }}
+                        {{ event.text | md | type | safe }}
                     </article>
                 </li>
                 {% endfor %}

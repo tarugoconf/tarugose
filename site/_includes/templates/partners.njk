@@ -1,35 +1,35 @@
 {% import "components.njk" as comp %}
 
-<section>
+<section class="ly-section">
     <header>
         <h2>{{ partners.title }}</h2>
     </header>
 
-    {{ partners.text | md | safe }}
+    {{ partners.text | md | type | safe }}
 
     <figure>
         {{ comp.img(partners.main) }}
 
         <figcaption>
-        {{ partners.main.text | md | safe }}
+        {{ partners.main.text | md | type | safe }}
         </figcaption>
     </figure>
 
-    <ul>
+    <ul class="ly-grid">
     {% for partner in partners.standard %}
         <li>
         <figure>
             {{ comp.img(partner) }}
 
             <figcaption>
-            {{ partner.text | md | safe }}
+            {{ partner.text | md | type | safe }}
             </figcaption>
         </figure>
         </li>
     {% endfor %}
     </ul>
 
-    <ul>
+    <ul class="ly-grid">
     {% for partner in partners.patrons %}
         <li>
             {{ comp.img(partner) }}
@@ -38,7 +38,7 @@
     </ul>
 
     <h3>{{ partners.sponsor.title }}</h3>
-    {{ partners.sponsor.text | md | safe }}
+    {{ partners.sponsor.text | md | type | safe }}
 
     {{ comp.button(partners.sponsor.btn) }}
 </section>
