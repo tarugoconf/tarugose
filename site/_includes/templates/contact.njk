@@ -1,6 +1,6 @@
 {% import "components.njk" as comp %}
 
-<section class="ly-section">
+<section class="ly-section" id="{{ contact.id }}">
     <header>
         <h2>{{ contact.title }}</h2>
     </header>
@@ -10,8 +10,8 @@
         <em>{{ contact.manager.position }}</em>
 
         <address>
-            {{ comp.button(contact.manager.email) }}
-            {{ comp.button(contact.manager.twitter) }}
+            {{ comp.link(contact.manager.email) }}
+            {{ comp.link(contact.manager.twitter) }}
         </address>
     </div>
 
@@ -19,9 +19,9 @@
         {{ contact.address | md | type | safe }}
 
         <address>
-            {{ comp.button(contact.map) }}
-            {{ comp.button(contact.slack) }}
-            {{ comp.button(contact.twitter) }}
+            {{ comp.link(contact.map) }}
+            {{ comp.link(contact.slack) }}
+            {{ comp.link(contact.twitter) }}
         </address>
     </div>
 </section>

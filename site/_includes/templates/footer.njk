@@ -1,0 +1,13 @@
+{% import "components.njk" as comp %}
+
+<footer>
+    <small>{{ footer.copyright }}</small>
+
+    <ul>
+        {% for link in footer.links %}
+        <li>
+            {{ comp.link(link) }}
+        </li>
+        {% endfor %}
+    </ul>
+</footer>

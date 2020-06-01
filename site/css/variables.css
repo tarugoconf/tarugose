@@ -30,3 +30,12 @@
     --column-gap: 5vw;
     --row-gap: 5vh;
 }
+
+@custom-media --from-width-1 (max-width: 400px);
+@custom-media --to-width-1 (min-width: 401px);
+
+@custom-media --from-width-2 (max-width: 800px);
+@custom-media --to-width-2 (min-width: 801px);
+
+@custom-media --from-width-3 (max-width: 1000px);
+@custom-media --to-width-3 (min-width: 1001px);

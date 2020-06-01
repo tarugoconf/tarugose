@@ -1,0 +1,14 @@
+.why {
+    & > ul {
+        list-style: none;
+        margin: 0;
+        grid-column: 1 / -1;
+        padding: 0;
+    }
+
+    & li {
+        padding: var(--row-gap) var(--column-gap);
+        background: #ddd;
+        border: dashed 1px blue;
+    }
+}

@@ -1,3 +1,6 @@
+html {
+    scroll-padding-top: 70px;
+}
 body {
     font: var(--font-normal);
     color: var(--color-black);

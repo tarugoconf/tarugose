@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
     grid-column-gap: var(--column-gap);
+    border-bottom: dashed 1px green;
 
     & > * {
         grid-column: 2;

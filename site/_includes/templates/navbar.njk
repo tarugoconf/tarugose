@@ -1,18 +1,23 @@
+{% import "components.njk" as comp %}
+
 <nav class="navbar">
     <strong class="navbar-logo">
         Tarugose
     </strong>
 
     <ul class="navbar-menu">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        {% for link in menu %}
+        <li>
+            {{ comp.link(link) | safe }}
+        </li>
+        {% endfor %}
     </ul>
 
-    <div class="navbar-buttons">
-        <a href="#">Asistir</a>
-        <a href="#">Patrocinar</a>
-    </div>
+    <ul class="navbar-buttons">
+        {% for link in ctas %}
+        <li>
+            {{ comp.link(link) | safe }}
+        </li>
+        {% endfor %}
+    </ul>
 </nav>

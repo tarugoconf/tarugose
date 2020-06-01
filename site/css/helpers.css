@@ -1,0 +1,10 @@
+.section-title {
+    font: var(--font-big-bold);
+}
+.section-text {
+    font: var(--font-normal);
+
+    & > p {
+        margin: .5em 0;
+    }
+}

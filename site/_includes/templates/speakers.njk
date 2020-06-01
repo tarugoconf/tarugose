@@ -1,12 +1,29 @@
-<section class="ly-section">
-    <header>
+{% import "components.njk" as comp %}
+
+<section class="ly-section speakers" id="{{ speakers.id }}">
+    <header class="speakers-header">
         <h1>{{ speakers.title }}</h1>
     </header>
 
-    <ul class="ly-grid">
-        {% for speaker in speakers.speakers %}
+    <ul class="speakers-list">
+
+        {% for speaker in collections.speakers %}
         <li>
-            <h4>{{ speaker }}</h4>
+            <article>
+                <h4>{{ speaker.data.title }}</h4>
+                <p>{{ speaker.data.company }}</p>
+                <em>{{ speaker.data.position }}</em>
+
+                <address>
+                    {% if speaker.data.twitter %}
+                    {{ comp.link(speaker.data.twitter) }}
+                    {% endif %}
+
+                    {% if speaker.data.linkedin %}
+                    {{ comp.link(speaker.data.linkedin) }}
+                    {% endif %}
+                </address>
+            </article>
         </li>
         {% endfor %}
     </ul>

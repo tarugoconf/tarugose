@@ -1,34 +1,46 @@
-<section class="ly-section">
-    <header>
-        <h2>{{ what.title }}</h2>
-    </header>
+{% import "components.njk" as comp %}
 
-    {{ what.text | md | type | safe }}
+<div class="ly-section" id="{{ what.id }}">
+    <section class="what">
+        <header class="what-header">
+            <h2 class="section-title">{{ what.title }}</h2>
+        </header>
 
-    <aside>
-        {{ what.metrics | md | type | safe }}
-    </aside>
+        <div class="section-text what-text">
+            {{ what.text | md | type | safe }}
+        </div>
 
-    <ul class="ly-grid">
-    {% for item in what.descriptions %}
-        <li>
-            <img src="//placehold.it/100x100">
-            <strong>{{ item.title | safe }}</strong>
-            {{ item.text | md | type | safe }}
-        </li>
-    {% endfor %}
-    </ul>
+        <aside class="what-metrics">
+            {{ what.metrics | md | type | safe }}
+        </aside>
 
-    <h3>{{ what.subtitle | safe }}</h3>
+        <ul class="what-descriptions">
+        {% for item in what.descriptions %}
+            <li>
+                <img src="//placehold.it/100x100">
+                <strong>{{ item.title | safe }}</strong>
+                {{ item.text | md | type | safe }}
+            </li>
+        {% endfor %}
+        </ul>
 
-    {{ what.subtext | md | type | safe }}
+        <h3 class="what-subtitle">{{ what.subtitle | safe }}</h3>
 
-    <ul class="ly-grid">
-    {% for item in what.features %}
-        <li>
-            <img src="//placehold.it/100x100">
-            {{ item.title | md | type | safe }}
-        </li>
-    {% endfor %}
-    </ul>
-</section>
+        <figure class="what-subimage">
+            {{ comp.img(what.subimg) }}
+        </figure>
+
+        <div class="what-subtext">
+            {{ what.subtext | md | type | safe }}
+        </div>
+
+        <ul class="what-features">
+        {% for item in what.features %}
+            <li>
+                <img src="//placehold.it/100x100">
+                {{ item.title | md | type | safe }}
+            </li>
+        {% endfor %}
+        </ul>
+    </section>
+</div>

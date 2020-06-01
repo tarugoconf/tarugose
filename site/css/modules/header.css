@@ -1,0 +1,14 @@
+.header {
+    text-align: center;
+    padding: var(--row-gap) 0;
+}
+.header-logo {
+    font: var(--font-small-bold);
+    text-transform: uppercase;
+}
+.header-title {
+    font: var(--font-big-bold);
+}
+.header-subtitle {
+    font: var(--font-normal);
+}

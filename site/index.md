@@ -1,14 +1,36 @@
 ---
 layout: layouts/home.njk
-lang: gl
+lang: es
 title: Tarugoconf Sofá Edition
 description: 
 
+menu:
+  - text: Qué
+    url: '#what'
+  - text: Para qué
+    url: '#why'
+  - text: Agenda
+    url: '#calendar'
+  - text: Contacto
+    url: '#contact'
+  - text: FAQ
+    url: '#faq'
+  - text: Blog
+    url: '/blog/'
+
+ctas:
+  - text: Asistir
+    url: '#tickets'
+  - text: Patrocinar
+    url: '--'
+
 header:
+    logo: Tarugoconf Sofa Edition
     title: Tecnología y negocios en una situación sin precedentes
     subtitle: 22-23-24 de octubre de 2020 - Evento online
 
 what:
+    id: what
     title: Qué
     metrics: |
         * **3** días
@@ -47,6 +69,7 @@ what:
     subtitle: <del>El problema</del> La oportunidad
     subimg: 
         src: //placehold.it/300x300
+        alt: 
 
     subtext: |
         El coronavirus nos ha obligado a que esta edición tenga que celebrarse online, pero **online no significa tener que tragarse 8 horas de charlas de gente hablando en un plano fijo desde su dormitorio.**
@@ -64,6 +87,7 @@ what:
         - title: '**Networking** para todos'
 
 why:
+    id: why
     title: Por qué
     text: |
         Muchos nos habéis preguntado por qué nos metemos en este berenjenal, arriesgando el prestigio del evento construido a lo largo de cuatro ediciones presenciales con una edición exclusivamente online cuando lo más fácil hubiera sido cancelar y volver en 2021.
@@ -83,6 +107,7 @@ why:
         En 2021, si todo sale bien la Tarugoconf volverá a ser presencial, pero este año **tenemos la oportunidad de diseñar y construir entre todos el evento online al que siempre nos hubiera gustado ir.** ¿Nos acompañaréis también en esta aventura?
     
 calendar:
+    id: calendar
     title: Agenda
     text: |
         Continuamos confirmando contenidos e invitados, pero aquí se podrá consultar siempre la última versión de la agenda.
@@ -154,18 +179,11 @@ calendar:
               text: Lorem ipsum
 
 speakers:
+    id: speakers
     title: Speakers e invitados
-    speakers:
-        - david-bonilla
-        - cris-carrascosa
-        - david-bonilla
-        - cris-carrascosa
-        - david-bonilla
-        - cris-carrascosa
-        - david-bonilla
-        - cris-carrascosa
 
 tickets:
+    id: tickets
     title: Entradas
     text:
         Hasta el 1 de agosto, las entradas estarán disponibles solo para los tarugos --los suscriptores de la Bonilista-- que podrán adquirir las mismas a un precio especial. 
@@ -211,6 +229,7 @@ tickets:
             url: --
 
 partners:
+    id: partners
     title: Partners
     text: |
         ### Estas son las compañías que hacen que todo esto sea posible
@@ -273,6 +292,7 @@ partners:
             url: --
 
 contact:
+    id: contact
     title: Contacto
     manager:
         name: Beatriz Jimenez
@@ -300,6 +320,7 @@ contact:
         url: --
 
 faq:
+    id: faq
     title: FAQ
     questions:
         - question: ¿Tenéis código de conducta?

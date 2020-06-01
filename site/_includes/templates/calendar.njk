@@ -1,28 +1,32 @@
-<section class="ly-section">
-    <header>
+<section class="ly-section calendar" id="{{ calendar.id }}">
+    <header class="calendar-header">
         <h1>{{ calendar.title }}</h1>
     </header>
 
-    {{ calendar.text | md | type | safe }}
+    <div class="calendar-text">
+        {{ calendar.text | md | type | safe }}
+    </div>
 
-    <ul class="ly-grid">
+    <ul class="calendar-days">
         {% for day in calendar.days %}
         <li>
-            <h4>{{ day.title }}</h4>
+            <div class="calendar-day">
+                <h4>{{ day.title }}</h4>
 
-            <ul>
-                {% for event in day.events %}
-                <li>
-                    <article>
-                        {{ event.hour }}
-                        {{ event.speakers }}
+                <ul>
+                    {% for event in day.events %}
+                    <li>
+                        <article>
+                            {{ event.hour }}
+                            {{ event.speakers }}
 
-                        <h5>{{ event.title }}</h5>
-                        {{ event.text | md | type | safe }}
-                    </article>
-                </li>
-                {% endfor %}
-            </ul>
+                            <h5>{{ event.title }}</h5>
+                            {{ event.text | md | type | safe }}
+                        </article>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </li>
         {% endfor %}
     </ul>

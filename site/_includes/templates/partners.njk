@@ -1,6 +1,6 @@
 {% import "components.njk" as comp %}
 
-<section class="ly-section">
+<section class="ly-section" id="{{ partners.id }}">
     <header>
         <h2>{{ partners.title }}</h2>
     </header>
@@ -40,5 +40,5 @@
     <h3>{{ partners.sponsor.title }}</h3>
     {{ partners.sponsor.text | md | type | safe }}
 
-    {{ comp.button(partners.sponsor.btn) }}
+    {{ comp.link(partners.sponsor.btn) }}
 </section>
