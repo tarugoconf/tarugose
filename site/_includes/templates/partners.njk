@@ -1,13 +1,14 @@
 {% import "components.njk" as comp %}
 
-<section class="ly-section" id="{{ partners.id }}">
-    <header>
+<section class="ly-section partners" id="{{ partners.id }}">
+    <header class="partners-header">
         <h2>{{ partners.title }}</h2>
+        <p>{{ partners.subtitle }}</p>
     </header>
 
     {{ partners.text | md | type | safe }}
 
-    <figure>
+    <figure class="partners-company">
         {{ comp.img(partners.main) }}
 
         <figcaption>
@@ -15,10 +16,10 @@
         </figcaption>
     </figure>
 
-    <ul class="ly-grid">
+    <ul class="partners-list">
     {% for partner in partners.standard %}
         <li>
-        <figure>
+        <figure class="partners-company">
             {{ comp.img(partner) }}
 
             <figcaption>
@@ -29,16 +30,18 @@
     {% endfor %}
     </ul>
 
-    <ul class="ly-grid">
+    <ul class="partners-list">
     {% for partner in partners.patrons %}
-        <li>
+        <li class="partners-company">
             {{ comp.img(partner) }}
         </li>
     {% endfor %}
     </ul>
 
-    <h3>{{ partners.sponsor.title }}</h3>
-    {{ partners.sponsor.text | md | type | safe }}
+    <div class="partners-sponsor">
+        <h3>{{ partners.sponsor.title }}</h3>
+        {{ partners.sponsor.text | md | type | safe }}
 
-    {{ comp.link(partners.sponsor.btn) }}
+        {{ comp.link(partners.sponsor.btn) }}
+    </div>
 </section>

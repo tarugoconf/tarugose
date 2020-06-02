@@ -1,0 +1,22 @@
+.faq {
+    padding: var(--row-gap) 0;
+}
+
+.faq-header {
+    margin-bottom: var(--row-gap);
+
+    & h2 {
+        font: var(--font-big-bold);
+        letter-spacing: var(--font-spacing-big);
+        margin: 0;
+    }
+}
+
+.faq-question {
+    font: var(--font-medium-bold);
+    padding: calc(var(--row-gap) / 2) 0;
+    cursor: pointer;
+}
+.faq-answer {
+    font: var(--font-normal);
+}

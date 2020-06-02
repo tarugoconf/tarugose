@@ -16,13 +16,18 @@
                 <ul>
                     {% for event in day.events %}
                     <li>
-                        <article>
-                            {{ event.hour }}
-                            {{ event.speakers }}
+                        <details class="calendar-event">
+                            <summary class="calendar-event-header">
+                                {{ event.hour }}
+                                {{ event.speakers }}
 
-                            <h5>{{ event.title }}</h5>
-                            {{ event.text | md | type | safe }}
-                        </article>
+                                <strong>{{ event.title }}</strong>
+                            </summary>
+
+                            <div class="calendar-event-text">
+                                {{ event.text | md | type | safe }}
+                            </div>
+                        </details>
                     </li>
                     {% endfor %}
                 </ul>

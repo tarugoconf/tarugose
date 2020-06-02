@@ -1,27 +1,29 @@
 {% import "components.njk" as comp %}
 
-<section class="ly-section" id="{{ contact.id }}">
-    <header>
-        <h2>{{ contact.title }}</h2>
-    </header>
+<div class="ly-section">
+    <section class="contact" id="{{ contact.id }}">
+        <header class="contact-header">
+            <h2>{{ contact.title }}</h2>
+        </header>
 
-    <div>
-        <strong>{{ contact.manager.name }}</strong>
-        <em>{{ contact.manager.position }}</em>
+        <div>
+            <strong>{{ contact.manager.name }}</strong>
+            <em>{{ contact.manager.position }}</em>
 
-        <address>
-            {{ comp.link(contact.manager.email) }}
-            {{ comp.link(contact.manager.twitter) }}
-        </address>
-    </div>
+            <address>
+                {{ comp.link(contact.manager.email) }}
+                {{ comp.link(contact.manager.twitter) }}
+            </address>
+        </div>
 
-    <div>
-        {{ contact.address | md | type | safe }}
+        <div>
+            {{ contact.address | md | type | safe }}
 
-        <address>
-            {{ comp.link(contact.map) }}
-            {{ comp.link(contact.slack) }}
-            {{ comp.link(contact.twitter) }}
-        </address>
-    </div>
-</section>
+            <address>
+                {{ comp.link(contact.map) }}
+                {{ comp.link(contact.slack) }}
+                {{ comp.link(contact.twitter) }}
+            </address>
+        </div>
+    </section>
+</div>

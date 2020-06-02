@@ -1,12 +1,15 @@
-<section class="ly-section" id="{{ faq.id }}">
-    <header>
+<section class="ly-section faq" id="{{ faq.id }}">
+    <header class="faq-header">
         <h2>{{ faq.title }}</h2>
     </header>
 
     {% for faq in faq.questions %}
-    <details>
+    <details class="faq-question">
         <summary>{{ faq.question }}</summary>
-        {{ faq.answer }}
+
+        <div class="faq-answer">
+            {{ faq.answer }}
+        </div>
     </details>
     {% endfor %}
 </section>

@@ -1,14 +1,42 @@
 .why {
-    & > ul {
-        list-style: none;
+    padding: var(--row-gap) 0;
+}
+.why-header {
+    & h2 {
+        font: var(--font-big-bold);
+        letter-spacing: var(--font-spacing-big);
         margin: 0;
-        grid-column: 1 / -1;
-        padding: 0;
     }
+}
+.why-reasons {
+    list-style: none;
+    margin: var(--row-gap) 0;
+    grid-column: 1 / -1;
+    padding: 0;
 
     & li {
         padding: var(--row-gap) var(--column-gap);
         background: #ddd;
         border: dashed 1px blue;
+    }
+}
+.why-reason {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    & h3 {
+        font: var(--font-medium-bold);
+        letter-spacing: var(--font-spacing-medium);
+        margin: 0;
+    }
+
+    @media (min-width: 800px) {
+        display: grid;
+        grid-template-columns: 10em 1fr;
+        grid-column-gap: var(--column-gap);
+
+        & h3 {
+            text-align: right;
+        }
     }
 }

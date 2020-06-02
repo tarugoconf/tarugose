@@ -1,0 +1,24 @@
+.contact {
+    padding: var(--row-gap) 0;
+    display: grid;
+    grid-column-gap: var(--column-gap);
+    grid-row-gap: var(--row-gap);
+
+    @media (min-width: 700px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.contact-header {
+    margin-bottom: var(--row-gap);
+
+    & h2 {
+        font: var(--font-big-bold);
+        letter-spacing: var(--font-spacing-big);
+        margin: 0;
+    }
+    
+    @media (min-width: 700px) {
+        grid-column: 1 / -1;
+    }
+}

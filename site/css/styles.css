@@ -13,6 +13,10 @@
 @import 'modules/calendar.css';
 @import 'modules/speakers.css';
 @import 'modules/tickets.css';
+@import 'modules/partners.css';
+@import 'modules/contact.css';
+@import 'modules/faq.css';
+@import 'modules/footer.css';
 
 /* Helpers */
 @import 'helpers.css';

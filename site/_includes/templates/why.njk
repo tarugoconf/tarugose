@@ -1,7 +1,20 @@
 <section class="ly-section why" id="{{ why.id }}">
     <header class="why-header">
-        <h1>{{ why.title }}</h1>
+        <h2>{{ why.title }}</h2>
     </header>
+
+    {{ why.intro | md | type | safe }}
+
+    <ul class="why-reasons">
+        {% for reason in why.reasons %}
+        <li>
+            <div class="why-reason">
+                <h3>{{ reason.title }}</h3>
+                {{ reason.text | md | type | safe }}
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
 
     {{ why.text | md | type | safe }}
 </section>

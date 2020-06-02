@@ -1,19 +1,24 @@
 .calendar {
-    
+    padding: var(--row-gap) 0;
+}
+.calendar-header {
+    & h2 {
+        font: var(--font-big-bold);
+        letter-spacing: var(--font-spacing-big);
+        margin: 0;
+    }
 }
 .calendar-days {
     list-style: none;
-    margin: 0;
+    margin: var(--row-gap) 0;
     padding: 0;
     display: grid;
 
     & > li {
         grid-column: 1;
         grid-row: 1;
-        border: dashed 1px red;
         width: 400px;
         max-width: calc(100vw - var(--row-gap) * 2);
-        background: var(--color-white);
 
         &:nth-child(1) {
             justify-self: start;
@@ -32,5 +37,34 @@
     }
 }
 .calendar-day {
-    
+    & h4 {
+        margin: .5em 0;
+        font: var(--font-medium-bold);
+        letter-spacing: var(--font-spacing-medium);
+    }
+
+    & ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: var(--color-white);
+        border: dashed 1px red;
+        box-shadow: 0 2px 5px #0003;
+    }
+    & li:nth-child(even) {
+        background: var(--color-gray-light);
+    }
+}
+.calendar-event-header {
+    font: var(--font-small);
+    padding: 1em;
+
+    & strong {
+        display: block;
+        font: var(--font-normal-bold);
+    }
+}
+.calendar-event-text {
+    padding: 1em;
+    font: var(--font-small);
 }

@@ -1,13 +1,41 @@
 .tickets {
-    
+    padding: var(--row-gap) 0;
 }
+
+.tickets-header {
+    & h2 {
+        font: var(--font-big-bold);
+        letter-spacing: var(--font-spacing-big);
+        margin: 0;
+    }
+}
+
 .tickets-list {
     list-style: none;
-    margin: 0;
+    margin: var(--row-gap) 0;
     padding: 0;
     display: flex;
 
-    & li + li {
+    & > li + li {
         margin-left: var(--column-gap);
+    }
+}
+.tickets-item {
+    font: var(--font-normal);
+    border: dashed 1px brown;
+    padding: 1em;
+
+    & h3 {
+        font: var(--font-medium-bold);
+        margin: 0;
+    }
+
+    & small {
+        font: var(--font-small);
+    }
+
+    & ul {
+        font: var(--font-small);
+        margin: 1em 0;
     }
 }

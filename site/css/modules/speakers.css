@@ -1,5 +1,12 @@
 .speakers {
-    
+    padding: var(--row-gap) 0;
+}
+.speakers-header {
+    & h2 {
+        font: var(--font-big-bold);
+        letter-spacing: var(--font-spacing-big);
+        margin: 0;
+    }
 }
 .speakers-list {
     list-style: none;
@@ -10,5 +17,6 @@
 
     & > li {
         margin: 10px;
+        border: dashed 1px green;
     }
 }

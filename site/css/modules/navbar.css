@@ -1,4 +1,5 @@
 .navbar {
+    font: var(--font-normal-bold);
     display: flex;
     padding: 0 var(--column-gap);
     align-items: center;
@@ -17,6 +18,10 @@
     padding: 0;
     margin: 0;
     display: flex;
+
+    & a {
+        padding: .5em;
+    }
 }
 .navbar-buttons {
     list-style: none;
@@ -24,4 +29,8 @@
     margin: 0;
     display: flex;
     margin-left: auto;
+
+    & a {
+        padding: .5em;
+    }
 }

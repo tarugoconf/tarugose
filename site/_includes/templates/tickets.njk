@@ -2,18 +2,18 @@
 
 <section class="ly-section tickets" id="{{ tickets.id }}">
     <header class="tickets-header">
-        <h1>{{ tickets.title }}</h1>
+        <h2>{{ tickets.title }}</h2>
     </header>
 
     {{ tickets.text | md | type | safe }}
 
     <ul class="tickets-list">
         {% for ticket in tickets.types %}
-        <li>
-            <h4>{{ ticket.title }}</h4>
+        <li class="tickets-item">
+            <h3>{{ ticket.title }}</h3>
 
             {% if ticket.subtitle %}
-                <p>{{ ticket.subtitle }}</p>
+                <small>{{ ticket.subtitle }}</small>
             {% endif %}
 
             <ul>
@@ -24,7 +24,7 @@
             {% endfor %}
             </ul>
 
-            {{ ticket.price | md | type | safe }}
+            <strong>{{ ticket.price | md | type | safe }}</strong>
 
             {{ comp.link(ticket.btn) }}
         </li>

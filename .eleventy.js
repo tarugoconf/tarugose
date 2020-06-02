@@ -13,6 +13,7 @@ module.exports = function (config) {
     // Copy dirs
     config.addPassthroughCopy('site/img');
     config.addPassthroughCopy({ 'site/assets': '/' });
+    config.addWatchTarget('site/css/');
 
     return {
         dir: {

@@ -25,7 +25,7 @@ ctas:
     url: '--'
 
 header:
-    logo: Tarugoconf Sofa Edition
+    logo: Tarugoconf Sofá Edition
     title: Tecnología y negocios en una situación sin precedentes
     subtitle: 22-23-24 de octubre de 2020 - Evento online
 
@@ -66,17 +66,22 @@ what:
         text: |
           Las charlas de la Tarugoconf se trabajan durante meses para que duren unos pocos minutos y se recuerden durante años.
 
-    subtitle: <del>El problema</del> La oportunidad
     subimg: 
         src: //placehold.it/300x300
         alt: 
 
     subtext: |
+        ## <del>El problema</del> La oportunidad
+
         El coronavirus nos ha obligado a que esta edición tenga que celebrarse online, pero **online no significa tener que tragarse 8 horas de charlas de gente hablando en un plano fijo desde su dormitorio.**
 
-        La #tarugose se grabará en un auténtico plató de TV con varias cámaras e iluminación de cine; y en vez de limitarnos a retransmitir charlas pensadas para un evento offline, **crearemos contenido adaptado al online y que aproveche todas las ventajas del medio:** interacción con ponentes y asistentes, concursos y sorteos en directo, reportajes pregrabados, la posibilidad de que el público retrasmita su propio contenido (y consuma el creado por otros) y de que el que quiera haga networking REAL desde el sofá de tu casa, gracias a un montón de dínamicas y juegos.
+        ### Zoom es para las videoconferencias, esto es una conferencia
 
-        Todo para **proporcionar una experiencia más parecida a «una mezcla de Late Night Show e Informe Semanal» que a una conferencia técnica** --como la definió su ideólogo, Javi Santana-- e intentar responder una simple pregunta: ¿Qué pasaría si nos tomaramos el COVIDgedón no solo como una crisis sino también como **una oportunidad para crear el mejor evento online DEL MUNDO, aquel al que siempre nos hubiera agustado asistir?**
+        La #tarugo20 se grabará en un auténtico plató de TV con varias cámaras e iluminación de cine; y en vez de limitarnos a retransmitir charlas pensadas para un evento offline, **crearemos contenido adaptado al online y que aproveche todas las ventajas del medio:** interacción con ponentes y asistentes, concursos y sorteos en directo, reportajes pregrabados, la posibilidad de que el público retrasmita su propio contenido (y consuma el creado por otros) y de que el que quiera haga networking REAL desde el sofá de tu casa, gracias a un montón de dinamicas y juegos.
+
+        ### En casa no puedes abstraerte de la gente que te rodea, ni queremos que lo hagas
+
+        El contenido de la Tarugoconf estará diseñado para **que puedsa ser disfrutada desde el sofá de tu casa tanto por profesionales como por *muggles* sin conocimientos técnicos.** El nombre de esta edición especial no está escogido al azar. Esperamos que asistas al evento desde tu sofá, rodeado de la familia y amigos --con comida y bebida-- y por eso pretendemos proporcionarte una **experiencia más parecida a «una mezcla de Late Night Show e Informe Semanal» que a una conferencia técnica.**
     
     features:
         - title: '**Charlas** awesomicas'
@@ -89,23 +94,22 @@ what:
 why:
     id: why
     title: Por qué
-    text: |
+    intro: |
         Muchos nos habéis preguntado por qué nos metemos en este berenjenal, arriesgando el prestigio del evento construido a lo largo de cuatro ediciones presenciales con una edición exclusivamente online cuando lo más fácil hubiera sido cancelar y volver en 2021.
+        
+    reasons:
+      - title: Porque podemos
+        text: Al contrario que otros eventos amigos como el T3chfest o la Lechazoconf, hemos tenido tiempo para reaccionar a la crisis sanitaria provocada por el COVID-19.
 
-        - ### Porque podemos
+      - title: Porque queremos
+        text: Nos negamos a tirar la toalla ante el virus o cualquier otra adversidad. Nos adaptaremos, pero nunca nos rendiremos.
 
-            Al contrario que otros eventos amigos como el T3chfest o la Lechazoconf, hemos tenido tiempo para reaccionar a la crisis sanitaria provocada por el COVID-19.
-
-        - ### Porque queremos
-
-            Nos negamos a tirar la toalla ante el virus o cualquier otra adversidad. Nos adaptaremos, pero nunca nos rendiremos.
-
-        - ### Porque debemos
-
-            Para honrar a las más de 350.000 personas que han fallecido por culpa del coronavirus y que tendremos siempre presentes, aunque no puedan acompañarnos.
-
-        En 2021, si todo sale bien la Tarugoconf volverá a ser presencial, pero este año **tenemos la oportunidad de diseñar y construir entre todos el evento online al que siempre nos hubiera gustado ir.** ¿Nos acompañaréis también en esta aventura?
+      - title: Porque debemos
+        text: Para honrar a las más de 350.000 personas que han fallecido por culpa del coronavirus y que tendremos siempre presentes, aunque no puedan acompañarnos.
     
+    text: |
+      En 2021, si todo sale bien la Tarugoconf volverá a ser presencial, pero este año **tenemos la oportunidad de diseñar y construir entre todos el evento online al que siempre nos hubiera gustado ir.** ¿Nos acompañaréis también en esta aventura?
+
 calendar:
     id: calendar
     title: Agenda
@@ -185,10 +189,10 @@ speakers:
 tickets:
     id: tickets
     title: Entradas
-    text:
+    text: |
         Hasta el 1 de agosto, las entradas estarán disponibles solo para los tarugos --los suscriptores de la Bonilista-- que podrán adquirir las mismas a un precio especial. 
 
-        \*Los primeros 300 que compren su entrada podrán, además, asistir a La Beta, el ensayo general con contenido exclusivo que celebraremos en septiembre.
+        *Los primeros 300 que compren su entrada podrán, además, asistir a La Beta, el ensayo general con contenido exclusivo que celebraremos en septiembre.
     
     types:
         - title: Early Tarugo
@@ -231,9 +235,8 @@ tickets:
 partners:
     id: partners
     title: Partners
+    subtitle: Estas son las compañías que hacen que todo esto sea posible
     text: |
-        ### Estas son las compañías que hacen que todo esto sea posible
-
         Cada una de estas empresas ha decidido apoyarnos para que la Tarugoconf no tenga que bajar la persiana y, aunque sea temporalmente, se reconvierta en la conferencia online que siempre habíamos soñado.
 
         El año que viene, volveremos a la normalidad, pero las miles de horas de video, fotos, posts y tweets que generará esta edición registraran para la posteridad como en uno de los momentos más oscuros de nuestra Historia, colaboramos, nos adaptamos y sobrepusimos. Si quieres ser parte de este esfuerzo, consulta nuestras oportunidades de patrocinio ¡graciñas!
@@ -286,7 +289,7 @@ partners:
         text: |
             En la tarugo intentamos huir de la figura del «sponsor» habitual y convertimos a nuestros patrocinadores en verdaderos socios que son una parte más del evento: nos preocupamos por entender sus objetivos y personalizamos los paquetes de patrocinio para intentar alcanzarlos, trabajando mano a mano con ellos y creando relaciones que perduran a lo largo de los años.
 
-            Si quieres ser parte de la próxima #tarugose puedes mandarnos un mail a [tarugoconf@bonillaware.com](mailto:tarugoconf@bonillaware.com)
+            Si quieres ser parte de la próxima #tarugo20 puedes mandarnos un mail a [tarugoconf@bonillaware.com](mailto:tarugoconf@bonillaware.com)
         btn:
             text: Descarga dosier de patrocinio
             url: --

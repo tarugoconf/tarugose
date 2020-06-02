@@ -1,4 +1,5 @@
 .what {
+    padding: var(--row-gap) 0;
     display: grid;
     grid-column-gap: var(--column-gap);
     grid-row-gap: var(--row-gap);
@@ -6,16 +7,15 @@
                          'text'
                          'metrics'
                          'descriptions'
-                         'sub-title'
                          'sub-image'
                          'sub-text'
                          'features';
 
     @media (min-width: 800px) {
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 'header header header'
                              'text text metrics'
                              'descriptions descriptions descriptions'
-                             'sub-title sub-title sub-title'
                              'sub-image sub-text sub-text'
                              'features features features';
     }
@@ -23,6 +23,12 @@
 
 .what-header {
     grid-area: header;
+
+    & h2 {
+        font: var(--font-big-bold);
+        letter-spacing: var(--font-spacing-big);
+        margin: 0;
+    }
 }
 .what-text {
     grid-area: text;
@@ -46,11 +52,7 @@
     grid-column-gap: var(--column-gap);
     grid-row-gap: var(--row-gap);
     grid-template-columns: minmax(200px, 250px);
-
-    & img {
-        display: block;
-        margin: 10px auto;
-    }
+    margin: var(--row-gap) 0;
 
     @media (min-width: 600px) {
         grid-template-columns: repeat(2, minmax(200px, 250px));
@@ -58,6 +60,21 @@
 
     @media (min-width: 1100px) {
         grid-template-columns: repeat(4, minmax(200px, 250px));
+    }
+}
+
+.what-description {
+    & > img {
+        display: block;
+        margin: 10px auto;
+    }
+
+    & > strong {
+        font: var(--font-normal-bold);
+    }
+
+    & > p {
+        font: var(--font-small);
     }
 }
 .what-features {
@@ -71,10 +88,16 @@
     grid-column-gap: var(--column-gap);
     grid-row-gap: var(--row-gap);
     grid-template-columns: repeat(2, minmax(100px, 150px));
+    font: var(--font-normal);
+    line-height: 1.2;
 
     & img {
         display: block;
-        margin: 10px auto;
+        margin: 1em auto;
+    }
+
+    & strong {
+        display: block;
     }
 
     @media (min-width: 500px) {
@@ -96,12 +119,20 @@
     }
 }
 
-.what-subtitle {
-    grid-area: sub-title;
-}
 .what-subimage {
     grid-area: sub-image;
 }
 .what-subtext {
     grid-area: sub-text;
+
+    & h2 {
+        font: var(--font-big-bold);
+        letter-spacing: var(--font-spacing-big);
+        margin-top: 0;
+    }
+
+    & h3 {
+        font: var(--font-medium-bold);
+        letter-spacing: var(--font-spacing-medium);
+    }
 }

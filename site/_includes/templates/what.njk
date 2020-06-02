@@ -3,10 +3,10 @@
 <div class="ly-section" id="{{ what.id }}">
     <section class="what">
         <header class="what-header">
-            <h2 class="section-title">{{ what.title }}</h2>
+            <h2>{{ what.title }}</h2>
         </header>
 
-        <div class="section-text what-text">
+        <div class="what-text">
             {{ what.text | md | type | safe }}
         </div>
 
@@ -16,15 +16,13 @@
 
         <ul class="what-descriptions">
         {% for item in what.descriptions %}
-            <li>
+            <li class="what-description">
                 <img src="//placehold.it/100x100">
                 <strong>{{ item.title | safe }}</strong>
                 {{ item.text | md | type | safe }}
             </li>
         {% endfor %}
         </ul>
-
-        <h3 class="what-subtitle">{{ what.subtitle | safe }}</h3>
 
         <figure class="what-subimage">
             {{ comp.img(what.subimg) }}
