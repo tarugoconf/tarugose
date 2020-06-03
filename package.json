@@ -2,9 +2,11 @@
   "private": true,
   "scripts": {
     "start": "rm -rf dist && concurrently npm:start:site npm:start:css",
-    "start:site": "eleventy --serve --incremental",
-    "start:css": "postcss ./site/css/styles.css -o dist/css/styles.css --watch",
-    "build": "rm -rf dist && eleventy && postcss ./site/css/styles.css -o dist/css/styles.css",
+    "start:site": "npm run build:site -- --serve --incremental",
+    "start:css": "npm run build:css -- --watch",
+    "build": "rm -rf dist && concurrently npm:build:site npm:build:css",
+    "build:site": "eleventy",
+    "build:css": "postcss ./site/css/styles.css -o dist/css/styles.css",
     "prettier": "prettier config/** ./*.js .eleventy.js site/**/*.{md,js,css} --write"
   },
   "devDependencies": {
