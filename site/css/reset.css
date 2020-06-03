@@ -1,10 +1,11 @@
 html {
     scroll-padding-top: 70px;
     scroll-behavior: smooth;
+    font: var(--font-normal);
+    color: var(--color-white);
+    background-color: var(--color-dark);
 }
 body {
-    font: var(--font-normal);
-    color: var(--color-black);
     scroll-behavior: smooth;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;

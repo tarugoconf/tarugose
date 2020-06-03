@@ -1,5 +1,5 @@
-{% macro link(data) %}
-    <a href="{{ data.url }}">
+{% macro link(data, class) %}
+    <a href="{{ data.url }}" {% if class %}class="{{ class }}"{% endif %}>
         {{ data.text }}
     </a>
 {% endmacro %}

@@ -1,14 +1,13 @@
 .navbar {
-    font: var(--font-normal-bold);
+    font: var(--font-small);
     display: flex;
     padding: 0 var(--column-gap);
     align-items: center;
     height: 70px;
-    border-bottom: solid 1px;
     position: sticky;
     top: 0;
     z-index: 10;
-    background: var(--color-white);
+    background: var(--color-xdark);
 }
 .navbar-logo {
     margin-right: var(--column-gap);
@@ -21,16 +20,10 @@
 
     & a {
         padding: .5em;
+        color: var(--color-white);
+        text-decoration: none;
     }
 }
 .navbar-buttons {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    margin-left: auto;
-
-    & a {
-        padding: .5em;
-    }
+    
 }

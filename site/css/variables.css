@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
 :root {
     /* Colors */
     --color-black: #222;
@@ -5,47 +7,61 @@
     --color-gray: #666;
     --color-gray-light: #efefee;
 
+    --color-xdark: hsl(240, 70%, 7%);
+    --color-dark: hsl(240, 70%, 10%);
+    --color-primary: hsl(290, 100%, 40%);
+    --color-primary-dark: hsl(290, 100%, 25%);
+
+    /* FX */
+    --radius: .9rem;
+    --duration: 200ms;
+
     /* Fonts */
-    --font-family: system-ui, sans-serif;
+    --font-family-title: Inter, system-ui, sans-serif;
+    --font-family-text: system-ui, sans-serif;
 
-    --scale: 1.2;
+    --min-scale: 1.2;
+    --max-scale: 1.5;
     --font-size-small: .9rem;
-    --font-size-normal: calc(var(--font-size-small) * var(--scale));
-    --font-size-medium: calc(var(--font-size-normal) * var(--scale));
-    --font-size-big: calc(var(--font-size-medium) * var(--scale));
-    --font-size-xxbig: calc(var(--font-size-medium) * (var(--scale) * 2));
+    --font-size-normal: calc(var(--font-size-small) * var(--min-scale));
+    --font-size-medium: calc(var(--font-size-normal) * var(--min-scale));
+    --font-size-big: calc(var(--font-size-medium) * var(--min-scale));
+    --font-size-xbig: calc(var(--font-size-big) * var(--min-scale));
+    --font-size-xxbig: calc(var(--font-size-xbig) * var(--min-scale));
 
-    @media (min-width: 400px) {
-        --scale: 1.3;
-    }
-    @media (min-width: 750px) {
-        --scale: 1.4;
-    }
-    @media (min-width: 1100px) {
-        --scale: 1.5;
+    @supports (font-size: clamp(14px, 5vw, 20px)) {
+        --font-size-normal: clamp(var(--font-size-small) * var(--min-scale), 5vw, var(--font-size-small) * var(--max-scale));
+        --font-size-medium: clamp(var(--font-size-normal) * var(--min-scale), 5vw, var(--font-size-normal) * var(--max-scale));
+        --font-size-big: clamp(var(--font-size-medium) * var(--min-scale), 4vw, var(--font-size-medium) * var(--max-scale));
+        --font-size-xbig: clamp(var(--font-size-big) * var(--min-scale), 5vw, var(--font-size-big) * var(--max-scale));
+        --font-size-xxbig: clamp(var(--font-size-xbig) * var(--min-scale), 5vw, var(--font-size-xbig) * var(--max-scale));
     }
 
     --font-weight-normal: 400;
-    --font-weight-bold: 600;
-    --font-weight-xbold: 700;
+    --font-weight-bold: 700;
+    --font-weight-xbold: 900;
 
-    --font-small: var(--font-weight-normal) var(--font-size-small) / 1.5 var(--font-family);
-    --font-small-bold: var(--font-weight-bold) var(--font-size-small) / 1.5 var(--font-family);
+    --font-small: var(--font-weight-normal) var(--font-size-small) / 1.5 var(--font-family-text);
+    --font-small-bold: var(--font-weight-bold) var(--font-size-small) / 1.5 var(--font-family-text);
 
-    --font-normal: var(--font-weight-normal) var(--font-size-normal) / 1.5 var(--font-family);
-    --font-normal-bold: var(--font-weight-bold) var(--font-size-normal) / 1.5 var(--font-family);
+    --font-normal: var(--font-weight-normal) var(--font-size-normal) / 1.5 var(--font-family-text);
+    --font-normal-bold: var(--font-weight-bold) var(--font-size-normal) / 1.5 var(--font-family-text);
 
-    --font-medium: var(--font-weight-normal) var(--font-size-medium) / 1.25 var(--font-family);
-    --font-medium-bold: var(--font-weight-bold) var(--font-size-medium) / 1.25 var(--font-family);
+    --font-medium: var(--font-weight-normal) var(--font-size-medium) / 1.25 var(--font-family-title);
+    --font-medium-bold: var(--font-weight-bold) var(--font-size-medium) / 1.25 var(--font-family-title);
     --font-spacing-medium: -0.01em;
 
-    --font-big: var(--font-weight-normal) var(--font-size-big) / 1.1 var(--font-family);
-    --font-big-bold: var(--font-weight-xbold) var(--font-size-big) / 1.1 var(--font-family);
+    --font-big: var(--font-weight-normal) var(--font-size-big) / 1.1 var(--font-family-title);
+    --font-big-bold: var(--font-weight-xbold) var(--font-size-big) / 1.1 var(--font-family-title);
     --font-spacing-big: -0.015em;
 
-    --font-xxbig: var(--font-weight-normal) var(--font-size-xxbig) / 1 var(--font-family);
-    --font-xxbig-bold: var(--font-weight-xbold) var(--font-size-xxbig) / 1 var(--font-family);
-    --font-spacing-xxbig: -0.02em;
+    --font-xbig: var(--font-weight-normal) var(--font-size-xbig) / 1 var(--font-family-title);
+    --font-xbig-bold: var(--font-weight-xbold) var(--font-size-xbig) / 1 var(--font-family-title);
+    --font-spacing-xbig: -0.02em;
+
+    --font-xxbig: var(--font-weight-normal) var(--font-size-xxbig) / 1 var(--font-family-title);
+    --font-xxbig-bold: var(--font-weight-xbold) var(--font-size-xxbig) / 1 var(--font-family-title);
+    --font-spacing-xxbig: -0.025em;
 
     /* Spacing */
     --column-gap: var(--font-size-big);

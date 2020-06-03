@@ -1,0 +1,26 @@
+.button {
+    font: var(--font-small-bold);
+    padding: .5em 1em;
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--radius);
+    transition: background-color var(--duration);
+    
+    &:hover {
+        background-color: var(--color-primary-dark);
+    }
+}
+
+.buttonGroup {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: auto;
+
+    & > * + * {
+        margin-left: .3em;
+    }
+}

@@ -5,18 +5,21 @@
 /* Layouts */
 @import 'layouts.css';
 
-/* Modules */
-@import 'modules/navbar.css';
-@import 'modules/header.css';
-@import 'modules/what.css';
-@import 'modules/why.css';
-@import 'modules/calendar.css';
-@import 'modules/speakers.css';
-@import 'modules/tickets.css';
-@import 'modules/partners.css';
-@import 'modules/contact.css';
-@import 'modules/faq.css';
-@import 'modules/footer.css';
+/* Blocks */
+@import 'blocks/navbar.css';
+@import 'blocks/header.css';
+@import 'blocks/what.css';
+@import 'blocks/why.css';
+@import 'blocks/calendar.css';
+@import 'blocks/speakers.css';
+@import 'blocks/tickets.css';
+@import 'blocks/partners.css';
+@import 'blocks/contact.css';
+@import 'blocks/faq.css';
+@import 'blocks/footer.css';
+
+/* Components */
+@import 'components/button.css';
 
 /* Helpers */
 @import 'helpers.css';

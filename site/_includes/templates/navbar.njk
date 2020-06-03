@@ -13,10 +13,10 @@
         {% endfor %}
     </ul>
 
-    <ul class="navbar-buttons">
+    <ul class="navbar-buttons buttonGroup">
         {% for link in ctas %}
         <li>
-            {{ comp.link(link) | safe }}
+            {{ comp.link(link, 'button') | safe }}
         </li>
         {% endfor %}
     </ul>

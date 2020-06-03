@@ -1,0 +1,22 @@
+.header {
+    text-align: center;
+    padding: var(--row-gap) 0;
+    align-content: center;
+    justify-items: center;
+    min-height: calc(100vh - 70px);
+}
+.header-logo {
+    font: var(--font-small-bold);
+    text-transform: uppercase;
+    margin-top: auto;
+}
+.header-title {
+    font: var(--font-xbig-bold);
+    letter-spacing: var(--font-spacing-xbig);
+    max-width: 12em;
+}
+.header-subtitle {
+    font: var(--font-normal);
+    max-width: 15em;
+    margin-bottom: auto;
+}
