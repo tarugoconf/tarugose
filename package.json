@@ -4,7 +4,7 @@
     "start": "rm -rf dist && concurrently npm:build:deps npm:start:site npm:start:css",
     "start:site": "npm run build:site -- --serve --incremental",
     "start:css": "npm run build:css -- --watch",
-    "build": "rm -rf dist && concurrently npm:build:site npm:build:css",
+    "build": "rm -rf dist && concurrently npm:build:deps npm:build:site npm:build:css",
     "build:site": "eleventy",
     "build:css": "postcss ./site/css/styles.css -o dist/css/styles.css",
     "build:deps": "browser-assets particles.js --dest=dist/vendors",
