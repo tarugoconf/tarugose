@@ -9,8 +9,8 @@
 
     --color-xdark: hsl(240, 70%, 7%);
     --color-dark: hsl(240, 70%, 10%);
-    --color-primary: hsl(290, 100%, 50%);
-    --color-primary-dark: hsl(290, 100%, 25%);
+    --color-primary: hsl(300, 100%, 60%);
+    --color-primary-dark: hsl(300, 100%, 30%);
 
     /* FX */
     --radius: .9rem;
