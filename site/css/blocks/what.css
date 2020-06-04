@@ -27,7 +27,11 @@
     & h2 {
         font: var(--font-big-bold);
         letter-spacing: var(--font-spacing-big);
-        margin: 0;
+        margin: 0 auto;
+        background-color: var(--color-primary-dark);
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
     }
 }
 .what-text {

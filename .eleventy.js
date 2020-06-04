@@ -11,7 +11,6 @@ module.exports = function (config) {
     config.setLibrary('md', require('./config/markdown'));
 
     // Copy dirs
-    config.addPassthroughCopy('site/img');
     config.addPassthroughCopy({ 'site/assets': '/' });
     config.addWatchTarget('site/css/');
 

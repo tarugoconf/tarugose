@@ -3,14 +3,20 @@ layout: layouts/base.njk
 bodyClass: home
 ---
 
-{% include "templates/navbar.njk" %}
-{% include "templates/header.njk" %}
-{% include "templates/what.njk" %}
-{% include "templates/why.njk" %}
-{% include "templates/calendar.njk" %}
-{% include "templates/speakers.njk" %}
-{% include "templates/tickets.njk" %}
-{% include "templates/partners.njk" %}
-{% include "templates/contact.njk" %}
-{% include "templates/faq.njk" %}
-{% include "templates/footer.njk" %}
+<div class="space-content">
+    {% include "templates/navbar.njk" %}
+    {% include "templates/header.njk" %}
+    {% include "templates/what.njk" %}
+    {% include "templates/why.njk" %}
+    {% include "templates/calendar.njk" %}
+    {% include "templates/speakers.njk" %}
+    {% include "templates/tickets.njk" %}
+    {% include "templates/partners.njk" %}
+    {% include "templates/contact.njk" %}
+    {% include "templates/faq.njk" %}
+    {% include "templates/footer.njk" %}
+</div>
+
+<div class="space-stars" id="js-space"></div>
+<script src="{{ 'vendors/particles.js/particles.js' | url }}"></script>
+<script src="{{ 'js/stars.js' | url }}"></script>

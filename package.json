@@ -1,23 +1,26 @@
 {
   "private": true,
   "scripts": {
-    "start": "rm -rf dist && concurrently npm:start:site npm:start:css",
+    "start": "rm -rf dist && concurrently npm:build:deps npm:start:site npm:start:css",
     "start:site": "npm run build:site -- --serve --incremental",
     "start:css": "npm run build:css -- --watch",
     "build": "rm -rf dist && concurrently npm:build:site npm:build:css",
     "build:site": "eleventy",
     "build:css": "postcss ./site/css/styles.css -o dist/css/styles.css",
+    "build:deps": "browser-assets particles.js --dest=dist/vendors",
     "prettier": "prettier config/** ./*.js .eleventy.js site/**/*.{md,js,css} --write"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "browser-assets": "^1.6.1",
     "concurrently": "^5.2.0",
     "date-fns": "^2.12.0",
     "markdown-it-attrs": "^3.0.2",
     "normalize.css": "^8.0.1",
-    "postcss": "^7.0.17",
+    "particles.js": "^2.0.0",
+    "postcss": "^7.0.32",
     "postcss-cli": "^7.1.0",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0",
