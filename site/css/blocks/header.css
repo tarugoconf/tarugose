@@ -4,11 +4,10 @@
     align-content: center;
     justify-items: center;
     min-height: calc(100vh - 70px);
-}
-.header-logo {
-    font: var(--font-small-bold);
-    text-transform: uppercase;
-    margin-top: auto;
+
+    & .logo {
+        width: 300px;
+    }
 }
 .header-title {
     font: var(--font-xbig-bold);

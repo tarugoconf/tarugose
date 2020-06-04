@@ -1,0 +1,13 @@
+.logo {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    --color-back: var(--color-primary); 
+    --color-front: var(--color-dark); 
+}
+.logo-back {
+    fill: var(--color-back);
+}
+.logo-front {
+    fill: var(--color-front);
+}

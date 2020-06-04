@@ -20,6 +20,7 @@
 
 /* Components */
 @import 'components/button.css';
+@import 'components/logo.css';
 
 /* Helpers */
 @import 'helpers.css';
