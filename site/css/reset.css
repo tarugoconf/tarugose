@@ -1,14 +1,17 @@
 html {
     scroll-padding-top: 70px;
     scroll-behavior: smooth;
-    font: var(--font-normal);
-    color: var(--color-white);
     background-color: var(--color-dark);
 }
 body {
     scroll-behavior: smooth;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    background: radial-gradient(ellipse at center, var(--color-dark), var(--color-xdark)) no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    font: var(--font-normal);
+    color: var(--color-white);
 }
 
 figure {

@@ -7,7 +7,7 @@
         {{ calendar.text | md | type | safe }}
     </div>
 
-    <ul class="calendar-days">
+    <ul class="calendar-days js-calendar">
         {% for day in calendar.days %}
         <li>
             <div class="calendar-day">
@@ -35,4 +35,9 @@
         </li>
         {% endfor %}
     </ul>
+
+    <footer class="calendar-buttons">
+        <button class="js-prev">Prev</button>
+        <button class="js-next">Next</button>
+    </footer>
 </section>

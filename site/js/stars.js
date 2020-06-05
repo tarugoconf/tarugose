@@ -8,7 +8,7 @@ particlesJS("js-space", {
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": ["#ffffff", "#ffff99"]
     },
     "shape": {
       "type": "circle",
@@ -21,8 +21,8 @@ particlesJS("js-space", {
       }
     },
     "opacity": {
-      "value": 0.5,
-      "random": false,
+      "value": 1,
+      "random": true,
       "anim": {
         "enable": false,
         "speed": 1,
@@ -50,9 +50,9 @@ particlesJS("js-space", {
     "move": {
       "enable": true,
       "speed": 0.5,
-      "direction": "none",
-      "random": true,
-      "straight": false,
+      "direction": "bottom-right",
+      "random": false,
+      "straight": true,
       "out_mode": "out",
       "bounce": false,
       "attract": {

@@ -1,6 +1,6 @@
 .button {
-    font: var(--font-small-bold);
-    padding: .5em 1em;
+    font: var(--font-normal-bold);
+    padding: .3em 1em;
     text-decoration: none;
     display: inline-block;
     background-color: var(--color-primary);
