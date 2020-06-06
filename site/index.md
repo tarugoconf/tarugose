@@ -77,14 +77,14 @@ what:
 
         ### Zoom es para las videoconferencias, esto es una conferencia
 
-        La #tarugo20 se grabará en un auténtico plató de TV con varias cámaras e iluminación de cine; y en vez de limitarnos a retransmitir charlas pensadas para un evento offline, **crearemos contenido adaptado al online y que aproveche todas las ventajas del medio:** interacción con ponentes y asistentes, concursos y sorteos en directo, reportajes pregrabados, la posibilidad de que el público retrasmita su propio contenido (y consuma el creado por otros) y de que el que quiera haga networking REAL desde el sofá de tu casa, gracias a un montón de dinamicas y juegos.
+        La #tarugo20 se grabará en un auténtico plató de TV con varias cámaras e iluminación de cine; y en vez de limitarnos a retransmitir charlas pensadas para un evento offline, **crearemos contenido adaptado al online y que aproveche todas las ventajas del medio:** interacción con ponentes y asistentes, concursos y sorteos en directo, reportajes pregrabados, la posibilidad de que el público retransmita su propio contenido (y consuma el creado por otros) y de que el que quiera haga networking REAL desde el sofá de su casa, gracias a un montón de dinamicas y juegos.
 
         ### En casa no puedes abstraerte de la gente que te rodea, ni queremos que lo hagas
 
-        El contenido de la Tarugoconf estará diseñado para **que puedsa ser disfrutada desde el sofá de tu casa tanto por profesionales como por *muggles* sin conocimientos técnicos.** El nombre de esta edición especial no está escogido al azar. Esperamos que asistas al evento desde tu sofá, rodeado de la familia y amigos --con comida y bebida-- y por eso pretendemos proporcionarte una **experiencia más parecida a «una mezcla de Late Night Show e Informe Semanal» que a una conferencia técnica.**
+        El contenido de la Tarugoconf estará diseñado para **que pueda ser disfrutado desde el sofá de tu casa tanto por profesionales como por *muggles* sin conocimientos técnicos.** El nombre de esta edición especial no está escogido al azar. Esperamos que asistas al evento desde tu sofá, rodeado de la familia y amigos --con comida y bebida-- y por eso pretendemos proporcionarte una **experiencia más parecida a «una mezcla de Late Night Show e Informe Semanal» que a una conferencia técnica.**
     
     features:
-        - title: '**Charlas** awesomicas'
+        - title: '**Charlas** awesómicas'
         - title: '**Reportajes** inéditos'
         - title: '**Concursos** y juegos'
         - title: '**Open** space'
