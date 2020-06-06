@@ -116,7 +116,7 @@ calendar:
     text: |
         Continuamos confirmando contenidos e invitados, pero aquí se podrá consultar siempre la última versión de la agenda.
 
-        El **viernes 23 de octubre** se dedicará al evento principal, el **jueves 22** se impartirán talleres y actividades de networking. Finalmente, el **sábado 24** por la mañana se celebrará la Tarugoff, un *Open Space* donde los asistentes podrán proponer sus propias charlas y asistir a las de otros y, por la tarde, se repetirán las charlas grabadas del viernes 23 con la participación en directo de los ponentes en el chat y en el turno de preguntas.
+        El **viernes 23 de octubre** se dedicará al evento principal, el **jueves 22** se impartirán talleres y tendrán lugar actividades de networking. Finalmente, el **sábado 24** por la mañana se celebrará la Tarugoff, un *Open Space* donde los asistentes podrán proponer sus propias charlas y asistir a las de otros y, por la tarde, se repetirán las charlas grabadas del viernes 23 con la participación en directo de los ponentes en el chat y en el turno de preguntas.
     
     days:
         - title: Jueves 22
@@ -227,7 +227,7 @@ tickets:
             - 10 entradas de tipo Tarugo y, además...
             - Logo en la web
             - Mención en la Keynote
-          price: 1000€ + IVA
+          price: 500€ + IVA
           btn:
             text: Contactar
             url: --
