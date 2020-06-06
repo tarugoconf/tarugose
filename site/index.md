@@ -41,9 +41,9 @@ what:
     text: |
         La Tarugoconf es **una conferencia sobre diseño, construcción y comercialización de productos y servicios digitales** que nace alrededor de la heterogénea Comunidad de suscriptores y suscriptoras de La Bonilista, la newsletter semanal sobre emprendimiento tecnológico escrita por David Bonilla.
 
-        Es ante todo, **un punto de encuentro para gente que «hace cosas»** alrededor del software, la innovación tecnológica e Internet: diseñadores, inversores, programadores, comerciales, gente de marketing o soporte, administradores de sistemas, recruiters... camaradas del metal, *tarugos* todos.
+        Es, ante todo, **un punto de encuentro para gente que «hace cosas»** alrededor del software, la innovación tecnológica e Internet: diseñadores, inversores, programadores, comerciales, gente de marketing o soporte, administradores de sistemas, recruiters... camaradas del metal, *tarugos* todos.
 
-        Organizada con un único objetivo: cuidar cada detalle del evento forma enfermiza --desde las acreditaciones hasta la oferta gastronómica-- para **transformar la asistencia en una experiencia,** sin olvidar nunca que lo más importante de la Tarugoconf, lo que verdaderamente la diferencia, son sus charlas.
+        Organizada con un único objetivo: cuidar cada detalle del evento de forma enfermiza --desde las acreditaciones hasta la oferta gastronómica-- para **transformar la asistencia en una experiencia**, sin olvidar nunca que lo más importante de la Tarugoconf, lo que verdaderamente la diferencia, son sus charlas.
 
     descriptions:
       - src: //placehold.it/100x100
