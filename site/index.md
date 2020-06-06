@@ -27,7 +27,7 @@ ctas:
 header:
     logo: Tarugoconf Sofá Edition
     title: Tecnología y negocios en una situación sin precedentes
-    subtitle: 22-23-24 de octubre de 2020 - Evento online
+    subtitle: 22-23-24 de octubre de 2020. <strong>Evento online</strong>
 
 what:
     id: what

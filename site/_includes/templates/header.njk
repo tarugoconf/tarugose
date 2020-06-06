@@ -2,5 +2,14 @@
     {% include "assets/logo.svg" %}
 
     <h1 class="header-title">{{ header.title }}</h1>
-    <p class="header-subtitle">{{ header.subtitle }}</p>
+    <p class="header-subtitle">{{ header.subtitle | safe }}</p>
+
+    <div class="scene-moonTop" role="presentation">
+        <span class="scene-moonTop-astronaut">
+            {% include "assets/astronaut.svg" %}
+        </span>
+        <span class="scene-moonTop-background">
+            {% include "assets/moon-top.svg" %}
+        </span>
+    </div>
 </header>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
 :root {
     /* Colors */
@@ -40,7 +40,7 @@
 
     --font-weight-normal: 400;
     --font-weight-bold: 700;
-    --font-weight-xbold: 900;
+    --font-weight-xbold: 800;
 
     --font-small: var(--font-weight-normal) var(--font-size-small) / 1.5 var(--font-family-text);
     --font-small-bold: var(--font-weight-bold) var(--font-size-small) / 1.5 var(--font-family-text);

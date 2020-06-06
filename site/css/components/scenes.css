@@ -1,0 +1,35 @@
+.scene-moonTop {
+    width: 100%;
+    grid-column: 1 / -1;
+    margin-top: 10vh;
+    margin-bottom: -1px;
+}
+.scene-moonTop-astronaut {
+    display: block;
+    margin-bottom: calc(-50px - 3vw);
+    position: relative;
+    animation: scene-moonTop-astronaut 10s;
+
+    & svg {
+        width: calc(100px + 2vw);
+        height: auto;
+    }
+}
+.scene-moonTop-background {
+    display: block;
+    width: 100%;
+
+    & svg {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+@keyframes scene-moonTop-astronaut {
+    from {
+        transform: translate(20px, -10vh);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
