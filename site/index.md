@@ -95,11 +95,11 @@ why:
     id: why
     title: Por qué
     intro: |
-        Muchos nos habéis preguntado por qué nos metemos en este berenjenal, arriesgando el prestigio del evento construido a lo largo de cuatro ediciones presenciales con una edición exclusivamente online cuando lo más fácil hubiera sido cancelar y volver en 2021.
+        Muchos nos habéis preguntado por qué nos metemos en este berenjenal, arriesgando el prestigio del evento construido a lo largo de cuatro ediciones presenciales con una edición exclusivamente online, cuando lo más fácil hubiera sido cancelar y volver en 2021.
         
     reasons:
       - title: Porque podemos
-        text: Al contrario que otros eventos amigos como el T3chfest o la Lechazoconf, hemos tenido tiempo para reaccionar a la crisis sanitaria provocada por el COVID-19.
+        text: Al contrario que otros eventos amigos como el T3chfest o la Lechazoconf, hemos tenido tiempo para reaccionar a la crisis sanitaria provocada por la COVID-19.
 
       - title: Porque queremos
         text: Nos negamos a tirar la toalla ante el virus o cualquier otra adversidad. Nos adaptaremos, pero nunca nos rendiremos.
@@ -108,7 +108,7 @@ why:
         text: Para honrar a las más de 350.000 personas que han fallecido por culpa del coronavirus y que tendremos siempre presentes, aunque no puedan acompañarnos.
     
     text: |
-      En 2021, si todo sale bien la Tarugoconf volverá a ser presencial, pero este año **tenemos la oportunidad de diseñar y construir entre todos el evento online al que siempre nos hubiera gustado ir.** ¿Nos acompañaréis también en esta aventura?
+      En 2021, si todo sale bien, la Tarugoconf volverá a ser presencial, pero este año **tenemos la oportunidad de diseñar y construir entre todos el evento online al que siempre nos hubiera gustado ir.** ¿Nos acompañarás también en esta aventura?
 
 calendar:
     id: calendar
