@@ -239,7 +239,7 @@ partners:
     text: |
         Cada una de estas empresas ha decidido apoyarnos para que la Tarugoconf no tenga que bajar la persiana y, aunque sea temporalmente, se reconvierta en la conferencia online que siempre habíamos soñado.
 
-        El año que viene, volveremos a la normalidad, pero las miles de horas de video, fotos, posts y tweets que generará esta edición registraran para la posteridad como en uno de los momentos más oscuros de nuestra Historia, colaboramos, nos adaptamos y sobrepusimos. Si quieres ser parte de este esfuerzo, consulta nuestras oportunidades de patrocinio ¡graciñas!
+        El año que viene volveremos a la normalidad, pero las miles de horas de vídeo, fotos, posts y tweets que generará esta edición registrarán para la posteridad cómo, en uno de los momentos más oscuros de nuestra Historia, colaboramos, nos adaptamos y sobrepusimos. Si quieres ser parte de este esfuerzo, consulta nuestras oportunidades de patrocinio. ¡Graciñas!
     
     main:
         src: //placehold.it/300x100
@@ -287,7 +287,7 @@ partners:
     sponsor:
         title: ¿Te gustaría ser parte de la Tarugoconf?
         text: |
-            En la tarugo intentamos huir de la figura del «sponsor» habitual y convertimos a nuestros patrocinadores en verdaderos socios que son una parte más del evento: nos preocupamos por entender sus objetivos y personalizamos los paquetes de patrocinio para intentar alcanzarlos, trabajando mano a mano con ellos y creando relaciones que perduran a lo largo de los años.
+            En la tarugo intentamos huir de la figura del «sponsor» habitual y convertimos a nuestros patrocinadores en verdaderos socios, que son una parte más del evento: nos preocupamos por entender sus objetivos y personalizamos los paquetes de patrocinio para intentar alcanzarlos, trabajando mano a mano con ellos y creando relaciones que perduran a lo largo de los años.
 
             Si quieres ser parte de la próxima #tarugo20 puedes mandarnos un mail a [tarugoconf@bonillaware.com](mailto:tarugoconf@bonillaware.com)
         btn:
