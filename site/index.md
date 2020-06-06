@@ -47,7 +47,7 @@ what:
 
     descriptions:
       - src: //placehold.it/100x100
-        title: Util
+        title: Útil
         text: |
           Problemas reales y las soluciones aplicadas para superarlos, que podrás incorporar a tu caja de herramientas y aplicar en tu día a día.
 
