@@ -14,7 +14,7 @@
     --color-primary-dark: hsl(336, 100%, 35%);
 
     /* FX */
-    --radius: 2rem;
+    --radius: 5px;
     --duration: 200ms;
 
     /* Fonts */

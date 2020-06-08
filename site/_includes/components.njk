@@ -1,11 +1,10 @@
 {% macro link(data, class) %}
-    <a href="{{ data.url }}" {% if class %}class="{{ class }}"{% endif %}>
+    <a href="{{ data.url }}" {% if (class or data.class) %}class="{{ [class, data.class] | join(' ') | trim }}"{% endif %}>
         {{ data.text }}
     </a>
 {% endmacro %}
 
 {% macro img(data) %}
-
     {% if data.url %}
         <a href="{{ data.url }}" target="_blank">
             <img src="{{ data.src }}" alt="{{ data.alt }}">

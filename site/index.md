@@ -21,6 +21,7 @@ menu:
 ctas:
   - text: Asistir
     url: '#tickets'
+    class: is-secondary
   - text: Patrocinar
     url: '--'
 
