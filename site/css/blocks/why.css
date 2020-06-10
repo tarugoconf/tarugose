@@ -10,7 +10,7 @@
 .why-header,
 .why-text,
 .why-intro {
-    width: 30em;
+    max-width: 30em;
     margin: auto;
     text-align: center;
 }
@@ -22,21 +22,24 @@
 
     & li {
         padding: var(--row-gap) var(--column-gap);
+        background-image: linear-gradient(to right, #0006, #0000 25%, #0000 75%, #0006);
+        background-repeat: no-repeat;
 
         &:nth-child(1) {
-            background-color: #a83b3b;
+            background-color: hsl(0, 50%, 45%);
         }
         &:nth-child(2) {
-            background-color: #323d91;
+            background-color: hsl(230, 50%, 40%);
         }
         &:nth-child(3) {
-            background-color: #3a8855;
+            background-color: hsl(140, 40%, 35%);
         }
     }
 }
 .why-reason {
     max-width: 1200px;
     margin: 0 auto;
+    font: var(--font-small);
 
     & h3 {
         font: var(--font-medium-bold);
@@ -46,8 +49,10 @@
 
     @media (min-width: 800px) {
         display: grid;
-        grid-template-columns: 10em 1fr;
+        grid-template-columns: 10em 35em;
         grid-column-gap: var(--column-gap);
+        justify-content: center;
+        align-items: center;
 
         & h3 {
             text-align: right;
