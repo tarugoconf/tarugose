@@ -299,7 +299,7 @@ contact:
     id: contact
     title: Contacto
     manager:
-        name: Beatriz Jimenez
+        name: Bea Jiménez
         position: Event manager
         email: 
           text: bea@bonillaware.com
