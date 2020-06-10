@@ -5,8 +5,14 @@
     & h2 {
         font: var(--font-big-bold);
         letter-spacing: var(--font-spacing-big);
-        margin: 0;
     }
+}
+.why-header,
+.why-text,
+.why-intro {
+    width: 30em;
+    margin: auto;
+    text-align: center;
 }
 .why-reasons {
     list-style: none;
@@ -16,8 +22,16 @@
 
     & li {
         padding: var(--row-gap) var(--column-gap);
-        background: #ddd;
-        border: dashed 1px blue;
+
+        &:nth-child(1) {
+            background-color: #a83b3b;
+        }
+        &:nth-child(2) {
+            background-color: #323d91;
+        }
+        &:nth-child(3) {
+            background-color: #3a8855;
+        }
     }
 }
 .why-reason {

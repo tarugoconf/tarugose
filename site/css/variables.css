@@ -13,6 +13,8 @@
     --color-primary-light: hsl(336, 100%, 90%);
     --color-primary-dark: hsl(336, 100%, 35%);
 
+    --color-shadow: #7aadc1;
+
     /* FX */
     --radius: 5px;
     --duration: 200ms;

@@ -6,13 +6,28 @@
 }
 .scene-moonTop-astronaut {
     display: block;
-    margin-bottom: calc(-50px - 3vw);
+    margin-bottom: calc(-100px - 3vw);
     position: relative;
     animation: scene-moonTop-astronaut 10s;
+    animation-fill-mode: both;
 
     & svg {
         width: calc(100px + 2vw);
         height: auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--color-shadow);
+        margin: auto;
+        animation: scene-moonTop-astronaut-shadow 10s;
+        animation-fill-mode: both;
     }
 }
 .scene-moonTop-background {
@@ -27,9 +42,19 @@
 }
 @keyframes scene-moonTop-astronaut {
     from {
-        transform: translate(20px, -10vh);
+        transform: translate(20px, -100px);
     }
     to {
         transform: translate(0, 0);
+    }
+}
+@keyframes scene-moonTop-astronaut-shadow {
+    from {
+        transform: translateY(130px) scale(2);
+        filter: blur(5px);
+    }
+    to {
+        transform: translateY(-30px) scale(1);
+        filter: none;
     }
 }

@@ -3,7 +3,9 @@
         <h2>{{ why.title }}</h2>
     </header>
 
-    {{ why.intro | md | type | safe }}
+    <div class="why-intro">
+        {{ why.intro | md | type | safe }}
+    </div>
 
     <ul class="why-reasons">
         {% for reason in why.reasons %}
@@ -16,5 +18,7 @@
         {% endfor %}
     </ul>
 
-    {{ why.text | md | type | safe }}
+    <div class="why-text">
+        {{ why.text | md | type | safe }}
+    </div>
 </section>

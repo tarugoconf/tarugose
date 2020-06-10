@@ -1,9 +1,9 @@
 .what-wrapper {
     background: var(--color-white);
-    color: var(--color-black);
+    color: var(--color-dark);
 }
 .what {
-    padding: var(--row-gap) 0;
+    padding: 0 0 var(--row-gap);
     display: grid;
     grid-column-gap: var(--column-gap);
     grid-row-gap: var(--row-gap);
@@ -16,7 +16,7 @@
                          'features';
 
     @media (min-width: 800px) {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 24rem 1fr 24rem;
         grid-template-areas: 'header header header'
                              'text text metrics'
                              'descriptions descriptions descriptions'
@@ -29,6 +29,7 @@
     grid-area: header;
 
     & h2 {
+        margin: 0;
         font: var(--font-big-bold);
         letter-spacing: var(--font-spacing-big);
     }
@@ -38,9 +39,20 @@
 }
 .what-metrics {
     grid-area: metrics;
+    font: var(--font-big-bold);
+    letter-spacing: var(--font-spacing-big);
+    white-space: nowrap;
+    color: var(--color-shadow);
 
     & ul {
         list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    & strong {
+        font-weight: inherit;
+        color: var(--color-dark);
     }
 }
 
@@ -124,6 +136,11 @@
 
 .what-subimage {
     grid-area: sub-image;
+
+    & img {
+        display: block;
+        width: 100%;
+    }
 }
 .what-subtext {
     grid-area: sub-text;
@@ -132,6 +149,11 @@
         font: var(--font-big-bold);
         letter-spacing: var(--font-spacing-big);
         margin-top: 0;
+
+        & del {
+            color: var(--color-shadow);
+            text-decoration-color: var(--color-dark);
+        }
     }
 
     & h3 {

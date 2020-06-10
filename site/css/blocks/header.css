@@ -20,5 +20,5 @@
     font: var(--font-normal);
     max-width: 25em;
     margin-bottom: auto;
-    color: #90A5C4;
+    color: var(--color-shadow);
 }
