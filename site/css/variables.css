@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
     /* Colors */
     --color-black: #000;
     --color-white: #fff;
     --color-gray: #666;
-    --color-gray-light: #efefee;
+    --color-gray-light: hsl(240, 45%, 85%);
+    --color-gray-xlight: hsl(240, 50%, 92%);
+    --color-gray-alpha: hsla(240, 70%, 7%, 0.08);
 
     --color-xdark: hsl(240, 70%, 7%);
     --color-dark: hsl(240, 70%, 13%);
@@ -20,7 +22,8 @@
     --duration: 200ms;
 
     /* Fonts */
-    --font-family-title: Inter, system-ui, sans-serif;
+    --font-family-display: 'IBM Plex Sans Condensed', system-ui, sans-serif;
+    --font-family-title: 'IBM Plex Sans', system-ui, sans-serif;
     --font-family-text: system-ui, sans-serif;
 
     --min-scale: 1.2;
@@ -30,41 +33,37 @@
     --font-size-medium: calc(var(--font-size-normal) * var(--min-scale));
     --font-size-big: calc(var(--font-size-medium) * var(--min-scale));
     --font-size-xbig: calc(var(--font-size-big) * var(--min-scale));
-    --font-size-xxbig: calc(var(--font-size-xbig) * var(--min-scale));
 
     @supports (font-size: clamp(14px, 5vw, 20px)) {
         --font-size-normal: clamp(var(--font-size-small) * var(--min-scale), 5vw, var(--font-size-small) * var(--max-scale));
         --font-size-medium: clamp(var(--font-size-normal) * var(--min-scale), 5vw, var(--font-size-normal) * var(--max-scale));
         --font-size-big: clamp(var(--font-size-medium) * var(--min-scale), 4vw, var(--font-size-medium) * var(--max-scale));
         --font-size-xbig: clamp(var(--font-size-big) * var(--min-scale), 5vw, var(--font-size-big) * var(--max-scale));
-        --font-size-xxbig: clamp(var(--font-size-xbig) * var(--min-scale), 5vw, var(--font-size-xbig) * var(--max-scale));
     }
 
     --font-weight-normal: 400;
     --font-weight-bold: 700;
-    --font-weight-xbold: 800;
 
     --font-small: var(--font-weight-normal) var(--font-size-small) / 1.5 var(--font-family-text);
     --font-small-bold: var(--font-weight-bold) var(--font-size-small) / 1.5 var(--font-family-text);
 
-    --font-normal: var(--font-weight-normal) var(--font-size-normal) / 1.5 var(--font-family-text);
-    --font-normal-bold: var(--font-weight-bold) var(--font-size-normal) / 1.5 var(--font-family-text);
+    --font-normal: var(--font-weight-normal) var(--font-size-normal) / 1.5 var(--font-family-title);
+    --font-normal-bold: var(--font-weight-bold) var(--font-size-normal) / 1.5 var(--font-family-title);
 
-    --font-medium: var(--font-weight-normal) var(--font-size-medium) / 1.25 var(--font-family-title);
-    --font-medium-bold: var(--font-weight-bold) var(--font-size-medium) / 1.25 var(--font-family-title);
+    --font-medium: var(--font-weight-normal) var(--font-size-medium) / 1.2 var(--font-family-title);
+    --font-medium-bold: var(--font-weight-bold) var(--font-size-medium) / 1.2 var(--font-family-title);
     --font-spacing-medium: -0.01em;
 
     --font-big: var(--font-weight-normal) var(--font-size-big) / 1.1 var(--font-family-title);
-    --font-big-bold: var(--font-weight-xbold) var(--font-size-big) / 1.1 var(--font-family-title);
-    --font-spacing-big: -0.015em;
+    --font-big-bold: var(--font-weight-bold) var(--font-size-big) / 1.1 var(--font-family-title);
+    --font-spacing-big: -0.02em;
 
     --font-xbig: var(--font-weight-normal) var(--font-size-xbig) / 1 var(--font-family-title);
-    --font-xbig-bold: var(--font-weight-xbold) var(--font-size-xbig) / 1 var(--font-family-title);
-    --font-spacing-xbig: -0.02em;
+    --font-xbig-bold: var(--font-weight-bold) var(--font-size-xbig) / 1 var(--font-family-title);
+    --font-spacing-xbig: -0.025em;
 
-    --font-xxbig: var(--font-weight-normal) var(--font-size-xxbig) / 1 var(--font-family-title);
-    --font-xxbig-bold: var(--font-weight-xbold) var(--font-size-xxbig) / 1 var(--font-family-title);
-    --font-spacing-xxbig: -0.025em;
+    --font-display: var(--font-weight-bold) var(--font-size-xbig) / 1 var(--font-family-display);
+    --font-spacing-display: -0.01em;
 
     /* Spacing */
     --column-gap: var(--font-size-big);

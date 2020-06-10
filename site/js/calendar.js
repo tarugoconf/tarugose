@@ -35,14 +35,19 @@ function setCurrent(newIndex) {
     index = newIndex;
     days[index].classList.add('is-front');
 
+    prev.disabled = false;
+    next.disabled = false;
+
     if (index === 0) {
         days[2].classList.add('is-back');
+        prev.disabled = true;
     } else {
         days[2].classList.remove('is-back');
     }
 
     if (index === 2) {
         days[0].classList.add('is-back');
+        next.disabled = true;
     } else {
         days[0].classList.remove('is-back');
     }

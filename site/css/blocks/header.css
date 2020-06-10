@@ -11,8 +11,8 @@
     }
 }
 .header-title {
-    font: var(--font-xbig-bold);
-    letter-spacing: var(--font-spacing-xbig);
+    font: var(--font-display);
+    letter-spacing: var(--font-spacing-display);
     max-width: 15em;
     margin-bottom: 0;
 }
