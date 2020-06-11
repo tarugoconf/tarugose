@@ -48,7 +48,7 @@ particlesJS("js-space", {
       "width": 1
     },
     "move": {
-      "enable": false,
+      "enable": true,
       "speed": 0.5,
       "direction": "bottom-right",
       "random": false,

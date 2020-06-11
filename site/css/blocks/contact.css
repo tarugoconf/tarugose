@@ -1,3 +1,6 @@
+.contact-wrapper {
+    background-color: var(--color-skyline);
+}
 .contact {
     padding: var(--row-gap) 0;
     display: grid;

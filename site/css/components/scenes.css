@@ -1,3 +1,4 @@
+/* Moon Top */
 .scene-moonTop {
     width: 100%;
     grid-column: 1 / -1;
@@ -6,13 +7,14 @@
 }
 .scene-moonTop-astronaut {
     display: block;
-    margin-bottom: calc(-100px - 3vw);
+    margin: 0 auto calc(-100px - 3vw);
     position: relative;
     animation: scene-moonTop-astronaut 10s;
     animation-fill-mode: both;
+    width: calc(100px + 2vw);
 
     & svg {
-        width: calc(100px + 2vw);
+        width: 100%;
         height: auto;
         position: relative;
         z-index: 2;
@@ -40,6 +42,45 @@
         height: auto;
     }
 }
+
+/* Moon Bottom */
+.scene-moonBottom {
+    width: 100%;
+    grid-column: 1 / -1;
+    margin-top: -5vw;
+    margin-bottom: -10vw;
+}
+.scene-moonBottom-background {
+    display: block;
+    width: 100%;
+    transform: scaleY(-1);
+
+    & svg {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Sofa */
+.scene-sofa {
+    width: 100%;
+    grid-column: 1 / -1;
+    margin-top: 10vw;
+    margin-bottom: -1px;
+}
+.scene-sofa-background {
+    display: block;
+    width: 100%;
+
+    & svg {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
 @keyframes scene-moonTop-astronaut {
     from {
         transform: translate(20px, -100px);

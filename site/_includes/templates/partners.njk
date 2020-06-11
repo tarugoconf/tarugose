@@ -8,13 +8,19 @@
 
     {{ partners.text | md | type | safe }}
 
-    <figure class="partners-company">
-        {{ comp.img(partners.main) }}
+    <ul class="partners-list is-main">
+    {% for partner in partners.main %}
+        <li>
+        <figure class="partners-company">
+            {{ comp.img(partner) }}
 
-        <figcaption>
-        {{ partners.main.text | md | type | safe }}
-        </figcaption>
-    </figure>
+            <figcaption>
+            {{ partner.text | md | type | safe }}
+            </figcaption>
+        </figure>
+        </li>
+    {% endfor %}
+    </ul>
 
     <ul class="partners-list">
     {% for partner in partners.standard %}
@@ -30,7 +36,7 @@
     {% endfor %}
     </ul>
 
-    <ul class="partners-list">
+    <ul class="partners-list is-patrons">
     {% for partner in partners.patrons %}
         <li class="partners-company">
             {{ comp.img(partner) }}
@@ -43,5 +49,11 @@
         {{ partners.sponsor.text | md | type | safe }}
 
         {{ comp.link(partners.sponsor.btn) }}
+    </div>
+
+    <div class="scene-sofa" role="presentation">
+        <span class="scene-sofa-background">
+            {% include "assets/buildings.svg" %}
+        </span>
     </div>
 </section>

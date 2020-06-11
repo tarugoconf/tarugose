@@ -21,18 +21,19 @@
     padding: 0;
 
     & li {
+        color: var(--color-xdark);
         padding: var(--row-gap) var(--column-gap);
         background-image: linear-gradient(to right, #0006, #0000 25%, #0000 75%, #0006);
         background-repeat: no-repeat;
 
         &:nth-child(1) {
-            background-color: hsl(0, 50%, 45%);
+            background-color: var(--color-shadow);
         }
         &:nth-child(2) {
-            background-color: hsl(230, 50%, 40%);
+            background-color: var(--color-light);
         }
         &:nth-child(3) {
-            background-color: hsl(140, 40%, 35%);
+            background-color: var(--color-smoke);
         }
     }
 }

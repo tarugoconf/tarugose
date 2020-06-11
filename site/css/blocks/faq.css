@@ -1,5 +1,6 @@
 .faq {
     padding: var(--row-gap) 0;
+    background-color: var(--color-skyline);
 }
 
 .faq-header {

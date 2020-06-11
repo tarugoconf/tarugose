@@ -243,47 +243,25 @@ partners:
         El año que viene volveremos a la normalidad, pero las miles de horas de vídeo, fotos, posts y tweets que generará esta edición registrarán para la posteridad cómo, en uno de los momentos más oscuros de nuestra Historia, colaboramos, nos adaptamos y sobrepusimos. Si quieres ser parte de este esfuerzo, consulta nuestras oportunidades de patrocinio. ¡Graciñas!
     
     main:
-        src: //placehold.it/300x100
-        url: --
-        text: Lorem ipsum
-        alt: --
-    
+        - src: /img/logos/manfred.svg
+          url: https://www.getmanfred.com/
+          text: |
+            We don't fill positions, we build careers.
+  
+            In the digital job market, there are countless recruiters looking for talent to fill their customers' open positions. We have a different approach: we look for the best positions for our candidates. Do you want to become one of them?
+  
+          alt: Manfred
+
     standard:
-        - src: //placehold.it/100x100
-          url: --
-          text: Lorem ipsum
-          alt: --
-        - src: //placehold.it/100x100
-          url: --
-          text: Lorem ipsum
-          alt: --
-        - src: //placehold.it/100x100
-          url: --
-          text: Lorem ipsum
-          alt: --
+        - src: /img/logos/corunet.svg
+          url: https://coru.net/
+          text: Desarrollamos soluciones tecnológicas para grandes empresas.
+          alt: Corunet
     
     patrons:
-        - src: //placehold.it/60x60
-          url: --
-          alt: --
-        - src: //placehold.it/60x60
-          url: --
-          alt: --
-        - src: //placehold.it/60x60
-          url: --
-          alt: --
-        - src: //placehold.it/60x60
-          url: --
-          alt: --
-        - src: //placehold.it/60x60
-          url: --
-          alt: --
-        - src: //placehold.it/60x60
-          url: --
-          alt: --
-        - src: //placehold.it/60x60
-          url: --
-          alt: --
+        - src: /img/logos/bliss-ventures.png
+          url: http://bliss.ventures/
+          alt: Bliss Ventures
     
     sponsor:
         title: ¿Te gustaría ser parte de la Tarugoconf?

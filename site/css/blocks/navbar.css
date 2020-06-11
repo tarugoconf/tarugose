@@ -6,7 +6,7 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    background: var(--color-dark);
+    background: #070727;
 }
 .navbar-logo {
     margin-right: var(--column-gap);

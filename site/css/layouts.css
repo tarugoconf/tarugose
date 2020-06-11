@@ -3,7 +3,6 @@
     grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
     grid-column-gap: var(--column-gap);
     box-sizing: border-box;
-    overflow: hidden;
 
     & > * {
         grid-column: 2;

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 :root {
     /* Colors */
@@ -16,14 +16,19 @@
     --color-primary-dark: hsl(336, 100%, 35%);
 
     --color-shadow: #7aadc1;
+    --color-smoke: #90a5c4;
+    --color-skin: #ddc2f2;
+    --color-light: #c3e5f4;
+    --color-sky: #BE1622;
+    --color-sky-alpha: #BE162200;
+    --color-skyline: #08082C;
 
     /* FX */
     --radius: 5px;
     --duration: 200ms;
 
     /* Fonts */
-    --font-family-display: 'IBM Plex Sans Condensed', system-ui, sans-serif;
-    --font-family-title: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-family-title: 'Inter', system-ui, sans-serif;
     --font-family-text: system-ui, sans-serif;
 
     --min-scale: 1.2;
@@ -52,18 +57,15 @@
 
     --font-medium: var(--font-weight-normal) var(--font-size-medium) / 1.2 var(--font-family-title);
     --font-medium-bold: var(--font-weight-bold) var(--font-size-medium) / 1.2 var(--font-family-title);
-    --font-spacing-medium: -0.01em;
+    --font-spacing-medium: -0.02em;
 
     --font-big: var(--font-weight-normal) var(--font-size-big) / 1.1 var(--font-family-title);
     --font-big-bold: var(--font-weight-bold) var(--font-size-big) / 1.1 var(--font-family-title);
-    --font-spacing-big: -0.02em;
+    --font-spacing-big: -0.03em;
 
     --font-xbig: var(--font-weight-normal) var(--font-size-xbig) / 1 var(--font-family-title);
     --font-xbig-bold: var(--font-weight-bold) var(--font-size-xbig) / 1 var(--font-family-title);
-    --font-spacing-xbig: -0.025em;
-
-    --font-display: var(--font-weight-bold) var(--font-size-xbig) / 1 var(--font-family-display);
-    --font-spacing-display: -0.01em;
+    --font-spacing-xbig: -0.03em;
 
     /* Spacing */
     --column-gap: var(--font-size-big);

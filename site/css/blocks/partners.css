@@ -1,5 +1,7 @@
 .partners {
-    padding: var(--row-gap) 0;
+    padding: var(--row-gap) 0 0;
+    background-image: linear-gradient(to bottom, var(--color-sky-alpha), var(--color-sky));
+    background-repeat: no-repeat;
 }
 
 .partners-header {
@@ -23,9 +25,19 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+    grid-template-columns: repeat(auto-fill, 160px);
     grid-column-gap: var(--column-gap);
     grid-row-gap: var(--row-gap);
+    text-align: center;
+
+    &.is-patrons {
+        grid-template-columns: repeat(auto-fill, 100px);
+    }
+
+    &.is-main {
+        grid-template-columns: repeat(auto-fill, 320px);
+        text-align: left;
+    }
 }
 .partners-company {
     font: var(--font-small);
@@ -33,6 +45,8 @@
 
     & img {
         display: block;
+        max-width: 100%;
+        height: auto;
     }
 }
 
