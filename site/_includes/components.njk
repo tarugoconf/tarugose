@@ -7,9 +7,9 @@
 {% macro img(data) %}
     {% if data.url %}
         <a href="{{ data.url }}" target="_blank">
-            <img src="{{ data.src }}" alt="{{ data.alt }}">
+            <img src="{{ data.src | url }}" alt="{{ data.alt }}">
         </a>
     {% else %}
-        <img src="{{ data.src }}" alt="{{ data.alt }}">
+        <img src="{{ data.src | url }}" alt="{{ data.alt }}">
     {% endif %}
 {% endmacro %}
