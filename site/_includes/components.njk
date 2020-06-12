@@ -4,12 +4,18 @@
     </a>
 {% endmacro %}
 
-{% macro img(data) %}
+{% macro img(data, class) %}
     {% if data.url %}
         <a href="{{ data.url }}" target="_blank">
             <img src="{{ data.src | url }}" alt="{{ data.alt }}">
         </a>
     {% else %}
-        <img src="{{ data.src | url }}" alt="{{ data.alt }}">
+        <img src="{{ data.src | url }}" alt="{{ data.alt }}" {% if (class or data.class) %}class="{{ [class, data.class] | join(' ') | trim }}"{% endif %}>
     {% endif %}
+{% endmacro %}
+
+{% macro icon(type, data, class) %}
+    <a href="{{ data.url }}" class="{{ ['icon', class, data.class] | join(' ') | trim }}">
+        {% include "assets/" + type + ".svg" %}
+    </a>
 {% endmacro %}

@@ -9,18 +9,18 @@
 
         {% for speaker in collections.speakers %}
         <li>
-            <article>
-                <h4>{{ speaker.data.title }}</h4>
-                <p>{{ speaker.data.company }}</p>
-                <em>{{ speaker.data.position }}</em>
+            <article class="speaker" style="--image: url('{{ speaker.data.image.src | url }}')">
+                <h4 class="speaker-title">{{ speaker.data.title }}</h4>
+                <p class="speaker-company">{{ speaker.data.company }}</p>
+                <em class="speaker-position">{{ speaker.data.position }}</em>
 
-                <address>
+                <address class="speaker-contact">
                     {% if speaker.data.twitter %}
-                    {{ comp.link(speaker.data.twitter) }}
+                    {{ comp.icon('twitter', speaker.data.twitter) }}
                     {% endif %}
 
                     {% if speaker.data.linkedin %}
-                    {{ comp.link(speaker.data.linkedin) }}
+                    {{ comp.icon('linkedin', speaker.data.linkedin) }}
                     {% endif %}
                 </address>
             </article>

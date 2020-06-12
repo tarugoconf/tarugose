@@ -3,8 +3,8 @@ title: Cris Carrascosa
 company: Pinsent Masons
 position: Strategy Lead
 
-img:
-    src: https://placehold.it/200x200
+image:
+    src: /img/speakers/grace-hopper.jpg
     alt: Cris Carrascosa
 
 twitter:

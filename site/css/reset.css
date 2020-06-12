@@ -24,3 +24,9 @@ b, strong {
 p {
     margin: .5em 0;
 }
+
+::selection {
+    background: var(--color-shadow);
+    color: var(--color-black);
+    text-shadow: none;
+}

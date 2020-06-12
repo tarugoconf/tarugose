@@ -2,6 +2,9 @@
     padding: var(--row-gap) 0;
 }
 .calendar-header {
+    text-align: center;
+    margin-top: calc(var(--row-gap) * 2);
+    
     & h2 {
         font: var(--font-big-bold);
         letter-spacing: var(--font-spacing-big);
@@ -11,7 +14,8 @@
 .calendar-text {
     max-width: 41em;
     width: 100%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .calendar-days {
     list-style: none;
