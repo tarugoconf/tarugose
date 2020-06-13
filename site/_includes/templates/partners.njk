@@ -1,54 +1,65 @@
 {% import "components.njk" as comp %}
 
 <section class="ly-section partners" id="{{ partners.id }}">
-    <header class="partners-header">
-        <h2>{{ partners.title }}</h2>
-        <p>{{ partners.subtitle }}</p>
-    </header>
+    <div class="partners-content">
+        <header class="partners-header">
+            <h2>{{ partners.title }}</h2>
+            <p>{{ partners.subtitle }}</p>
+        </header>
 
-    {{ partners.text | md | type | safe }}
+        <div class="partners-text">
+            {{ partners.text | md | type | safe }}
+        </div>
 
-    <ul class="partners-list is-main">
-    {% for partner in partners.main %}
-        <li>
-        <figure class="partners-company">
-            {{ comp.img(partner) }}
+        <div class="partners-logos">
+            <ul class="partners-list is-main">
+            {% for partner in partners.main %}
+                <li>
+                <figure class="partners-company">
+                    {{ comp.img(partner) }}
 
-            <figcaption>
-            {{ partner.text | md | type | safe }}
-            </figcaption>
-        </figure>
-        </li>
-    {% endfor %}
-    </ul>
+                    <figcaption>
+                    {{ partner.text | md | type | safe }}
+                    </figcaption>
+                </figure>
+                </li>
+            {% endfor %}
+            </ul>
 
-    <ul class="partners-list">
-    {% for partner in partners.standard %}
-        <li>
-        <figure class="partners-company">
-            {{ comp.img(partner) }}
+            <ul class="partners-list">
+            {% for partner in partners.standard %}
+                <li>
+                <figure class="partners-company">
+                    {{ comp.img(partner) }}
 
-            <figcaption>
-            {{ partner.text | md | type | safe }}
-            </figcaption>
-        </figure>
-        </li>
-    {% endfor %}
-    </ul>
+                    <figcaption>
+                    {{ partner.text | md | type | safe }}
+                    </figcaption>
+                </figure>
+                </li>
+            {% endfor %}
+            </ul>
 
-    <ul class="partners-list is-patrons">
-    {% for partner in partners.patrons %}
-        <li class="partners-company">
-            {{ comp.img(partner) }}
-        </li>
-    {% endfor %}
-    </ul>
+            <ul class="partners-list is-patrons">
+            {% for partner in partners.patrons %}
+                <li class="partners-company">
+                    {{ comp.img(partner) }}
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
 
     <div class="partners-sponsor">
-        <h3>{{ partners.sponsor.title }}</h3>
-        {{ partners.sponsor.text | md | type | safe }}
+        <h3 class="partners-sponsor-title">{{ partners.sponsor.title }}</h3>
 
-        {{ comp.link(partners.sponsor.btn) }}
+        <div class="partners-sponsor-text">
+            {{ partners.sponsor.text | md | type | safe }}
+        </div>
+
+        <div class="partners-sponsor-document">
+            {{ partners.sponsor.document | safe }}
+        </div>
     </div>
 
     <div class="scene-sofa" role="presentation">

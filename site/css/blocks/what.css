@@ -18,8 +18,8 @@
                          'sub-text'
                          'features';
 
-    @media (min-width: 800px) {
-        grid-template-columns: 24rem 1fr 24rem;
+    @media (min-width: 850px) {
+        grid-template-columns: 1fr 12rem 24rem;
         grid-template-areas: 'header header header'
                              'text text metrics'
                              'descriptions descriptions descriptions'

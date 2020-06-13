@@ -269,9 +269,14 @@ partners:
             En la tarugo intentamos huir de la figura del «sponsor» habitual y convertimos a nuestros patrocinadores en verdaderos socios, que son una parte más del evento: nos preocupamos por entender sus objetivos y personalizamos los paquetes de patrocinio para intentar alcanzarlos, trabajando mano a mano con ellos y creando relaciones que perduran a lo largo de los años.
 
             Si quieres ser parte de la próxima #tarugo20 puedes mandarnos un mail a [tarugoconf@bonillaware.com](mailto:tarugoconf@bonillaware.com)
-        btn:
-            text: Descarga dosier de patrocinio
-            url: --
+
+        document: |
+          <iframe
+            frameborder="0"
+            scrolling="yes"
+            src="https://drive.google.com/file/d/17Pa-X7bGsu0SmRWal6LEmtPPnimq7JLL/preview?usp=drivesdk" 
+            allowfullscreen="">
+          </iframe>
 
 contact:
     id: contact
