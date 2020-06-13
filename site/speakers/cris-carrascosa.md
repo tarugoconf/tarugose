@@ -1,19 +1,19 @@
 ---
-title: Cris Carrascosa
+title: Grace Hopper
 company: Pinsent Masons
 position: Strategy Lead
 
 image:
     src: /img/speakers/grace-hopper.jpg
-    alt: Cris Carrascosa
+    alt: Grace Hopper
 
 twitter:
-    text: '@CarrascosaCris_'
-    url: 'https://twitter.com/CarrascosaCris_'
+    text: '@Yale'
+    url: 'https://twitter.com/Yale'
 
 linkedin:
-    text: 'cristina-carrascosa'
-    url: 'https://linkedin.com/in/cristina-carrascosa'
+    text: 'grace-hopper'
+    url: 'https://es.wikipedia.org/wiki/Grace_Murray_Hopper'
 
 web:
     text: 'pinsentmasons.com'
@@ -23,9 +23,9 @@ calendar:
     - day: Jueves 22 - 22:30h
       title: Debate sobre «La Red» 25 años después
     - day: Viernes 23 - 17:00h
-      title: Fiscalidad y Legalidad Cripto para Dummies
+      title: Programar en los años 50 - ni Vim ni Emacs
     - day: Sábado 24 - 12:00h
-      title: 'Open Space: cómo no invertir en criptomonedas'
+      title: 'Como crear tu primer compilador'
 ---
 
-Abogada especializada en asuntos de IP/IT. Licenciada en Derecho en IE Business School. Ha desarrollado su carrera en firmas de abogados internacionales como Cuatrecasas, Broseta o Ecija Law & Tech. Co-autora del libro «Blockchain: la revolución industrial», enamorada del Valencia F.C y actualmente en Pylon Network.
+ Científica de la computación y militar estadounidense con grado de contraalmirante. Fue pionera en el mundo de las ciencias de la computación y la primera programadora que utilizó el Mark I. Entre las décadas de los 50 y 60 desarrolló el primer compilador para un lenguaje de programación así como también propició métodos de validación.
