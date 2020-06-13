@@ -208,6 +208,7 @@ tickets:
           price: <del>75€</del> 50€ + IVA
           btn:
             text: Comprar
+            class: button
             url: --
 
         - title: Tarugo
@@ -221,6 +222,7 @@ tickets:
           price: 75€ + IVA
           btn:
             text: Comprar
+            class: button is-disabled
             url: --
 
         - title: Mecenas
@@ -231,6 +233,7 @@ tickets:
           price: 500€ + IVA
           btn:
             text: Contactar
+            class: button
             url: --
 
 partners:

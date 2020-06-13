@@ -5,18 +5,22 @@
         <h2>{{ tickets.title }}</h2>
     </header>
 
-    {{ tickets.text | md | type | safe }}
+    <div class="tickets-text">
+        {{ tickets.text | md | type | safe }}
+    </div>
 
     <ul class="tickets-list">
         {% for ticket in tickets.types %}
-        <li class="tickets-item">
-            <h3>{{ ticket.title }}</h3>
+        <li class="ticket">
+            <div class="ticket-header">
+                <h3 class="ticket-title">{{ ticket.title }}</h3>
 
-            {% if ticket.subtitle %}
-                <small>{{ ticket.subtitle }}</small>
-            {% endif %}
+                {% if ticket.subtitle %}
+                    <p class="ticket-subtitle">{{ ticket.subtitle }}</p>
+                {% endif %}
+            </div>
 
-            <ul>
+            <ul class="ticket-body">
             {% for item in ticket.features %}
                 <li>
                     {{ item }}
@@ -24,9 +28,11 @@
             {% endfor %}
             </ul>
 
-            <strong>{{ ticket.price | md | type | safe }}</strong>
+            <div class="ticket-buy">
+                <strong>{{ ticket.price | md | type | safe }}</strong>
 
-            {{ comp.link(ticket.btn) }}
+                {{ comp.link(ticket.btn) }}
+            </div>
         </li>
         {% endfor %}
     </ul>
