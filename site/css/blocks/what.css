@@ -1,7 +1,7 @@
 .what-wrapper {
     background: var(--color-white);
     color: var(--color-dark);
-    margin-bottom: 10vw;
+    margin-bottom: 20vw;
 }
 .what {
     position: relative;

@@ -2,17 +2,23 @@
     display: inline-block;
     color: inherit;
     text-decoration: none;
-    padding: 5px;
     border-radius: var(--radius);
 
     & svg {
         display: block;
-        width: 32px;
-        height: 32px;
     }
 
     & path {
         fill: currentColor;
+    }
+}
+
+a.icon {
+    padding: 5px;
+
+    & svg {
+        width: 32px;
+        height: 32px;
     }
 
     &:hover {

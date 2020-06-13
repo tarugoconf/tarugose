@@ -279,26 +279,30 @@ contact:
     manager:
         name: Bea Jiménez
         position: Event manager
-        email: 
-          text: bea@bonillaware.com
-          url: mailto:bea@bonillaware.com
-        twitter: 
-          text: '@beajmnz'
-          url: https://twitter.com/beajmnz
+        image:
+          src: img/bea-jimenez.jpg
+          alt: Bea Jiménez
+        links: 
+          - text: bea@bonillaware.com
+            url: mailto:bea@bonillaware.com
+          - text: '@beajmnz'
+            icon: twitter
+            url: https://twitter.com/beajmnz
     address: |
         **Bonillaware SLU**
 
-        Castellana 194, Cink Coworking
+        Castellana 194, Cink Coworking  
         28046 Madrid (España)
     
-    map:
-        text: Ver mapa
+    links:
+      - text: Ver mapa
+        icon: gmaps
         url: --
-    slack:
-        text: tarugoconf.slack.com
+      - text: tarugoconf.slack.com
+        icon: slack
         url: --
-    twitter:
-        text: tarugoconf
+      - text: tarugoconf
+        icon: twitter
         url: --
 
 faq:

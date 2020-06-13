@@ -6,23 +6,25 @@
             <h2>{{ contact.title }}</h2>
         </header>
 
-        <div>
-            <strong>{{ contact.manager.name }}</strong>
-            <em>{{ contact.manager.position }}</em>
+        <div class="contact-manager">
+            {{ comp.img(contact.manager.image, 'contact-manager-photo') }}
+            <strong class="contact-manager-name">{{ contact.manager.name }}</strong><br>
+            <em class="contact-manager-position">{{ contact.manager.position }}</em>
 
             <address>
-                {{ comp.link(contact.manager.email) }}
-                {{ comp.link(contact.manager.twitter) }}
+                {% for link in contact.manager.links %}
+                    {{ comp.link(link) }}
+                {% endfor %}
             </address>
         </div>
 
-        <div>
+        <div class="contact-tarugo">
             {{ contact.address | md | type | safe }}
 
             <address>
-                {{ comp.link(contact.map) }}
-                {{ comp.link(contact.slack) }}
-                {{ comp.link(contact.twitter) }}
+                {% for link in contact.links %}
+                    {{ comp.link(link) }}
+                {% endfor %}
             </address>
         </div>
     </section>
