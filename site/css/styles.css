@@ -2,8 +2,9 @@
 @import 'variables.css';
 @import 'reset.css';
 
-/* Layouts */
+/* Layouts & pages */
 @import 'layouts.css';
+@import 'about.css';
 
 /* Blocks */
 @import 'blocks/navbar.css';
@@ -24,6 +25,3 @@
 @import 'components/scenes.css';
 @import 'components/logo.css';
 @import 'components/space.css';
-
-/* Helpers */
-@import 'helpers.css';

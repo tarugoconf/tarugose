@@ -1,8 +1,10 @@
 ---
 layout: layouts/base.njk
-bodyClass: about
+bodyClass: about-body
 ---
 
-{{ content | safe }}
+<article class="about">
+    {{ content | safe }}
+</article>
 
 {% include "templates/footer.njk" %}

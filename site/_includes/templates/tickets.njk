@@ -29,7 +29,7 @@
             </ul>
 
             <div class="ticket-buy">
-                <strong>{{ ticket.price | md | type | safe }}</strong>
+                <strong>{{ ticket.price | type | safe }}</strong>
 
                 {{ comp.link(ticket.btn) }}
             </div>

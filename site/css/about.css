@@ -1,0 +1,46 @@
+.about-body {
+    background: var(--color-white);
+    color: var(--color-dark);
+}
+.about {
+    max-width: 40em;
+    padding: var(--row-gap) var(--column-gap);
+    margin: auto;
+    border-radius: var(--radius);
+
+    & h1 {
+        font: var(--font-xbig-bold);
+        letter-spacing: var(--font-spacing-xbig);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    & h2 {
+        font: var(--font-medium-bold);
+        letter-spacing: var(--font-spacing-medium);
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    & h3 {
+        font: var(--font-normal-bold);
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    & a {
+        color: var(--color-gray);
+
+        &:hover {
+            color: var(--color-dark);
+            text-decoration: none;
+        }
+    }
+
+    & hr {
+        border: none;
+        border-top: solid 1px;
+        margin: 3em 2em 2em;
+        color: var(--color-gray);
+    }
+}

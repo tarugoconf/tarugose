@@ -21,7 +21,7 @@
     --color-light: #c3e5f4;
     --color-sky: #c3e5f4;
     --color-sky-alpha: #c3e5f400;
-    --color-skyline: #08082C;
+    --color-skyline: #08082c;
 
     /* FX */
     --radius: 5px;
@@ -33,16 +33,28 @@
 
     --min-scale: 1.2;
     --max-scale: 1.5;
-    --font-size-small: .9rem;
+    --font-size-small: 0.9rem;
     --font-size-normal: calc(var(--font-size-small) * var(--min-scale));
     --font-size-medium: calc(var(--font-size-normal) * var(--min-scale));
     --font-size-big: calc(var(--font-size-medium) * var(--min-scale));
     --font-size-xbig: calc(var(--font-size-big) * var(--min-scale));
 
     @supports (font-size: clamp(14px, 5vw, 20px)) {
-        --font-size-normal: clamp(var(--font-size-small) * var(--min-scale), 5vw, var(--font-size-small) * var(--max-scale));
-        --font-size-medium: clamp(var(--font-size-normal) * var(--min-scale), 5vw, var(--font-size-normal) * var(--max-scale));
-        --font-size-big: clamp(var(--font-size-medium) * var(--min-scale), 4vw, var(--font-size-medium) * var(--max-scale));
+        --font-size-normal: clamp(
+            var(--font-size-small) * var(--min-scale),
+            5vw,
+            var(--font-size-small) * var(--max-scale)
+        );
+        --font-size-medium: clamp(
+            var(--font-size-normal) * var(--min-scale),
+            5vw,
+            var(--font-size-normal) * var(--max-scale)
+        );
+        --font-size-big: clamp(
+            var(--font-size-medium) * var(--min-scale),
+            4vw,
+            var(--font-size-medium) * var(--max-scale)
+        );
         --font-size-xbig: clamp(var(--font-size-big) * var(--min-scale), 5vw, var(--font-size-big) * var(--max-scale));
     }
 

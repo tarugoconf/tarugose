@@ -34,11 +34,20 @@
         margin: auto;
     }
 
-    @media (max-width: 999px) {
+    @media (max-width: 799px) {
+        background: none;
+
+        & > li + li {
+            margin-top: var(--row-gap);
+        }
+    }
+
+    @media (min-width: 800px) (max-width: 999px) {
         & > li + li {
             border-top: solid 1px var(--color-gray-light);
         }
     }
+
     @media (min-width: 1000px) {
         flex-direction: row;
         align-items: stretch;
@@ -57,6 +66,12 @@
     font: var(--font-normal);
     display: flex;
 
+    @media (max-width: 799px) {
+        flex-direction: column;
+        background: var(--color-white);
+        border-radius: var(--radius);
+    }
+
     @media (min-width: 1000px) {
         flex-direction: column;
     }
@@ -65,17 +80,23 @@
     text-align: center;
     background: var(--color-light);
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
 
-    @media (max-width: 999px) {
+    @media (max-width: 799px) {
+        width: 100%;
+        border-radius: var(--radius) var(--radius) 0 0;
+    }
+
+    @media (min-width: 800px) and (max-width: 999px) {
         width: 12rem;
         flex: 0 0 auto;
     }
 
     @media (min-width: 1000px) {
-        min-height: 3em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        min-height: 6rem;
     }
 }
 .ticket-title {
@@ -91,6 +112,11 @@
     padding: 1rem 2rem;
     margin: 0;
     flex: 1 1 auto;
+
+    @media (max-width: 999px) {
+        align-self: center;
+        padding: 2rem;
+    }
 }
 .ticket-buy {
     padding: 2rem;
@@ -100,8 +126,19 @@
         display: block;
     }
 
+    & > strong {
+        display: block;
+        margin-bottom: .5em;
+    }
+
+    & del {
+        color: var(--color-shadow);
+        text-decoration-color: var(--color-dark);
+    }
+
     @media (max-width: 999px) {
-        width: 12rem;
+        width: 11rem;
         flex: 0 0 auto;
+        align-self: center;
     }
 }

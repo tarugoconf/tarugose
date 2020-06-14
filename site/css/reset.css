@@ -18,11 +18,12 @@ figure {
     margin: 0;
     padding: 0;
 }
-b, strong {
+b,
+strong {
     font-weight: var(--font-weight-bold);
 }
 p {
-    margin: .5em 0;
+    margin: 0.5em 0;
 }
 
 ::selection {

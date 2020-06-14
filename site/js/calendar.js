@@ -14,7 +14,7 @@ prev.addEventListener('click', () => {
     }
 
     setCurrent(index - 1);
-})
+});
 
 next.addEventListener('click', () => {
     if (index === maxIndex) {
@@ -22,13 +22,13 @@ next.addEventListener('click', () => {
     }
 
     setCurrent(index + 1);
-})
+});
 
 days.forEach((day, i) => {
-    day.addEventListener('click', ev => {
+    day.addEventListener('click', (ev) => {
         setCurrent(i);
-    })
-})
+    });
+});
 
 function setCurrent(newIndex) {
     days[index].classList.remove('is-front');

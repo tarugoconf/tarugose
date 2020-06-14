@@ -1,5 +1,6 @@
 const typeset = require('typeset');
 
-module.exports = (string) => typeset(string, {
-    disable: ['hyphenate']
-});
+module.exports = (string) =>
+    typeset(string, {
+        disable: ['hyphenate'],
+    });

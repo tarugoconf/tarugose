@@ -3,11 +3,11 @@ module.exports = {
     links: [
         {
             text: 'Aviso legal',
-            url: '/aviso-legal'
+            url: '/aviso-legal',
         },
         {
             text: 'Política de privacidad',
-            url: '/politica-de-privacidad'
-        }
-    ]
+            url: '/politica-de-privacidad',
+        },
+    ],
 };
