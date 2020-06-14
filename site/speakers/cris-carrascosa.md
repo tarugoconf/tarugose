@@ -8,16 +8,16 @@ image:
     alt: Grace Hopper
 
 links:
-  - text: '@Yale'
-    icon: twitter
-    url: 'https://twitter.com/Yale'
+    - text: '@Yale'
+      icon: twitter
+      url: 'https://twitter.com/Yale'
 
-  - text: 'grace-hopper'
-    icon: linkedin
-    url: 'https://es.wikipedia.org/wiki/Grace_Murray_Hopper'
+    - text: 'grace-hopper'
+      icon: linkedin
+      url: 'https://es.wikipedia.org/wiki/Grace_Murray_Hopper'
 
-  - text: 'pinsentmasons.com'
-    url: 'https://pinsentmasons.com'
+    - text: 'pinsentmasons.com'
+      url: 'https://pinsentmasons.com'
 
 calendar:
     - day: Jueves 22 - 22:30h
