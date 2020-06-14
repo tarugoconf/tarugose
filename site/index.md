@@ -260,6 +260,10 @@ partners:
           url: https://coru.net/
           text: Desarrollamos soluciones tecnológicas para grandes empresas.
           alt: Corunet
+        - src: /img/logos/bitergia.svg
+          url: https://bitergia.com/
+          text: Software Development Analytics for Your Peace of Mind
+          alt: Corunet
     
     patrons:
         - src: /img/logos/bliss-ventures.png

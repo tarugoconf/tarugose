@@ -40,22 +40,10 @@
     --font-size-xbig: calc(var(--font-size-big) * var(--min-scale));
 
     @supports (font-size: clamp(14px, 5vw, 20px)) {
-        --font-size-normal: clamp(
-            var(--font-size-small) * var(--min-scale),
-            5vw,
-            var(--font-size-small) * var(--max-scale)
-        );
-        --font-size-medium: clamp(
-            var(--font-size-normal) * var(--min-scale),
-            5vw,
-            var(--font-size-normal) * var(--max-scale)
-        );
-        --font-size-big: clamp(
-            var(--font-size-medium) * var(--min-scale),
-            4vw,
-            var(--font-size-medium) * var(--max-scale)
-        );
-        --font-size-xbig: clamp(var(--font-size-big) * var(--min-scale), 5vw, var(--font-size-big) * var(--max-scale));
+        --font-size-normal: clamp(var(--font-size-small) * var(--min-scale), 4vw, var(--font-size-small) * var(--max-scale));
+        --font-size-medium: clamp(var(--font-size-normal) * var(--min-scale), 5vw, var(--font-size-normal) * var(--max-scale));
+        --font-size-big: clamp(var(--font-size-medium) * var(--min-scale), 6vw, var(--font-size-medium) * var(--max-scale));
+        --font-size-xbig: clamp(var(--font-size-big) * var(--min-scale), 7vw, var(--font-size-big) * var(--max-scale));
     }
 
     --font-weight-normal: 400;

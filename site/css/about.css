@@ -7,6 +7,7 @@
     padding: var(--row-gap) var(--column-gap);
     margin: auto;
     border-radius: var(--radius);
+    font: var(--font-normal);
 
     & h1 {
         font: var(--font-xbig-bold);
