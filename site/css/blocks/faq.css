@@ -5,19 +5,63 @@
 
 .faq-header {
     margin-bottom: var(--row-gap);
+    text-align: center;
 
     & h2 {
         font: var(--font-big-bold);
         letter-spacing: var(--font-spacing-big);
-        margin: 0;
     }
 }
 
 .faq-question {
-    font: var(--font-medium-bold);
-    padding: calc(var(--row-gap) / 2) 0;
-    cursor: pointer;
+    font: var(--font-normal-bold);
+    padding: 0 var(--column-gap);
+    grid-column: 1 / -1;
+    border-bottom: solid 1px var(--color-dark-light);
+    transition-property: color, background-color;
+    transition-duration: var(--duration);
+
+    & > summary {
+        cursor: pointer;
+        padding: calc(var(--row-gap) / 2) 0;
+
+        &:hover {
+            text-decoration: underline;
+            color: var(--color-smoke);
+        }
+    }
+
+    &:first-of-type {
+        border-top: solid 1px var(--color-dark-light);
+    }
+
+    &[open] {
+        color: var(--color-dark);
+        background: var(--color-white);
+
+        & .faq-answer {
+            animation: show var(--duration);
+            transform-origin: center top;
+        }
+    }
 }
 .faq-answer {
     font: var(--font-normal);
+    padding-bottom: calc(var(--row-gap) / 2);
+}
+.faq-question > summary,
+.faq-answer {
+    max-width: 41em;
+    margin: auto;
+}
+
+@keyframes show {
+    from {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    to {
+        transform: scaleY(1);
+        opacity: 1;
+    }
 }
