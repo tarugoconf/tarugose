@@ -277,7 +277,7 @@ partners:
           <iframe
             frameborder="0"
             scrolling="yes"
-            src="https://drive.google.com/file/d/17Pa-X7bGsu0SmRWal6LEmtPPnimq7JLL/preview?usp=drivesdk" 
+            src="https://drive.google.com/file/d/1XEOImLr7-1c6uC2_10Pt7QGxGY24BkMj/preview" 
             allowfullscreen="">
           </iframe>
 
@@ -338,12 +338,4 @@ faq:
         - question: ¿Hay un número máximo de entradas?
           answer: |
             lorem ipsum
-
-footer:
-    copyright: © 2020 Bonillaware SLU
-    links:
-        - text: Aviso legal
-          url: --
-        - text: Política de privacidad
-          url: --
 ---
