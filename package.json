@@ -7,7 +7,7 @@
     "build": "rm -rf dist && concurrently npm:build:deps npm:build:site npm:build:css",
     "build:site": "eleventy",
     "build:css": "postcss ./site/css/styles.css -o dist/css/styles.css",
-    "build:deps": "browser-assets particles.js --dest=dist/vendors",
+    "build:deps": "browser-assets particles.js dialog-polyfill --dest=dist/vendors",
     "prettier": "prettier config/** ./*.js .eleventy.js site/**/*.{md,js,css} --write"
   },
   "devDependencies": {
@@ -17,6 +17,7 @@
     "browser-assets": "^1.6.1",
     "concurrently": "^5.2.0",
     "date-fns": "^2.12.0",
+    "dialog-polyfill": "^0.5.1",
     "markdown-it-attrs": "^3.0.2",
     "normalize.css": "^8.0.1",
     "particles.js": "^2.0.0",
@@ -32,6 +33,5 @@
     "tabWidth": 4,
     "printWidth": 130,
     "singleQuote": true
-  },
-  "dependencies": {}
+  }
 }

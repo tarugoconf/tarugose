@@ -7,16 +7,16 @@ image:
     src: /img/speakers/grace-hopper.jpg
     alt: Grace Hopper
 
-twitter:
-    text: '@Yale'
+links:
+  - text: '@Yale'
+    icon: twitter
     url: 'https://twitter.com/Yale'
 
-linkedin:
-    text: 'grace-hopper'
+  - text: 'grace-hopper'
+    icon: linkedin
     url: 'https://es.wikipedia.org/wiki/Grace_Murray_Hopper'
 
-web:
-    text: 'pinsentmasons.com'
+  - text: 'pinsentmasons.com'
     url: 'https://pinsentmasons.com'
 
 calendar:

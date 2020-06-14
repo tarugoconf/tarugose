@@ -9,21 +9,54 @@
 
         {% for speaker in collections.speakers %}
         <li>
-            <article class="speaker" style="--image: url('{{ speaker.data.image.src | url }}')">
+            <article class="speaker js-openDialog" style="--image: url('{{ speaker.data.image.src | url }}')">
                 <h4 class="speaker-title">{{ speaker.data.title }}</h4>
                 <p class="speaker-company">{{ speaker.data.company }}</p>
                 <em class="speaker-position">{{ speaker.data.position }}</em>
 
                 <address class="speaker-contact">
-                    {% if speaker.data.twitter %}
-                    {{ comp.icon('twitter', speaker.data.twitter) }}
-                    {% endif %}
-
-                    {% if speaker.data.linkedin %}
-                    {{ comp.icon('linkedin', speaker.data.linkedin) }}
-                    {% endif %}
+                    {% for link in speaker.data.links %}
+                        {% if link.icon %}
+                            {{ comp.icon(link.icon, link) }}
+                        {% endif %}
+                    {% endfor %}
                 </address>
             </article>
+
+            <dialog class="speaker-modal">
+                <div class="speaker-modal-content">
+                    <div class="speaker-photo">
+                        {{ comp.img(speaker.data.image) }}
+                    </div>
+
+                    <div class="speaker-modal-header">
+                        <h4 class="speaker-title">{{ speaker.data.title }}</h4>
+                        <p class="speaker-company">{{ speaker.data.company }}</p>
+                        <em class="speaker-position">{{ speaker.data.position }}</em>
+                    </div>
+
+                    <address class="speaker-links">
+                        {% for link in speaker.data.links %}
+                            <p>{{ comp.link(link) }}</p>
+                        {% endfor %}
+                    </address>
+
+                    <ul class="speaker-calendar">
+                        {% for event in speaker.data.calendar %}
+                            <li>
+                                <time>{{ event.day }}</time>
+                                <strong>{{ event.title }}</strong>
+                            </li>
+                        {% endfor %}
+                    </ul>
+
+                    <div class="speaker-bio">
+                        {{ speaker.templateContent | safe }}
+                    </div>
+                </div>
+
+                <button class="js-closeDialog speaker-modal-close">Cerrar</button>
+            </dialog>
         </li>
         {% endfor %}
     </ul>
