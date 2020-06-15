@@ -17,7 +17,7 @@
         <ul class="what-descriptions">
         {% for item in what.descriptions %}
             <li class="what-description">
-                <img src="//placehold.it/100x100">
+                {{ comp.img(item) }}
                 <strong>{{ item.title | safe }}</strong>
                 {{ item.text | md | type | safe }}
             </li>
@@ -35,7 +35,7 @@
         <ul class="what-features">
         {% for item in what.features %}
             <li>
-                <img src="//placehold.it/100x100">
+                {{ comp.img(item) }}
                 {{ item.title | md | type | safe }}
             </li>
         {% endfor %}

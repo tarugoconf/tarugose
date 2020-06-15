@@ -21,9 +21,10 @@ menu:
 ctas:
   - text: Asistir
     url: '#tickets'
-    class: is-secondary
+    class: button is-secondary
   - text: Patrocinar
     url: '--'
+    class: button
 
 header:
     logo: Tarugoconf Sofá Edition
@@ -47,28 +48,28 @@ what:
         Organizada con un único objetivo: cuidar cada detalle del evento de forma enfermiza --desde las acreditaciones hasta la oferta gastronómica-- para **transformar la asistencia en una experiencia**, sin olvidar nunca que lo más importante de la Tarugoconf, lo que verdaderamente la diferencia, son sus charlas.
 
     descriptions:
-      - src: //placehold.it/100x100
+      - src: /img/what/util.svg
         title: Útil
         text: |
           Problemas reales y las soluciones aplicadas para superarlos, que podrás incorporar a tu caja de herramientas y aplicar en tu día a día.
 
-      - src: //placehold.it/100x100
+      - src: /img/what/practica.svg
         title: Práctica
         text: |
           Un speaker de la Tarugoconf no habla de lo que ha leído sino de lo que ha vivido.
 
-      - src: //placehold.it/100x100
+      - src: /img/what/divertida.svg
         title: Divertida
         text: |
           Lo contrario de «divertido» no es «serio» sino «aburrido» y lo único que está prohibido en la Tarugoconf es aburrirse.
         
-      - src: //placehold.it/100x100
+      - src: /img/what/awesomica.svg
         title: Awesómica
         text: |
           Las charlas de la Tarugoconf se trabajan durante meses para que duren unos pocos minutos y se recuerden durante años.
 
     subimg: 
-        src: //placehold.it/300x300
+        src: https://placehold.it/300x300
         alt: 
 
     subtext: |
@@ -86,11 +87,17 @@ what:
     
     features:
         - title: '**Charlas** awesómicas'
+          src: https://placehold.it/100x100
         - title: '**Reportajes** inéditos'
+          src: https://placehold.it/100x100
         - title: '**Concursos** y juegos'
+          src: https://placehold.it/100x100
         - title: '**Open** space'
+          src: https://placehold.it/100x100
         - title: '**Interacción** total'
+          src: https://placehold.it/100x100
         - title: '**Networking** para todos'
+          src: https://placehold.it/100x100
 
 why:
     id: why

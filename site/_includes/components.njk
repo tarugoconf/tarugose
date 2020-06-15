@@ -1,5 +1,5 @@
-{% macro link(data, class) %}
-    <a href="{{ data.url }}" {% if (class or data.class) %}class="{{ [class, data.class] | join(' ') | trim }}"{% endif %}>
+{% macro link(data) %}
+    <a href="{{ data.url }}" {{ data | attr('class') | safe }}>
         {% if data.icon %}
             <span class="icon">
                 {% include "assets/" + data.icon + ".svg" %}
@@ -10,18 +10,18 @@
     </a>
 {% endmacro %}
 
-{% macro img(data, class) %}
+{% macro img(data, extra) %}
     {% if data.url %}
         <a href="{{ data.url }}" target="_blank">
-            <img src="{{ data.src | url }}" alt="{{ data.alt }}">
+            <img {{ data | attr('src', 'alt', 'class') | safe }}>
         </a>
     {% else %}
-        <img src="{{ data.src | url }}" alt="{{ data.alt }}" {% if (class or data.class) %}class="{{ [class, data.class] | join(' ') | trim }}"{% endif %}>
+        <img {{ [data, extra] | attr('src', 'alt', 'class') | safe }}>
     {% endif %}
 {% endmacro %}
 
 {% macro icon(type, data, class) %}
-    <a href="{{ data.url }}" class="{{ ['icon', class, data.class] | join(' ') | trim }}">
+    <a href="{{ data.url }}" class="{{ ['icon', class, data.class] | class }}">
         {% include "assets/" + type + ".svg" %}
     </a>
 {% endmacro %}

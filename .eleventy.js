@@ -6,6 +6,8 @@ module.exports = function (config) {
     config.addFilter('dateFormat', require('./config/filters/date.js'));
     config.addFilter('md', require('./config/filters/markdown.js'));
     config.addFilter('type', require('./config/filters/typeset.js'));
+    config.addFilter('attr', require('template-filters/attributes'));
+    config.addFilter('class', require('template-filters/className'));
 
     // Libs
     config.setLibrary('md', require('./config/markdown'));

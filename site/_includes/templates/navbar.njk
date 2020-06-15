@@ -18,7 +18,7 @@
     <ul class="navbar-buttons buttonGroup">
         {% for link in ctas %}
         <li>
-            {{ comp.link(link, 'button') | safe }}
+            {{ comp.link(link) | safe }}
         </li>
         {% endfor %}
     </ul>
