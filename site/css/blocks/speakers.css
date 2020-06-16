@@ -97,12 +97,16 @@
     padding: 0;
     font: var(--font-small);
     grid-area: calendar;
+
+    @media (max-width: 900px) {
+        padding-bottom: var(--row-gap);
+    }
 }
 
 .speaker-modal {
     width: 100%;
     border: none;
-    max-width: 41em;
+    max-width: 900px;
     border-radius: var(--radius);
     box-shadow: 0 5px 100px #000;
     padding: 0;
@@ -120,6 +124,12 @@
     }
     & ::backdrop {
         background-color: #0009;
+    }
+
+    @media (max-width: 900px) {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
     }
 }
 
@@ -149,6 +159,10 @@
     display: grid;
     grid-row-gap: var(--row-gap);
     grid-column-gap: var(--column-gap);
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
     grid-template-areas: 'photo . .'
                          'photo header .'
                          'photo links .'
@@ -156,6 +170,16 @@
                          'photo calendar .'
                          'photo . .';
 
+    @media (max-width: 800px) {
+        grid-template-columns: 0 1fr 0;
+        grid-template-rows: 0 auto auto minmax(200px, 40vh) auto auto;
+        grid-template-areas: '. . .'
+                         '. header .'
+                         '. links .'
+                         'photo photo photo'
+                         '. bio .'
+                         '. calendar .';
+    }
 }
 
 @keyframes showModal {

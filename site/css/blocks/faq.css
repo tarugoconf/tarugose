@@ -29,6 +29,9 @@
             text-decoration: underline;
             color: var(--color-smoke);
         }
+        &:focus {
+            outline: 0;
+        }
     }
 
     &:first-of-type {

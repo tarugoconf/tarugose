@@ -1,5 +1,6 @@
 .contact-wrapper {
     background-color: var(--color-skyline);
+    padding-top: 20vh;
 }
 .contact {
     padding: var(--row-gap) 0;

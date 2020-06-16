@@ -24,6 +24,8 @@
             </article>
 
             <dialog class="speaker-modal">
+                <button class="js-closeDialog speaker-modal-close">Cerrar</button>
+                
                 <div class="speaker-modal-content">
                     <div class="speaker-photo">
                         {{ comp.img(speaker.data.image) }}
@@ -54,8 +56,6 @@
                         {{ speaker.templateContent | safe }}
                     </div>
                 </div>
-
-                <button class="js-closeDialog speaker-modal-close">Cerrar</button>
             </dialog>
         </li>
         {% endfor %}
