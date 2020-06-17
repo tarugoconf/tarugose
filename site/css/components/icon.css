@@ -29,3 +29,9 @@ a.icon {
         }
     }
 }
+.icon-fg {
+    fill: var(--color-primary);
+}
+.icon-bg {
+    fill: var(--color-dark-light);
+}
