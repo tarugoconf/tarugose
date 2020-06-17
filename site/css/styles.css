@@ -7,7 +7,7 @@
 @import 'layouts.css';
 @import 'about.css';
 
-/* Blocks */
+/* Blocks (home) */
 @import 'blocks/navbar.css';
 @import 'blocks/header.css';
 @import 'blocks/what.css';
@@ -19,6 +19,16 @@
 @import 'blocks/contact.css';
 @import 'blocks/faq.css';
 @import 'blocks/footer.css';
+
+/* Blocks (speakers) */
+@import 'blocks/intro.css';
+@import 'blocks/highlights.css';
+@import 'blocks/photo.css';
+@import 'blocks/talks.css';
+@import 'blocks/video.css';
+@import 'blocks/benefits.css';
+@import 'blocks/past-speakers.css';
+@import 'blocks/resources.css';
 
 /* Components */
 @import 'components/button.css';

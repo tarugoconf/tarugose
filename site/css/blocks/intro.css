@@ -1,0 +1,16 @@
+.intro {
+    text-align: center;
+    padding: var(--row-gap) 0 0;
+    align-content: center;
+    justify-items: center;
+    max-width: 30em;
+    margin: auto;
+}
+.intro-title {
+    font: var(--font-xbig-bold);
+    letter-spacing: var(--font-spacing-xbig);
+}
+.intro-text {
+    font: var(--font-normal);
+    margin-bottom: auto;
+}

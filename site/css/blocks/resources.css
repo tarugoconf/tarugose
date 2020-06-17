@@ -1,0 +1,41 @@
+.resources {
+    padding-top: 20vh;
+    display: grid;
+    grid-template-areas: 'title' 'links';
+    grid-column-gap: var(--column-gap);
+    grid-row-gap: var(--row-gap);
+    align-items: start;
+    justify-content: center;
+
+    @media (min-width: 800px) {
+        grid-template-columns: minmax(min-content, 22rem) auto;
+        grid-template-areas: 'title links';
+    }
+}
+
+.resources-title {
+    font: var(--font-big-bold);
+    grid-area: title;
+    text-align: center;
+    
+    @media (min-width: 800px) {
+        text-align: right;
+        margin: 0;
+        position: sticky;
+        top: 6rem;
+    }
+}
+
+.resources-links {
+    font: var(--font-small);
+    grid-area: links;
+    margin-top: 0;
+
+    & a {
+        color: inherit;
+    }
+
+    & li + li {
+        margin-top: .5em;
+    }
+}

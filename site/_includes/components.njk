@@ -21,7 +21,7 @@
 {% endmacro %}
 
 {% macro icon(type, data, class) %}
-    <a href="{{ data.url }}" class="{{ ['icon', class, data.class] | class }}">
+    <a href="{{ data.url }}" class="{{ ['icon', class, data.class] | class }}" title="{{ data.title }}">
         {% include "assets/" + type + ".svg" %}
     </a>
 {% endmacro %}
