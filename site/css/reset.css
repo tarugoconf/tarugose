@@ -1,23 +1,27 @@
 html {
     scroll-padding-top: 70px;
     scroll-behavior: smooth;
-    background-color: var(--color-dark);
+    background-color: var(--color-skyline);
 }
 body {
     scroll-behavior: smooth;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    font: var(--font-normal);
+    color: var(--color-white);
+}
+
+body.body-home {
     background: radial-gradient(ellipse at center, var(--color-dark), var(--color-xdark)) no-repeat;
     background-size: 100vw 100vh;
     background-attachment: fixed;
-    font: var(--font-normal);
-    color: var(--color-white);
 }
 
 figure {
     margin: 0;
     padding: 0;
 }
+
 b,
 strong {
     font-weight: var(--font-weight-bold);

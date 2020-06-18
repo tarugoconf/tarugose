@@ -197,14 +197,14 @@ resources:
 
 {% include "templates/navbar.njk" %}
 
-<header class="intro">
+<header class="intro ly-section">
   <h1 class="intro-title">{{ header.title }}</h1>
   <div class="intro-text">
       {{ header.intro | md | safe }}
   </div>
 </header>
 
-<div class="highlights">
+<div class="highlights ly-section">
     <ul>
         {% for item in highlights %}
         <li>
@@ -215,7 +215,7 @@ resources:
     </ul>
 </div>
 
-<figure class="photo">
+<figure class="photo ly-section">
     <picture>
       <source srcset="{{ image.src | url }}-3200px.webp" media="(min-width:2400px)" type="image/webp">
       <source srcset="{{ image.src | url }}-3200px.jpg" media="(min-width:2400px)">
@@ -236,23 +236,24 @@ resources:
     </picture>
 </figure>
 
-<section class="talks" id="las-charlas">
-  <h2 class="talks-title">{{ talks.title }}</h2>
-  <div class="talks-aside">{{ talks.aside | safe }}</div>
+<div class="ly-section">
+  <section class="talks" id="las-charlas">
+    <h2 class="talks-title">{{ talks.title }}</h2>
+    <div class="talks-aside">{{ talks.aside | safe }}</div>
 
-  <div class="talks-text">
-    {{ talks.text | md | safe }}
-  </div>
+    <div class="talks-text">
+      {{ talks.text | md | safe }}
+    </div>
+  </section>
+</div>
 
-</section>
-
-<figure class="video">
+<figure class="video ly-section">
     <div id="video" class="video-ratio" data-id="305100749">
       <a href="https://vimeo.com/305100749">#tarugo3 / Andrés Torrubia / Haciendo posible lo imposible</a>
     </div>
 </figure>
 
-<section class="benefits" id="beneficios">
+<section class="benefits ly-section" id="beneficios">
     <h2 class="benefits-title">{{ benefits.title }}</h2>
     <div class="benefits-intro">
         {{ benefits.intro | md | safe }}
@@ -269,7 +270,7 @@ resources:
     </ul>
 </section>
 
-<section class="pastSpeakers">
+<section class="pastSpeakers ly-section">
     <h2 class="pastSpeakers-title">{{ speakers.title }}</h2>
 
     <tarugo-carousel class="pastSpeakers-quotes">
@@ -316,18 +317,20 @@ resources:
     </ul>
 </section>
 
-<section class="resources" id="recursos">
-  <h2 class="resources-title">{{ resources.title }}</h2>
+<div class="ly-section">
+  <section class="resources" id="recursos">
+    <h2 class="resources-title">{{ resources.title }}</h2>
 
-  <ul class="resources-links">
-    {% for item in resources.links %}
-    <li>
-      <a href="{{ item.href }}">
-        {{ item.text }}
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+    <ul class="resources-links">
+      {% for item in resources.links %}
+      <li>
+        <a href="{{ item.href }}">
+          {{ item.text }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
 
 {% include "templates/footer.njk" %}

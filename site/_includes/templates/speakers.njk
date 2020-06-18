@@ -3,6 +3,7 @@
 <section class="ly-section speakers" id="{{ speakers.id }}">
     <header class="speakers-header">
         <h2>{{ speakers.title }}</h2>
+        {{ speakers.subtitle | md | safe }}
     </header>
 
     <ul class="speakers-list">

@@ -1,5 +1,9 @@
 .photo {
-    margin: 20vh 0;
+    margin: 10vh 0 20vh;
+
+    & > * {
+        grid-column: 1 / -1;
+    }
 }
 .photo-image {
     max-width: 100%;

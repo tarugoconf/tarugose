@@ -22,7 +22,7 @@
 
     & button {
         font: var(--font-small-bold);
-        color: var(--color-gray);
+        color: var(--color-smoke);
         background: none;
         border: none;
         text-decoration: underline;
@@ -59,7 +59,7 @@
         font: var(--font-small);
         display: flex;
         align-items: center;
-        color: var(--color-gray);
+        color: var(--color-smoke);
         padding-left: 3rem;
     }
     & cite {
@@ -80,7 +80,7 @@
 }
 .pastSpeakers-speakers {
     list-style: none;
-    margin: 4em auto;
+    margin: 4em 0;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
@@ -113,7 +113,7 @@
 
     & a {
         padding: .5em;
-        color: var(--color-gray);
+        color: var(--color-smoke);
 
         &:first-child {
             border-top-left-radius: 4px;

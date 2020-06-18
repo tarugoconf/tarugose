@@ -7,6 +7,6 @@ document.querySelectorAll('.video-ratio').forEach(
             byline: false,
             portrait: false,
             dnt: true,
-            color: 'EBFF00',
+            color: 'ff5c9d',
         })
 );

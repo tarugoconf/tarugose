@@ -1,5 +1,4 @@
 .intro {
-    text-align: center;
     padding: var(--row-gap) 0 0;
     align-content: center;
     justify-items: center;
@@ -9,6 +8,7 @@
 .intro-title {
     font: var(--font-xbig-bold);
     letter-spacing: var(--font-spacing-xbig);
+    text-align: center;
 }
 .intro-text {
     font: var(--font-normal);

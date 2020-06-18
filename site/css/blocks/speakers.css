@@ -3,10 +3,24 @@
 }
 .speakers-header {
     text-align: center;
+    margin-bottom: 2em;
     
     & h2 {
         font: var(--font-big-bold);
         letter-spacing: var(--font-spacing-big);
+        margin-bottom: 0;
+    }
+
+    & p {
+        font: var(--font-normal);
+    }
+    & a {
+        color: var(--color-smoke);
+
+        &:hover {
+            text-decoration: none;
+            color: var(--white);
+        }
     }
 }
 .speakers-list {
