@@ -23,3 +23,6 @@
     margin-bottom: auto;
     color: var(--color-shadow);
 }
+.header-video {
+    background: var(--color-white);
+}

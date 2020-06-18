@@ -1,11 +1,10 @@
 .video {
     margin: 0;
-    padding-top: 20vh;
+    padding: var(--row-gap) 0;
 }
 .video-ratio {
     position: relative;
-    padding-bottom: 56%;
-    margin-top: -10vh;
+    padding-bottom: 54%;
 
     & iframe {
         position: absolute;
@@ -14,5 +13,14 @@
         top: 0;
         left: 0;
         background-color: var(--color-black);
+    }
+}
+.body-home .video {
+    background-color: var(--color-white);
+    margin-top: -5vw;
+    padding-bottom: 10vh;
+
+    & iframe {
+        background-color: var(--color-white);
     }
 }

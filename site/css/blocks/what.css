@@ -19,12 +19,13 @@
                          'features';
 
     @media (min-width: 850px) {
-        grid-template-columns: 1fr 12rem 24rem;
-        grid-template-areas: 'header header header'
-                             'text text metrics'
-                             'descriptions descriptions descriptions'
-                             'sub-image sub-text sub-text'
-                             'features features features';
+        grid-template-columns: 1fr 24rem;
+        grid-template-areas: 'header header'
+                             'text metrics'
+                             'descriptions descriptions'
+                             'sub-text sub-text'
+                             'sub-image sub-image'
+                             'features features';
     }
 }
 
@@ -85,6 +86,8 @@
     & > img {
         display: block;
         margin: 10px auto;
+        max-width: 100%;
+        width: 200px;
     }
 
     & > strong {
@@ -112,6 +115,7 @@
     & img {
         display: block;
         margin: 1em auto;
+        max-width: 100%;
     }
 
     & strong {
@@ -139,28 +143,54 @@
 
 .what-subimage {
     grid-area: sub-image;
-
-    & img {
-        display: block;
-        width: 100%;
-    }
 }
 .what-subtext {
     grid-area: sub-text;
+}
 
-    & h2 {
-        font: var(--font-big-bold);
-        letter-spacing: var(--font-spacing-big);
-        margin-top: 0;
+.what-subtext-title {
+    font: var(--font-big-bold);
+    letter-spacing: var(--font-spacing-big);
+    text-align: center;
 
-        & del {
-            color: var(--color-shadow);
-            text-decoration-color: var(--color-dark);
-        }
+    & del {
+        color: var(--color-shadow);
+        text-decoration-color: var(--color-dark);
     }
+}
+.what-subtext-intro {
+    width: 100%;
+    max-width: 41em;
+    margin: auto;
+    text-align: center;
+}
+
+.what-subtext-text {
+    column-count: 2;
+    column-gap: calc(var(--column-gap) * 2);
+    column-rule: solid 1px var(--color-shadow);
+    max-width: 41em;
+    margin: var(--row-gap) auto;
 
     & h3 {
         font: var(--font-medium-bold);
         letter-spacing: var(--font-spacing-medium);
+        break-inside: avoid;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    & p {
+        break-inside: avoid;
+    }
+
+    @media (max-width: 800px) {
+        column-count: 1;
+        max-width: 24em;
+
+        & h3 {
+            text-align: left;
+            margin-top: 2em;
+        }
     }
 }

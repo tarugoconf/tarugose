@@ -52,22 +52,24 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 160px);
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     grid-column-gap: var(--column-gap);
     grid-row-gap: var(--row-gap);
     text-align: center;
 
     &.is-patrons {
-        grid-template-columns: repeat(auto-fill, 100px);
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
 
     &.is-main {
-        grid-template-columns: repeat(auto-fill, 320px);
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
         text-align: left;
     }
 
     & + .partners-list {
         margin-top: var(--row-gap);
+        padding-top: var(--row-gap);
+        border-top: solid 1px #fff3;
     }
 }
 .partners-company {

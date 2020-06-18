@@ -24,12 +24,31 @@
         {% endfor %}
         </ul>
 
-        <figure class="what-subimage">
-            {{ comp.img(what.subimg) }}
-        </figure>
-
         <div class="what-subtext">
-            {{ what.subtext | md | safe }}
+            <h2 class="what-subtext-title">{{ what.subtitle | safe }}</h2>
+
+            <div class="what-subtext-intro">
+            {{ what.subintro | md | safe }}
+            </div>
+
+            <div class="what-subtext-text">
+                {{ what.subtext | md | safe }}
+            </div>
+        </div>
+
+        <div class="scene-set what-subimage js-parallax-wrapper" role="presentation">
+            <span class="scene-set-guest">
+                {% include "assets/guest.svg" %}
+            </span>
+            <span class="scene-set-presenter">
+                {% include "assets/presenter.svg" %}
+            </span>
+            <span class="scene-set-band">
+                {% include "assets/band.svg" %}
+            </span>
+            <span class="scene-set-audience js-parallax">
+                {% include "assets/audience.svg" %}
+            </span>
         </div>
 
         <ul class="what-features">
@@ -44,7 +63,7 @@
 
     <div class="scene-moonBottom" role="presentation">
         <span class="scene-moonBottom-background">
-            {% include "assets/moon-top.svg" %}
+            {% include "assets/moon.svg" %}
         </span>
     </div>
 </div>
