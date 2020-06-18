@@ -27,11 +27,15 @@
         border: none;
         text-decoration: underline;
         padding: 1em;
+        cursor: pointer;
 
         &:disabled {
             opacity: .2;
             text-decoration: none;
             background: none;
+        }
+        &:hover:not(:disabled) {
+            color: var(--color-white);
         }
     }
 }
