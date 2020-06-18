@@ -2,7 +2,7 @@
     padding: var(--row-gap) 0 0;
     align-content: center;
     justify-items: center;
-    max-width: 30em;
+    max-width: 36em;
     margin: auto;
 }
 .intro-title {
