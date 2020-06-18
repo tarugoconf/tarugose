@@ -15,7 +15,8 @@
         font: var(--font-normal);
     }
     & a {
-        color: var(--color-smoke);
+        color: var(--color-primary);
+        font-weight: var(--font-weight-bold);
 
         &:hover {
             text-decoration: none;

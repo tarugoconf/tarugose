@@ -5,16 +5,17 @@
     justify-items: center;
 
     & .logo {
-        width: 300px;
+        width: 250px;
         max-width: 40vw;
-        margin-top: 5vh;
+        margin-top: 3vh;
     }
 }
 .header-title {
     font: var(--font-xbig-bold);
     letter-spacing: var(--font-spacing-xbig);
-    max-width: 15em;
+    max-width: 11em;
     margin-bottom: 0;
+    margin-top: .2em;
 }
 .header-subtitle {
     font: var(--font-normal);

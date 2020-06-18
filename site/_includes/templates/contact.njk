@@ -19,7 +19,7 @@
         </div>
 
         <div class="contact-tarugo">
-            {{ contact.address | md | type | safe }}
+            {{ contact.address | md | safe }}
 
             <address>
                 {% for link in contact.links %}

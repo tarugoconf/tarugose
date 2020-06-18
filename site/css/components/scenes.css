@@ -2,7 +2,7 @@
 .scene-moonTop {
     width: 100%;
     grid-column: 1 / -1;
-    margin-top: 10vh;
+    margin-top: 8vh;
     margin-bottom: -1px;
 }
 .scene-moonTop-astronaut {

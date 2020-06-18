@@ -28,8 +28,7 @@
     "postcss-preset-env": "^6.7.0",
     "postcss-url": "^8.0.0",
     "prettier": "^2.0.5",
-    "template-filters": "^0.2.0",
-    "typeset": "^0.2.9"
+    "template-filters": "^0.2.0"
   },
   "prettier": {
     "tabWidth": 4,

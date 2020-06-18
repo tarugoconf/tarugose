@@ -4,7 +4,7 @@
     </header>
 
     <div class="why-intro">
-        {{ why.intro | md | type | safe }}
+        {{ why.intro | md | safe }}
     </div>
 
     <ul class="why-reasons">
@@ -12,13 +12,13 @@
         <li>
             <div class="why-reason">
                 <h3>{{ reason.title }}</h3>
-                {{ reason.text | md | type | safe }}
+                {{ reason.text | md | safe }}
             </div>
         </li>
         {% endfor %}
     </ul>
 
     <div class="why-text">
-        {{ why.text | md | type | safe }}
+        {{ why.text | md | safe }}
     </div>
 </section>

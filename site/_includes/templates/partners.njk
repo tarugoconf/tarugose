@@ -8,7 +8,7 @@
         </header>
 
         <div class="partners-text">
-            {{ partners.text | md | type | safe }}
+            {{ partners.text | md | safe }}
         </div>
 
         <div class="partners-logos">
@@ -19,7 +19,7 @@
                     {{ comp.img(partner) }}
 
                     <figcaption>
-                    {{ partner.text | md | type | safe }}
+                    {{ partner.text | md | safe }}
                     </figcaption>
                 </figure>
                 </li>
@@ -33,7 +33,7 @@
                     {{ comp.img(partner) }}
 
                     <figcaption>
-                    {{ partner.text | md | type | safe }}
+                    {{ partner.text | md | safe }}
                     </figcaption>
                 </figure>
                 </li>
@@ -54,7 +54,7 @@
         <h3 class="partners-sponsor-title">{{ partners.sponsor.title }}</h3>
 
         <div class="partners-sponsor-text">
-            {{ partners.sponsor.text | md | type | safe }}
+            {{ partners.sponsor.text | md | safe }}
         </div>
 
         <div class="partners-sponsor-document">

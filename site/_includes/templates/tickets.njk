@@ -6,7 +6,7 @@
     </header>
 
     <div class="tickets-text">
-        {{ tickets.text | md | type | safe }}
+        {{ tickets.text | md | safe }}
     </div>
 
     <ul class="tickets-list">
@@ -29,7 +29,7 @@
             </ul>
 
             <div class="ticket-buy">
-                <strong>{{ ticket.price | type | safe }}</strong>
+                <strong>{{ ticket.price | safe }}</strong>
 
                 {{ comp.link(ticket.btn) }}
             </div>

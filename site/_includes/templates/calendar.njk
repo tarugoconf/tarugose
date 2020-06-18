@@ -4,7 +4,7 @@
     </header>
 
     <div class="calendar-text">
-        {{ calendar.text | md | type | safe }}
+        {{ calendar.text | md | safe }}
     </div>
 
     <ul class="calendar-days js-calendar">
@@ -25,7 +25,7 @@
                             </summary>
 
                             <div class="calendar-event-text">
-                                {{ event.text | md | type | safe }}
+                                {{ event.text | md | safe }}
                             </div>
                         </details>
                     </li>

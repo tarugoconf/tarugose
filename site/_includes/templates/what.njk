@@ -7,11 +7,11 @@
         </header>
 
         <div class="what-text">
-            {{ what.text | md | type | safe }}
+            {{ what.text | md | safe }}
         </div>
 
         <aside class="what-metrics">
-            {{ what.metrics | md | type | safe }}
+            {{ what.metrics | md | safe }}
         </aside>
 
         <ul class="what-descriptions">
@@ -19,7 +19,7 @@
             <li class="what-description">
                 {{ comp.img(item) }}
                 <strong>{{ item.title | safe }}</strong>
-                {{ item.text | md | type | safe }}
+                {{ item.text | md | safe }}
             </li>
         {% endfor %}
         </ul>
@@ -29,14 +29,14 @@
         </figure>
 
         <div class="what-subtext">
-            {{ what.subtext | md | type | safe }}
+            {{ what.subtext | md | safe }}
         </div>
 
         <ul class="what-features">
         {% for item in what.features %}
             <li>
                 {{ comp.img(item) }}
-                {{ item.title | md | type | safe }}
+                {{ item.title | md | safe }}
             </li>
         {% endfor %}
         </ul>

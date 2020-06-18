@@ -1,12 +1,13 @@
 .navbar {
     font: var(--font-normal-bold);
     display: flex;
-    padding: 1rem;
+    padding: 0 1rem;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 10;
     background: #070727;
+    height: 4.5rem;
 }
 .navbar-logo {
     margin-right: var(--column-gap);

@@ -18,14 +18,12 @@
     }
 
     &.is-secondary {
-        background: none;
-        color: var(--color-primary);
-        box-shadow: inset 0 0 0 2px var(--color-primary);
-        transition-property: box-shadow, color;
+        background: var(--color-smoke);
+        box-shadow: 0 1px 1px var(--color-dark-light);
 
         &:hover:not(:disabled) {
-            color: var(--color-white);
-            box-shadow: inset 0 0 0 2px var(--color-white);
+            background-color: var(--color-light);
+            box-shadow: 0 1px 20px var(--color-light);
         }
     }
 

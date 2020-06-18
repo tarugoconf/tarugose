@@ -5,6 +5,8 @@ description: |
   Todas los requisitos y ventajas que conlleva ser speaker de la Tarugoconf, la conferencia sobre diseño, construcción y comercialización de productos y servicios digitales más awesómica del mundo.
 
 menu:
+  - text: ← Volver
+    url: '/'
   - text: Las charlas
     url: '#las-charlas'
   - text: Beneficios
@@ -53,7 +55,7 @@ talks:
     Alrededor de <strong>1.000</strong> asistentes
 
   text: |
-    «Ningún discurso es demasiado corto». En la Tarugo creemos en las enseñanzas de los legendarios Kenneth Roman y Joel Raphaelson, por eso nuestras charlas «solo» duran 20 minutos. Eso sí, tenemos un turno de preguntas de 15 minutos -desarrollao en formato entrevista, sentado en un sofá, como en un *late night show*- que SIEMPRE se nos queda corto. ¡La interactuación con el público suele ser tan interesante como la charla en sí!
+    «Ningún discurso es demasiado corto». En la Tarugo creemos en las enseñanzas de los legendarios Kenneth Roman y Joel Raphaelson, por eso nuestras charlas «solo» duran 20 minutos. Eso sí, tenemos un turno de preguntas de 15 minutos —desarrollao en formato entrevista, sentado en un sofá, como en un *late night show*— que SIEMPRE se nos queda corto. ¡La interactuación con el público suele ser tan interesante como la charla en sí!
 
     No tendrás que competir con otro ponente. Hay un sólo track, así que **toda la atención del evento estará puesta en tu charla.**
 
@@ -280,7 +282,7 @@ resources:
               {{ item.quote | md | safe }}
             </blockquote>
             <figcaption>
-              <img src="{{ item.image }}">
+              <img src="{{ item.image | url }}">
               <p>
                 <cite>{{ item.name }}</cite><br>
                 {{ item.position }}
