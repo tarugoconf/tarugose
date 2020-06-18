@@ -13,10 +13,10 @@
 {% macro img(data, extra) %}
     {% if data.url %}
         <a href="{{ data.url }}" target="_blank">
-            <img {{ data | attr('src', 'alt', 'class') | safe }}>
+            <img src="{{ data.src | url }}" {{ [data, extra] | attr('alt', 'class') | safe }}>
         </a>
     {% else %}
-        <img {{ [data, extra] | attr('src', 'alt', 'class') | safe }}>
+        <img src="{{ data.src | url }}" {{ [data, extra] | attr('alt', 'class') | safe }}>
     {% endif %}
 {% endmacro %}
 
