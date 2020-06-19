@@ -3,7 +3,6 @@
 }
 .calendar-header {
     text-align: center;
-    margin-top: calc(var(--row-gap) * 2);
     
     & h2 {
         font: var(--font-big-bold);
