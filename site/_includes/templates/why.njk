@@ -1,3 +1,9 @@
+<div class="scene scene-satellite">
+    <div class="scene-figure">
+        {% include "assets/satellite.svg" %}
+    </div>
+</div>
+
 <section class="ly-section why" id="{{ why.id }}">
     <header class="why-header">
         <h2>{{ why.title }}</h2>
@@ -22,8 +28,8 @@
         {{ why.text | md | safe }}
     </div>
 
-    <div class="scene-paper">
-        <div class="scene-paper-cart">
+    <div class="scene scene-paper">
+        <div class="scene-figure">
             {% include "assets/paper.svg" %}
         </div>
     </div>

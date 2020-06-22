@@ -64,6 +64,10 @@
     &.is-main {
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
         text-align: left;
+
+        @media (max-width: 420px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     & + .partners-list {

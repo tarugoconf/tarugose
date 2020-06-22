@@ -5,6 +5,10 @@
 .video-ratio {
     position: relative;
     padding-bottom: 54%;
+    
+    & a {
+        color: transparent;
+    }
 
     & iframe {
         position: absolute;

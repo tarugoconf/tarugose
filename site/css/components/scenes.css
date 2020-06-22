@@ -1,221 +1,249 @@
-/* Moon Top */
-.scene-moonTop {
+.scene {
     width: 100%;
     grid-column: 1 / -1;
-    margin-top: 8vh;
-    margin-bottom: -1px;
-}
-.scene-moonTop-astronaut {
-    display: block;
-    margin: 0 auto calc(-60px - 3vw);
-    position: relative;
-    animation: scene-moonTop-astronaut 10s;
-    animation-fill-mode: both;
-    width: calc(100px + 2vw);
+    overflow: hidden;
 
     & svg {
-        width: 100%;
+        max-width: 100%;
         height: auto;
-        position: relative;
-        z-index: 2;
+        display: block;
+        margin: auto;
     }
 
-    &::after {
-        content: '';
+    & > .scene-figure {
         display: block;
-        width: 100px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: var(--color-primary);
-        margin: auto;
-        animation: scene-moonTop-astronaut-shadow 10s;
+        width: max-content;
+        margin: 0;
         animation-fill-mode: both;
     }
-}
-.scene-moonTop-background {
-    display: block;
-    width: 100%;
 
-    & svg {
+    & > .scene-tile {
+        display: block;
+        margin: 0;
+        animation-fill-mode: both;
+    }
+
+    & > .scene-background {
         display: block;
         width: 100%;
-        height: auto;
+        grid-column: 1 / -1;
+    }
+}
+
+/* Moon Top */
+.scene-moonTop {
+    margin-top: 8vh;
+    margin-bottom: -1px;
+    overflow: visible;
+
+    & > .scene-figure {
+        margin: 0 auto calc(-60px - 3vw);
+        position: relative;
+        animation-name: scene-moonTop-astronaut;
+        animation-duration: 10s;
+        max-width: calc(120px + 2vw);
+
+        & svg {
+            position: relative;
+            z-index: 2;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--color-primary);
+            margin: auto;
+            animation: scene-moonTop-astronaut-shadow 10s;
+            animation-fill-mode: both;
+        }
     }
 }
 
 /* Moon Bottom */
 .scene-moonBottom {
-    width: 100%;
-    grid-column: 1 / -1;
     margin-top: -5vw;
     margin-bottom: -10vw;
-}
-.scene-moonBottom-background {
-    display: block;
-    width: 100%;
-    transform: scaleY(-1);
 
-    & svg {
-        display: block;
-        width: 100%;
-        height: auto;
+    & > .scene-background {
+        transform: scaleY(-1);
     }
 }
 
 /* Plató */
 .scene-set {
     display: grid;
-    overflow: hidden;
-    position: relative;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    padding-bottom: 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 
-    & svg {
-        display: block;
-        width: 100%;
-        height: auto;
+    @media (min-width: 700px) {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
-    @media (max-width: 700px) {
-        grid-template-columns: 1fr 1fr;
+    @media (min-height: 650px) {
+        grid-template-rows: auto auto;
     }
 
-    @media (max-height: 650px) {
-        grid-template-rows: 1fr;
+    & > .is-guest {
+        grid-column: 1;
+        grid-row: 1;
+
+        @media (min-width: 700px) {
+            grid-column: 2;
+        }
+    }
+    & > .is-presenter {
+        grid-column: 2;
+        grid-row: 1;
+
+        @media (min-width: 700px) {
+            grid-column: 3;
+        }
+    }
+    & > .is-band {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        display: none;
+
+        @media (min-width: 700px) {
+            display: block;
+        }
+    }
+    & > .is-audience {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        display: none;
+
+        @media (min-height: 650px) {
+            display: block;
+        }
+    }
+    & > .is-presenter-bg {
+        grid-column: 2;
+        grid-row: 1;
+
+        @media (min-width: 700px) {
+            grid-column: 3;
+        }
+    }
+    & > .is-window-big {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        display: none;
+
+        @media (min-width: 700px) {
+            display: block;
+        }
+    }
+    & > .is-window-small {
+        grid-column: 1;
+        grid-row: 1;
+
+        @media (min-width: 700px) {
+            display: none;
+        }
+    }
+    & > .is-sofa {
+        grid-column: 1;
+        grid-row: 1;
+
+        @media (min-width: 700px) {
+            grid-column: 2;
+        }
     }
 }
-.scene-set-guest {
-    grid-column: 2;
-    grid-row: 1;
+
+
+/* Satélite */
+.scene-satellite {
+    padding: 80px 0;
+    margin-top: -120px;
+    margin-bottom: -80px;
+
+    & > .scene-figure {
+        max-width: 250px;
+        margin: auto;
+        animation-name: scene-satellite;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
 }
-.scene-set-presenter {
-    grid-column: 3;
-    grid-row: 1;
-}
-.scene-set-band {
-    grid-column: 1 / 3;
-    grid-row: 1;
-}
-.scene-set-audience {
-    grid-column: 1 / 4;
-    grid-row: 2;
-}
-.scene-set-presenter-bg {
-    grid-column: 3 / 4;
-    grid-row: 1;
-}
-.scene-set-window-big {
-    grid-column: 1 / 3;
-    grid-row: 1;
-}
-.scene-set-window-small {
-    grid-column: 2 / 3;
-    grid-row: 1;
-}
-.scene-set-sofa {
-    grid-column: 2 / 3;
-    grid-row: 1;
-}
+
 
 /* Papel hixiénico */
 .scene-paper {
-    width: 100%;
-    grid-column: 1 / -1;
     padding: 80px 0 40px 0;
-    position: relative;
-    overflow: hidden;
-}
+    margin-bottom: -80px;
 
-.scene-paper-cart {
-    display: block;
-    width: 200px;
-    margin: auto;
-    animation: scene-paper-cart 90s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-
-    & svg {
-        display: block;
-        width: 100%;
-        height: auto;
+    & > .scene-figure {
+        max-width: 200px;
+        margin: auto;
+        animation-name: scene-paper-cart;
+        animation-duration: 90s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
 }
 
-
-
-/* Spaceship */
+/* Nave Enterprise */
 .scene-spaceship {
-    width: 100%;
-    grid-column: 1 / -1;
-    margin-top: 5vh;
-    margin-bottom: 10vh;
-    text-align: center;
-}
-.scene-spaceship-enterprise {
-    animation: scene-spaceship-enterprise 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    display: inline-block;
+    padding-top: 5vh;
+    padding-bottom: 100px;
 
-    & svg {
-        display: block;
-        max-width: 100%;
-        width: 400px;
-        height: auto;
+    & > .scene-figure {
+        animation-name: scene-spaceship-enterprise;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        margin: auto;
+
+        & svg {
+            width: 400px;
+        }
     }
 }
-
-
 
 /* Sofa */
 .scene-sofa {
-    width: 100%;
-    grid-column: 1 / -1;
     margin-top: 10vw;
     margin-bottom: -1px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-}
-.scene-sofa-background {
-    grid-column: 1;
-    grid-row: 1;
-    width: 100%;
-    margin-bottom: -1px;
 
-    & svg {
-        display: block;
-        width: 100%;
-        height: auto;
+    & > .scene-background {
+        margin-bottom: -1px;
+    }
+
+    & > .is-logo {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: end;
+
+        & svg {
+            width: 500px;
+            max-width: 60vw;
+        }
+    }
+    & > .is-people {
+        background-color: var(--color-skyline);
+        grid-column: 1;
+        grid-row: 2;
+        align-self: end;
     }
 }
-.scene-sofa-logo {
-    grid-column: 1;
-    grid-row: 2;
-    margin-bottom: 100px;
-    align-self: end;
 
-    & svg {
-        display: block;
-        width: 500px;
-        height: auto;
-        max-width: 90vw;
-        margin: auto;
+@keyframes scene-satellite {
+    from {
+        transform: translateX(-250px) rotate(60deg);
     }
-}
-.scene-sofa-people {
-    background-color: var(--color-skyline);
-    display: block;
-    grid-column: 1;
-    grid-row: 2;
-    align-self: end;
-
-    & svg {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin: auto;
+    to {
+        transform: translateX(250px) rotate(-60deg);
     }
 }
 
