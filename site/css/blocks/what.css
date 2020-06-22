@@ -58,6 +58,10 @@
         font-weight: inherit;
         color: var(--color-dark);
     }
+
+    @media (max-width: 800px) {
+        text-align: center;
+    }
 }
 
 .what-descriptions {
@@ -73,7 +77,7 @@
     grid-template-columns: minmax(200px, 250px);
     margin: var(--row-gap) 0;
 
-    @media (min-width: 600px) {
+    @media (min-width: 500px) {
         grid-template-columns: repeat(2, minmax(200px, 250px));
     }
 
@@ -87,7 +91,7 @@
         display: block;
         margin: 10px auto;
         max-width: 100%;
-        width: 200px;
+        width: 150px;
     }
 
     & > strong {

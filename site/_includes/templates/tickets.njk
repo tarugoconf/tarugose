@@ -1,6 +1,12 @@
 {% import "components.njk" as comp %}
 
 <section class="ly-section tickets" id="{{ tickets.id }}">
+    <div class="scene-spaceship" role="presentation">
+        <span class="scene-spaceship-enterprise">
+            {% include "assets/spaceship.svg" %}
+        </span>
+    </div>
+    
     <header class="tickets-header">
         <h2>{{ tickets.title }}</h2>
     </header>
