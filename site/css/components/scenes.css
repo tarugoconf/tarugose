@@ -79,6 +79,9 @@
     grid-template-rows: 1fr;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media (min-width: 700px) {
         grid-template-columns: 1fr 1fr 1fr;
@@ -120,6 +123,8 @@
 
         @media (min-height: 650px) {
             display: block;
+            transform: translateY(var(--top, 0));
+            will-change: transform;
         }
     }
     & > .is-presenter-bg {
@@ -224,10 +229,13 @@
         grid-column: 1;
         grid-row: 2;
         align-self: end;
+        margin-bottom: 80px;
 
         & svg {
             width: 500px;
             max-width: 60vw;
+            transform: translateY(var(--top-sofa, 0));
+            will-change: transform;
         }
     }
     & > .is-people {
@@ -235,6 +243,11 @@
         grid-column: 1;
         grid-row: 2;
         align-self: end;
+
+        & svg {
+            transform: translateY(var(--top-people, 0));
+            will-change: transform;
+        }
     }
 }
 

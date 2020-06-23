@@ -7,7 +7,7 @@
     "build": "rm -rf dist && concurrently npm:build:deps npm:build:site npm:build:css",
     "build:site": "eleventy",
     "build:css": "postcss ./site/css/styles.css -o dist/css/styles.css",
-    "build:deps": "browser-assets particles.js @oom/carousel dialog-polyfill --dest=dist/vendors",
+    "build:deps": "browser-assets particles.js @oom/carousel dialog-polyfill basicscroll --dest=dist/vendors",
     "prettier": "prettier config/** ./*.js .eleventy.js site/**/*.{md,js,css} --write"
   },
   "devDependencies": {
@@ -28,7 +28,8 @@
     "postcss-preset-env": "^6.7.0",
     "postcss-url": "^8.0.0",
     "prettier": "^2.0.5",
-    "template-filters": "^0.2.0"
+    "template-filters": "^0.2.0",
+    "basicscroll": "^3.0.3"
   },
   "prettier": {
     "tabWidth": 4,

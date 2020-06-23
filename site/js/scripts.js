@@ -9,3 +9,7 @@ if (document.querySelector('.js-calendar')) {
 if (document.querySelector('tarugo-carousel')) {
     import('./carousel.js');
 }
+
+if (document.querySelector('.js-parallax')) {
+    import('./parallax.js');
+}
