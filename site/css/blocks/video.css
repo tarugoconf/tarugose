@@ -4,7 +4,8 @@
 }
 .video-ratio {
     position: relative;
-    padding-bottom: 54%;
+    padding-bottom: 53%;
+    background-color: var(--color-gray-xlight);
     
     & a {
         color: transparent;
@@ -16,15 +17,10 @@
         height: 100%;
         top: 0;
         left: 0;
-        background-color: var(--color-black);
     }
 }
 .body-home .video {
     background-color: var(--color-white);
     margin-top: -5vw;
     padding-bottom: 10vh;
-
-    & iframe {
-        background-color: var(--color-white);
-    }
 }
