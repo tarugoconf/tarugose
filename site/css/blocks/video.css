@@ -5,7 +5,6 @@
 .video-ratio {
     position: relative;
     padding-bottom: 53%;
-    background-color: #0002;
     
     & a {
         color: transparent;

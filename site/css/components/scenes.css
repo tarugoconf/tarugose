@@ -243,6 +243,7 @@
             transform: translateY(var(--top-people, 0));
             will-change: transform;
             max-width: 800px;
+            width: 100%;
         }
     }
 }
