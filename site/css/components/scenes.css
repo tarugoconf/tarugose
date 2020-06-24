@@ -233,20 +233,7 @@
         margin-bottom: -1px;
     }
 
-    & > .is-logo {
-        grid-column: 1;
-        grid-row: 2;
-        align-self: end;
-        margin-bottom: 80px;
-
-        & svg {
-            width: 500px;
-            max-width: 60vw;
-            transform: translateY(var(--top-sofa, 0));
-            will-change: transform;
-        }
-    }
-    & > .is-people {
+    & > .scene-tile {
         background-color: var(--color-skyline);
         grid-column: 1;
         grid-row: 2;
@@ -255,6 +242,7 @@
         & svg {
             transform: translateY(var(--top-people, 0));
             will-change: transform;
+            max-width: 800px;
         }
     }
 }
