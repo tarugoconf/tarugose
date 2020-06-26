@@ -6,4 +6,3 @@ document.querySelectorAll('.js-parallax').forEach(element => {
     scroll.observe(element)
 })
 
-scroll.init();
