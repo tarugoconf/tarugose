@@ -1,16 +1,9 @@
-import '../vendors/basicscroll/dist/basicScroll.min.js';
+import Scroll from '../vendors/@oom/scroll-styles/scroll.js';
+
+const scroll = new Scroll();
 
 document.querySelectorAll('.js-parallax').forEach(element => {
-    const prop = element.dataset.prop;
-    const from = element.dataset.from;
-    const to = element.dataset.to;
-    
-    basicScroll.create({
-        elem: element,
-        from: 'top-bottom',
-        to: 'top-top',
-        props: {
-            [prop]: { from, to }
-        }
-    }).start()
+    scroll.observe(element)
 })
+
+scroll.init();
