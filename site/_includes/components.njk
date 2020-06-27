@@ -1,5 +1,5 @@
 {% macro link(data) %}
-    <a href="{{ data.url | url }}" {{ data | attr('class') | safe }}>
+    <a href="{{ data.url | url }}" {{ data | attr('class', 'rel') | safe }}>
         {% if data.icon %}
             <span class="icon">
                 {% include "assets/" + data.icon + ".svg" %}
@@ -12,7 +12,7 @@
 
 {% macro img(data, extra) %}
     {% if data.url %}
-        <a href="{{ data.url }}" target="_blank">
+        <a href="{{ data.url }}" target="_blank" rel="noopener">
             <img src="{{ data.src | url }}" {{ [data, extra] | attr('alt', 'class') | safe }}>
         </a>
     {% else %}
@@ -22,7 +22,7 @@
 
 {% macro icon(type, data, class) %}
     {% if data.url %}
-    <a href="{{ data.url }}" class="{{ ['icon', class, data.class] | class }}" title="{{ data.title }}">
+    <a href="{{ data.url }}" class="{{ ['icon', class, data.class] | class }}" title="{{ data.title }}" rel="noopener">
         {% include "assets/" + type + ".svg" %}
     </a>
     {% else %}
