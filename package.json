@@ -7,7 +7,7 @@
     "build": "rm -rf dist && concurrently npm:build:deps npm:build:site npm:build:css",
     "build:site": "eleventy",
     "build:css": "postcss ./site/css/styles.css -o dist/css/styles.css",
-    "build:deps": "browser-assets @oom/particles @oom/carousel dialog-polyfill @oom/scroll-styles --dest=dist/vendors",
+    "build:deps": "browser-assets @oom/particles @oom/carousel dialog-polyfill @oom/scroll-styles @vimeo/player --dest=dist/vendors",
     "prettier": "prettier config/** ./*.js .eleventy.js site/**/*.{md,js,css} --write"
   },
   "devDependencies": {
@@ -17,6 +17,7 @@
     "@oom/carousel": "^4.0.0",
     "@oom/particles": "^0.1.2",
     "@oom/scroll-styles": "^0.2.0",
+    "@vimeo/player": "^2.12.0",
     "browser-assets": "^1.6.1",
     "concurrently": "^5.2.0",
     "date-fns": "^2.12.0",

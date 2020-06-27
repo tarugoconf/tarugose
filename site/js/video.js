@@ -1,7 +1,9 @@
+import Player from '../vendors/@vimeo/player/player.es.js';
+
 //Vimeo player
 document.querySelectorAll('.video-ratio').forEach(
     (el) =>
-        new Vimeo.Player('video', {
+        new Player('video', {
             id: el.dataset.id,
             title: false,
             byline: false,
