@@ -15,7 +15,7 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "@oom/carousel": "^4.0.0",
-    "@oom/particles": "^0.1.1",
+    "@oom/particles": "^0.1.2",
     "@oom/scroll-styles": "^0.2.0",
     "browser-assets": "^1.6.1",
     "concurrently": "^5.2.0",
