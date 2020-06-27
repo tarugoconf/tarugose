@@ -13,3 +13,7 @@ if (document.querySelector('tarugo-carousel')) {
 if (document.querySelector('.js-parallax')) {
     import('./parallax.js');
 }
+
+if (document.querySelector('.js-space')) {
+    import('./space.js');
+}
