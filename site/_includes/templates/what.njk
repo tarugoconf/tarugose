@@ -25,7 +25,7 @@
         </ul>
 
         <div class="what-subtext">
-            <h2 class="what-subtext-title">{{ what.subtitle | safe }}</h2>
+            <h2 class="what-subtext-title">{{ what.subtitle | md(true) | safe }}</h2>
 
             <div class="what-subtext-intro">
             {{ what.subintro | md | safe }}

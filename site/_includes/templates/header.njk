@@ -2,7 +2,7 @@
     {% include "assets/logo.svg" %}
 
     <h1 class="header-title">{{ header.title }}</h1>
-    <p class="header-subtitle">{{ header.subtitle | safe }}</p>
+    <p class="header-subtitle">{{ header.subtitle | md(true) | trim | safe }}</p>
 
     <div class="scene scene-moonTop" role="presentation">
         <span class="scene-figure">

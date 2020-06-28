@@ -1,15 +1,18 @@
+// Markdown
+const markdown = require('./config/markdown');
+
 module.exports = function (config) {
     // Layouts
     config.addLayoutAlias('default', 'layouts/base.njk');
 
     // Filters
     config.addFilter('dateFormat', require('./config/filters/date.js'));
-    config.addFilter('md', require('./config/filters/markdown.js'));
+    config.addFilter('md', require('template-filters/markdown')(markdown));
     config.addFilter('attr', require('template-filters/attributes'));
     config.addFilter('class', require('template-filters/className'));
 
     // Libs
-    config.setLibrary('md', require('./config/markdown'));
+    config.setLibrary('md', markdown);
 
     // Copy dirs
     config.addPassthroughCopy('site/img');

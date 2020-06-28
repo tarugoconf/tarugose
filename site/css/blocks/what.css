@@ -157,8 +157,9 @@
     letter-spacing: var(--font-spacing-big);
     text-align: center;
 
-    & del {
+    & s {
         color: var(--color-shadow);
+        text-decoration: line-through;
         text-decoration-color: var(--color-dark);
     }
 }
