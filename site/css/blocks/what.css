@@ -14,9 +14,9 @@
                          'text'
                          'metrics'
                          'descriptions'
-                         'sub-image'
                          'sub-text'
-                         'features';
+                         'features'
+                         'sub-image';
 
     @media (min-width: 850px) {
         grid-template-columns: 1fr 24rem;
@@ -24,8 +24,8 @@
                              'text metrics'
                              'descriptions descriptions'
                              'sub-text sub-text'
-                             'sub-image sub-image'
-                             'features features';
+                             'features features'
+                             'sub-image sub-image';
     }
 }
 
@@ -40,6 +40,15 @@
 }
 .what-text {
     grid-area: text;
+
+    & a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: none;
+            color: var(--color-smoke);
+        }
+    }
 }
 .what-metrics {
     grid-area: metrics;

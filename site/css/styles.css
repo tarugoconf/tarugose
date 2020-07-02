@@ -7,6 +7,8 @@
 @import 'layouts.css';
 @import 'about.css';
 
+@import 'scenes.css';
+
 /* Blocks (home) */
 @import 'blocks/navbar.css';
 @import 'blocks/header.css';
@@ -33,6 +35,5 @@
 /* Components */
 @import 'components/button.css';
 @import 'components/icon.css';
-@import 'components/scenes.css';
 @import 'components/logo.css';
 @import 'components/space.css';
