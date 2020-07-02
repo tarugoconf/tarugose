@@ -2,9 +2,9 @@
 title: Juanjo Montiel
 company: Pasiona Consulting
 position: Senior Developer
-
 image:
     src: /img/speakers/juanjo-montiel.jpeg
+    thumbnail: /img/speakers/juanjo-montiel-thumbnail.jpeg
     alt: Juanjo Montiel
 
 links:

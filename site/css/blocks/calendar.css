@@ -23,6 +23,7 @@
     display: grid;
     grid-template-columns: minmax(300px, 900px);
     justify-content: center;
+    align-items: start;
 
     & > li {
         grid-column: 1;
@@ -144,6 +145,15 @@
     & strong {
         display: block;
         font: var(--font-normal-bold);
+    }
+
+    & img {
+        width: 20px;
+        height: 20px;
+        margin-left: 1em;
+        border-radius: 2px;
+        object-fit: cover;
+        float: right;
     }
 }
 .calendar-event-text {
