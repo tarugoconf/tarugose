@@ -1,7 +1,7 @@
 ---
 title: Grace Hopper
-company: Pinsent Masons
-position: Strategy Lead
+company: Armada de los EEUU
+position: Contralmirante
 
 image:
     src: /img/speakers/grace-hopper.jpg
@@ -16,8 +16,8 @@ links:
       icon: linkedin
       url: 'https://es.wikipedia.org/wiki/Grace_Murray_Hopper'
 
-    - text: 'pinsentmasons.com'
-      url: 'https://pinsentmasons.com'
+    - text: 'navy.mil'
+      url: 'https://www.navy.mil/'
 
 calendar:
     - day: Jueves 22 - 22:30h
