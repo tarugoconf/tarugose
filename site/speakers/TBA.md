@@ -8,17 +8,13 @@ image:
     alt: TBA
 
 links:
-    - text: '@Martixx'
+    - text: '@tarugoconf'
       icon: twitter
-      url: 'https://twitter.com/Martixx'    
+      url: 'https://twitter.com/tarugoconf'
+      
+    - text: 'tarugoconf.com'
+      url: 'https://www.tarugoconf.com/'
 
-calendar:
-    - day: Viernes 23 - 20:35h
-      title: 'Ciberseguridad en medio de una hecatombe zombie'
-    - day: Sábado 24 - 20:35h
-      title: 'Replay: Ciberseguridad en medio de una hecatombe zombie'
 ---
 
-Ex-administradora de sistemas y analista de seguridad. Lee logs, libros y PCAPs, no necesariamente por ese orden.
-
-Un día se sacó el CEH pero en lugar de darle un papelito le dieron un PDF. Otro día le llamó la Guardia Civil y no fue para ponerle una multa sino para pedirle que fuera mentora en la National Cyberleague.
+¡Aún tenemos muchos ponentes que confirmar y sorpresas que desvelar! No dejéis de visitar la agenda para estar al día de las últimas novedades y siguenos en Tuitar (<a href="https://twitter.com/tarugoconf" target="_blank">@tarugoconf</a>)para no perderte ninguna información relevante del evento.
