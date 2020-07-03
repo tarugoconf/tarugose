@@ -2,6 +2,7 @@
 title: Juanjo Montiel
 company: Pasiona Consulting
 position: Senior Developer
+date: 2020-06-29
 image:
     src: /img/speakers/juanjo-montiel.jpeg
     thumbnail: /img/speakers/juanjo-montiel-thumbnail.jpg

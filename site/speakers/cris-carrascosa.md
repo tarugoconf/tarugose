@@ -2,6 +2,7 @@
 title: Cris Carrascosa
 company: Pinsent Masons
 position: Blockchain Head of Practice
+date: 2020-06-28
 image:
     src: /img/speakers/cris-carrascosa.jpg
     thumbnail: /img/speakers/cris-carrascosa-thumbnail.jpg
