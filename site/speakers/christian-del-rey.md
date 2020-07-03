@@ -15,11 +15,6 @@ links:
     - text: 'estetica-dental.com'
       url: 'http://www.estetica-dental.com/'       
 
-calendar:
-    - day: Viernes 23 - 19:20h
-      title: 'La tecnología (y el bisnes) detrás de un empaste'
-    - day: Sábado 24 - 19:20h
-      title: 'La tecnología (y el bisnes) detrás de un empaste'
 ---
 
 Dentista con más de 20 años de experiencia especializado en odontología microscópica. Coordinador de grupo en Dentistas sin Fronteras de los proyectos de India 2012 y República Dominicana 2015. Conferenciante nacional e internacional sobre odontología microscópica. Speaker para la empresa ZEISS y usuario CEREC desde 2014

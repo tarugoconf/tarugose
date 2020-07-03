@@ -18,12 +18,6 @@ links:
 
     - text: 'kastwey.org'
       url: 'http://www.kastwey.org/'
-
-calendar:
-    - day: Viernes 23 - 18:35h
-      title: 'Lo veo todo negro'
-    - day: Sábado 24 - 18:35h
-      title: 'Replay: Lo veo todo negro'
 ---
 
 Desarrollador de software invidente con más de diez años de experiencia creando aplicaciones accesibles tanto web como de escritorio. Programador .net/c#. Desde 2017, forma parte del programa Microsoft MVP (Visual Studio & development technologies).

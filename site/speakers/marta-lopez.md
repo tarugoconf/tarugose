@@ -10,13 +10,7 @@ image:
 links:
     - text: '@Martixx'
       icon: twitter
-      url: 'https://twitter.com/Martixx'    
-
-calendar:
-    - day: Viernes 23 - 20:35h
-      title: 'Ciberseguridad en medio de una hecatombe zombie'
-    - day: Sábado 24 - 20:35h
-      title: 'Replay: Ciberseguridad en medio de una hecatombe zombie'
+      url: 'https://twitter.com/Martixx'
 ---
 
 Ex-administradora de sistemas y analista de seguridad. Lee logs, libros y PCAPs, no necesariamente por ese orden.
