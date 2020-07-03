@@ -23,7 +23,6 @@
     display: grid;
     grid-template-columns: minmax(300px, 900px);
     justify-content: center;
-    align-items: start;
 
     & > li {
         grid-column: 1;
@@ -141,10 +140,11 @@
 .calendar-event-header {
     font: var(--font-small);
     padding: 1em;
+    cursor: pointer;
 
     & strong {
         display: block;
-        font: var(--font-normal-bold);
+        font: var(--font-small-bold);
     }
 
     & img {

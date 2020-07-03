@@ -46,7 +46,7 @@
 
         &:hover {
             text-decoration: none;
-            color: var(--color-smoke);
+            color: var(--color-dark-light);
         }
     }
 }
