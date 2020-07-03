@@ -10,7 +10,11 @@ image:
 links:
     - text: '@david_bonilla'
       icon: twitter
-      url: 'https://twitter.com/david_bonilla'    
+      url: 'https://twitter.com/david_bonilla'
+
+    - text: 'David Bonilla Fuertes'
+      icon: linkedin
+      url: 'https://www.linkedin.com/in/dbonillaf/'    
 
 calendar:
     - day: Viernes 23 - 20:35h

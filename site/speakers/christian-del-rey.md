@@ -1,24 +1,27 @@
 ---
 title: Christian del Rey
-company: Entelgy Innotec Security
-position: Analista de Seguridad 
+company: Clínica del Rey
+position: Odontólogo
 image:
     src: /img/speakers/christian-del-rey.jpg
-    thumbnail: /img/speakers/christian-del-rey.jpg
+    thumbnail: /img/speakers/christian-del-rey-thumbnail.jpg
     alt: Christian del Rey
 
 links:
-    - text: '@Martixx'
-      icon: twitter
-      url: 'https://twitter.com/Martixx'    
+    - text: 'Christian del Rey Schnitzler'
+      icon: linkedin
+      url: 'https://www.linkedin.com/in/christian-del-rey-schnitzler-11920148/'
+      
+    - text: 'estetica-dental.com'
+      url: 'http://www.estetica-dental.com/'       
 
 calendar:
-    - day: Viernes 23 - 20:35h
-      title: 'Ciberseguridad en medio de una hecatombe zombie'
-    - day: Sábado 24 - 20:35h
-      title: 'Replay: Ciberseguridad en medio de una hecatombe zombie'
+    - day: Viernes 23 - 19:20h
+      title: 'La tecnología (y el bisnes) detrás de un empaste'
+    - day: Sábado 24 - 19:20h
+      title: 'La tecnología (y el bisnes) detrás de un empaste'
 ---
 
-Ex-administradora de sistemas y analista de seguridad. Lee logs, libros y PCAPs, no necesariamente por ese orden.
+Dentista con más de 20 años de experiencia especializado en odontología microscópica. Coordinador de grupo en Dentistas sin Fronteras de los proyectos de India 2012 y República Dominicana 2015. Conferenciante nacional e internacional sobre odontología microscópica. Speaker para la empresa ZEISS y usuario CEREC desde 2014
 
-Un día se sacó el CEH pero en lugar de darle un papelito le dieron un PDF. Otro día le llamó la Guardia Civil y no fue para ponerle una multa sino para pedirle que fuera mentora en la National Cyberleague.
+Master of Fine Arts. Especialidad Multimedia Interactiva y Animación por ordenador. Especialidad de diseño gráfico y Comunicación Corporativa. Licenciado en Odontología por la Universidad Complutense de Madrid. Experto Universitario en Odontología Conservadora y Endodoncia por la Universidad de Sevilla. Postgrado en Endodoncia Clínica y Microscópica.
