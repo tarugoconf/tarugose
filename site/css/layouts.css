@@ -1,6 +1,6 @@
 .ly-section {
     display: grid;
-    grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+    grid-template-columns: 1fr minmax(0, 1200px) 1fr;
     grid-column-gap: var(--column-gap);
     box-sizing: border-box;
 

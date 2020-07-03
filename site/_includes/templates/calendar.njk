@@ -1,3 +1,5 @@
+{% import "components.njk" as comp %}
+
 <section class="ly-section calendar" id="{{ calendar.id }}">
     <header class="calendar-header">
         <h2>{{ calendar.title }}</h2>
@@ -19,7 +21,14 @@
                         <details class="calendar-event">
                             <summary class="calendar-event-header">
                                 {{ event.hour }}
-                                {{ event.speakers }}
+
+                                {% if event.speakers %}
+                                {% for speaker in collections.speakers %}
+                                    {% if speaker.fileSlug == event.speakers %}
+                                    <img src="{{ speaker.data.image.thumbnail | url }}" alt="{{ speaker.data.image.alt }}">
+                                    {% endif %}
+                                {% endfor %}
+                                {% endif %}
 
                                 <strong>{{ event.title }}</strong>
                             </summary>

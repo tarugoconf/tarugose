@@ -138,10 +138,11 @@
         grid-row: 2;
         display: none;
 
-        @media (min-height: 650px) {
+        @media (min-height: 650px) and (min-width: 500px)  {
             display: block;
-            transform: translateY(calc(var(--scale, 0) * -150px));
+            transform: translateY(calc(20px + (var(--scale, 0) * -100px)));
             will-change: transform;
+            margin-bottom: -100px;
         }
     }
     & > .is-audience-2 {
@@ -149,10 +150,11 @@
         grid-row: 2;
         display: none;
 
-        @media (min-height: 650px) {
+        @media (min-height: 650px) and (min-width: 500px) {
             display: block;
-            transform: translateY(calc(150px + var(--scale, 0) * -300px));
+            transform: translateY(calc(20px + (var(--scale, 0) * -125px)));
             will-change: transform;
+            margin-bottom: -100px;
         }
     }
     & > .is-presenter-bg {
@@ -275,19 +277,19 @@
 
 @keyframes scene-satellite {
     from {
-        transform: translateX(-250px) rotate(60deg);
+        transform: translateX(-20vw) rotate(60deg);
     }
     to {
-        transform: translateX(250px) rotate(-60deg);
+        transform: translateX(20vw) rotate(-60deg);
     }
 }
 
 @keyframes scene-paper-cart {
     from {
-        transform: translate(-500px, 20px) rotate(60deg);
+        transform: translate(-25vw, 20px) rotate(60deg);
     }
     to {
-        transform: translate(500px, -20px) rotate(-360deg);
+        transform: translate(25vw, -20px) rotate(-360deg);
     }
 }
 
