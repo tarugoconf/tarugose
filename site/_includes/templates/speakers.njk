@@ -47,12 +47,14 @@
                     <ul class="speaker-calendar">
                         {% for day in calendar.days %}
                         {% for event in day.events %}
-                            {% if event.speakers === speaker.fileSlug %}
+                        {% for id in event.speakers %}
+                            {% if id === speaker.fileSlug %}
                                 <li>
                                     <time>{{ day.title }} - {{ event.hour }}</time>
                                     <strong>{{ event.title }}</strong>
                                 </li>
                             {% endif %}
+                        {% endfor %}
                         {% endfor %}
                         {% endfor %}
                     </ul>

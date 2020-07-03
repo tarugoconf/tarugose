@@ -11,13 +11,11 @@ links:
     - text: '@javisantana'
       icon: twitter
       url: 'https://twitter.com/javisantana'
-      
-links:
+
     - text: 'Javier Santana'
       icon: linkedin
       url: 'https://www.linkedin.com/in/javisantana/'
-      
-links:
+
     - text: 'javisantana.com'      
       url: 'http://javisantana.com/' 
 

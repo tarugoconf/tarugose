@@ -22,13 +22,13 @@
                             <summary class="calendar-event-header">
                                 {{ event.hour }}
 
-                                {% if event.speakers %}
+                                {% for id in event.speakers %}
                                 {% for speaker in collections.speakers %}
-                                    {% if speaker.fileSlug == event.speakers %}
+                                    {% if speaker.fileSlug == id %}
                                     <img src="{{ speaker.data.image.thumbnail | url }}" alt="{{ speaker.data.image.alt }}">
                                     {% endif %}
                                 {% endfor %}
-                                {% endif %}
+                                {% endfor %}
 
                                 <strong>{{ event.title }}</strong>
                             </summary>
