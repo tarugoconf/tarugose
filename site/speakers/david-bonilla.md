@@ -17,12 +17,8 @@ links:
       url: 'https://www.linkedin.com/in/dbonillaf/'    
 
 calendar:
-    - day: Viernes 23 - 20:35h
-      title: 'Ciberseguridad en medio de una hecatombe zombie'
-    - day: Sábado 24 - 20:35h
-      title: 'Replay: Ciberseguridad en medio de una hecatombe zombie'
+    - day: Viernes 23 - 16:00h
+      title: 'Keynote'
 ---
 
-Ex-administradora de sistemas y analista de seguridad. Lee logs, libros y PCAPs, no necesariamente por ese orden.
-
-Un día se sacó el CEH pero en lugar de darle un papelito le dieron un PDF. Otro día le llamó la Guardia Civil y no fue para ponerle una multa sino para pedirle que fuera mentora en la National Cyberleague.
+Autor de la Bonilista, la lista de correo sobre 'temas interesantes para personas relevantes' de la que nace la Tarugoconf. Rico heredero del imperio churreropatatístico <a href="https://www.bonillaalavista.com/" target="_blank">Bonilla a la Vista</a>. Se enfrentó a su familia y al destino para dedicarse a su vocación y pasión: la informática. No es muy brillante, pero sí insistente. Rocoso. Emprendedor en serie, ha vendido dos startups y ha ganado dinero con una de ellas.</br></br>Ultimamente <b>se dedica a intentar cambiar el recruiting técnico</b> en <a href="https://www.getmanfred.com/" target="_blank">Manfred</a>, una Agencia de Talento donde encuentran empleo a personas que no buscan empleo. 
