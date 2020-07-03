@@ -107,6 +107,15 @@
 .speaker-bio {
     font: var(--font-small);
     grid-area: bio;
+
+    & a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: none;
+            color: var(--color-dark-light);
+        }
+    }
 }
 .speaker-calendar {
     list-style: none;

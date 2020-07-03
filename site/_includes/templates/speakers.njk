@@ -45,11 +45,15 @@
                     </address>
 
                     <ul class="speaker-calendar">
-                        {% for event in speaker.data.calendar %}
-                            <li>
-                                <time>{{ event.day }}</time>
-                                <strong>{{ event.title }}</strong>
-                            </li>
+                        {% for day in calendar.days %}
+                        {% for event in day.events %}
+                            {% if event.speakers === speaker.fileSlug %}
+                                <li>
+                                    <time>{{ day.title }} - {{ event.hour }}</time>
+                                    <strong>{{ event.title }}</strong>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
                         {% endfor %}
                     </ul>
 
