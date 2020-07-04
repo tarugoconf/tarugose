@@ -6,7 +6,7 @@ title: Código de Conducta
 # Código de Conducta
 
 
- Más allá de un evento online, la Tarugoconf pretende ser **una experiencia agradable para todos los asistentes**, independientemente de su planeta de origen, género, orientación sexual, apariencia física, raza o religión.
+Más allá de un evento online, la Tarugoconf pretende ser **una experiencia agradable para todos los asistentes**, independientemente de su planeta de origen, género, orientación sexual, apariencia física, raza o religión.
 
 Para conseguirlo, te rogamos que seas amable con los otros asistentes. No les avasayes en el chat del evento ni tampoco les pongas en una situación incómoda, sobre todo en los 1:1. Aunque esto sea más parecido a una reunión de amigos que a una conferencia técnica, por favor, compórtarte como si te estuvieran viendo tus padres.
 

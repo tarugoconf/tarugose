@@ -8,7 +8,7 @@
         <summary>{{ faq.question }}</summary>
 
         <div class="faq-answer">
-            {{ faq.answer }}
+            {{ faq.answer | md | safe }}
         </div>
     </details>
     {% endfor %}

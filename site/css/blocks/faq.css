@@ -51,6 +51,15 @@
 .faq-answer {
     font: var(--font-normal);
     padding-bottom: calc(var(--row-gap) / 2);
+
+    & a {
+        color: inherit;
+
+        &:hover {
+            color: var(--color-dark-light);
+            text-decoration: none;
+        }
+    }
 }
 .faq-question > summary,
 .faq-answer {

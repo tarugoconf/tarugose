@@ -25,7 +25,7 @@
                                 {% for id in event.speakers %}
                                 {% for speaker in collections.speakers %}
                                     {% if speaker.fileSlug == id %}
-                                    <img src="{{ speaker.data.image.thumbnail | url }}" alt="{{ speaker.data.image.alt }}">
+                                    <img src="{{ speaker.data.image.thumbnail | url }}" alt="{{ speaker.data.image.alt }}" data-target="dialog-{{ id }}" class="js-openDialog" title="{{ speaker.data.title }}">
                                     {% endif %}
                                 {% endfor %}
                                 {% endfor %}
