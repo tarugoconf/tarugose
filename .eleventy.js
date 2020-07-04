@@ -1,5 +1,6 @@
 // Markdown
 const markdown = require('./config/markdown');
+const yaml = require('js-yaml');
 
 module.exports = function (config) {
     // Layouts
@@ -13,6 +14,9 @@ module.exports = function (config) {
 
     // Libs
     config.setLibrary('md', markdown);
+
+    // Data extensions
+    config.addDataExtension('yaml', contents => yaml.safeLoad(contents));
 
     // Copy dirs
     config.addPassthroughCopy('site/img');

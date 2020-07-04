@@ -36,5 +36,8 @@
     "tabWidth": 4,
     "printWidth": 130,
     "singleQuote": true
+  },
+  "dependencies": {
+    "js-yaml": "^3.14.0"
   }
 }

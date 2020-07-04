@@ -141,6 +141,7 @@
     font: var(--font-small);
     padding: 1em;
     cursor: pointer;
+    outline: 0;
 
     & strong {
         display: block;
@@ -150,15 +151,30 @@
     & img {
         width: 20px;
         height: 20px;
-        margin-left: 1em;
+        margin: 0 0 5px 5px;
         border-radius: 2px;
         object-fit: cover;
         float: right;
+        transition: box-shadow var(--duration), transform var(--duration);
+
+        &:hover {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            transform: scale(1.5, 1.5);
+        }
     }
 }
 .calendar-event-text {
-    padding: 1em;
+    padding: 0 1em 1em;
     font: var(--font-small);
+
+    & a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: none;
+            color: var(--color-dark-light);
+        }
+    }
 }
 .calendar-buttons {
     display: flex;

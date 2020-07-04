@@ -24,7 +24,7 @@
                 </address>
             </article>
 
-            <dialog class="speaker-modal">
+            <dialog class="speaker-modal" id="dialog-{{ speaker.fileSlug }}">
                 <button class="js-closeDialog speaker-modal-close">Cerrar</button>
                 
                 <div class="speaker-modal-content">
@@ -50,8 +50,14 @@
                         {% for id in event.speakers %}
                             {% if id === speaker.fileSlug %}
                                 <li>
-                                    <time>{{ day.title }} - {{ event.hour }}</time>
-                                    <strong>{{ event.title }}</strong>
+                                    <details>
+                                        <summary>
+                                            <time>{{ day.title }} - {{ event.hour }}</time>
+                                            <strong>{{ event.title }}</strong>
+                                        </summary>
+
+                                        {{ event.text | md | safe }}
+                                    </details>
                                 </li>
                             {% endif %}
                         {% endfor %}

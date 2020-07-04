@@ -9,10 +9,13 @@ document.querySelectorAll('dialog').forEach((dialog) => {
 });
 
 document.querySelectorAll('.js-openDialog').forEach((element) =>
-    element.addEventListener('click', () => {
-        const dialog = element.nextElementSibling;
+    element.addEventListener('click', (event) => {
+        const dialog = element.dataset.target
+            ? document.getElementById(element.dataset.target)
+            : element.nextElementSibling;
         blockScroll();
         dialog.showModal();
+        event.preventDefault();
     })
 );
 
