@@ -17,7 +17,7 @@
 
                 <ul>
                     {% for event in day.events %}
-                    <li>
+                    <li class="{{ {"has-separator": event.separator} | class }}">
                         <details class="calendar-event">
                             <summary class="calendar-event-header">
                                 {{ event.hour }}

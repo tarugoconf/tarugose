@@ -125,7 +125,7 @@
         box-shadow: 0 2px 5px #0003;
     }
     & li:nth-child(even) {
-        background: var(--color-gray-alpha);
+        background: var(--color-gray-xxlight);
     }
 }
 
@@ -135,6 +135,9 @@
     @media (max-width: 850px) {
         opacity: 0;
     }
+}
+.calendar-day li.has-separator {
+    border-top: solid 4px var(--color-dark);
 }
 
 .calendar-event-header {
