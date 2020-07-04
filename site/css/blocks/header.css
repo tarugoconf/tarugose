@@ -3,6 +3,7 @@
     padding: var(--row-gap) 0 0;
     align-content: center;
     justify-items: center;
+    text-shadow: 0 0 5px black;
 
     & .logo {
         width: 250px;
