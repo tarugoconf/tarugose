@@ -8,7 +8,11 @@
     "build:site": "eleventy",
     "build:css": "postcss ./site/css/styles.css -o dist/css/styles.css",
     "build:deps": "browser-assets @oom/particles @oom/carousel dialog-polyfill @oom/scroll-styles @vimeo/player --dest=dist/vendors",
-    "prettier": "prettier config/** ./*.js .eleventy.js site/**/*.{md,js,css} --write"
+    "prettier": "prettier config/** ./*.js .eleventy.js site/**/*.{md,js,css} --write",
+    "svg": "concurrently npm:svg:what npm:svg:logos npm:svg:assets",
+    "svg:what": "svgo -f site/img/what --disable=removeViewBox",
+    "svg:logos": "svgo -f site/img/logos --disable=removeViewBox",
+    "svg:assets": "svgo -f site/_includes/assets --disable=removeViewBox"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
@@ -30,6 +34,7 @@
     "postcss-preset-env": "^6.7.0",
     "postcss-url": "^8.0.0",
     "prettier": "^2.0.5",
+    "svgo": "^1.3.2",
     "template-filters": "^0.2.2"
   },
   "prettier": {
