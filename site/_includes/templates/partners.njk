@@ -12,7 +12,7 @@
         </div>
 
         <div class="partners-logos">
-            <ul class="partners-list is-main">
+            <ul class="partners-list is-main" aria-label="Lista de patrocinadores principales">
             {% for partner in partners.main %}
                 <li>
                 <figure class="partners-company">
@@ -26,7 +26,7 @@
             {% endfor %}
             </ul>
 
-            <ul class="partners-list">
+            <ul class="partners-list" arial-label="Lista de partners">
             {% for partner in partners.standard %}
                 <li>
                 <figure class="partners-company">
@@ -40,7 +40,7 @@
             {% endfor %}
             </ul>
 
-            <ul class="partners-list is-patrons">
+            <ul class="partners-list is-patrons" aria-label="Lista de mecenas">
             {% for partner in partners.patrons %}
                 <li class="partners-company">
                     {{ comp.img(partner) }}
