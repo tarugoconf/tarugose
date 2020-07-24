@@ -89,6 +89,10 @@
     & .icon {
         vertical-align: middle;
     }
+    & svg {
+        width: 24px;
+        height: 24px;
+    }
 }
 .speaker-photo {
     grid-area: photo;
