@@ -13,6 +13,7 @@ links:
       url: 'https://www.linkedin.com/in/christian-del-rey-schnitzler-11920148/'
       
     - text: 'estetica-dental.com'
+      icon: www
       url: 'http://www.estetica-dental.com/'       
 
 ---

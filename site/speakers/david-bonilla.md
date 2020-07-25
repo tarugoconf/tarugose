@@ -9,13 +9,18 @@ image:
     alt: David Bonilla
 
 links:
+
     - text: '@david_bonilla'
       icon: twitter
       url: 'https://twitter.com/david_bonilla'
 
     - text: 'David Bonilla Fuertes'
       icon: linkedin
-      url: 'https://www.linkedin.com/in/dbonillaf/'    
+      url: 'https://www.linkedin.com/in/dbonillaf/'
+      
+    - text: 'bonillaware.com'
+      icon: www
+      url: 'https://bonillaware.com/' 
 
 ---
 

@@ -8,10 +8,7 @@ image:
     thumbnail: /img/speakers/eva-belmonte-thumbnail.jpg
     alt: Eva Belmonte
 
-links:
-    - text: 'civio.es'
-      icon: www
-      url: 'https://civio.es/'
+links:  
 
     - text: '@evabelmonte'
       icon: twitter
@@ -20,6 +17,10 @@ links:
     - text: 'Eva Belmonte'
       icon: linkedin
       url: 'https://www.linkedin.com/in/eva-belmonte-b6423758/'
+
+    - text: 'civio.es'
+      icon: www
+      url: 'https://civio.es/'
 
 ---
 

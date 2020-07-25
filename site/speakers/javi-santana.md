@@ -16,7 +16,8 @@ links:
       icon: linkedin
       url: 'https://www.linkedin.com/in/javisantana/'
       
-    - text: 'javisantana.com'      
+    - text: 'javisantana.com'
+      icon: www      
       url: 'http://javisantana.com/' 
 
 ---
