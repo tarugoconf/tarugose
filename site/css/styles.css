@@ -32,6 +32,9 @@
 @import 'blocks/past-speakers.css';
 @import 'blocks/resources.css';
 
+/* Blocks (tarugoff) */
+@import 'blocks/section.css';
+
 /* Components */
 @import 'components/button.css';
 @import 'components/icon.css';

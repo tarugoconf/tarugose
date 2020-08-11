@@ -1,0 +1,25 @@
+.section {
+    padding: var(--row-gap) 0;
+
+    &.is-center {
+      text-align: center;
+    }
+}
+.section-header {
+    & h2 {
+        font: var(--font-big-bold);
+        letter-spacing: var(--font-spacing-big);
+    }
+}
+.section-header,
+.section-text,
+.section-intro {
+    max-width: 30em;
+    margin: auto;
+}
+.section-text {
+    & h3 {
+        margin: 2em 0 .5em;
+        font: var(--font-medium-bold);
+    }
+}

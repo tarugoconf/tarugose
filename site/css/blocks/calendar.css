@@ -110,6 +110,9 @@
     }
 }
 .calendar-day {
+    max-width: 500px;
+    margin: auto;
+    
     & h4 {
         margin: .5em 0;
         font: var(--font-normal-bold);
