@@ -1,5 +1,8 @@
 import Player from '../vendors/@vimeo/player/player.es.js';
 
+const primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--color-primary');
+const color = primaryColor.replace('#', '').trim();
+
 //Vimeo player
 document.querySelectorAll('.video-ratio').forEach(
     (el) =>
@@ -9,6 +12,6 @@ document.querySelectorAll('.video-ratio').forEach(
             byline: false,
             portrait: false,
             dnt: true,
-            color: 'ff5c9d',
+            color,
         })
 );

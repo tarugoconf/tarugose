@@ -6,7 +6,7 @@
     "start:css": "npm run build:css -- --watch",
     "build": "rm -rf dist && concurrently npm:build:deps npm:build:site npm:build:css",
     "build:site": "eleventy",
-    "build:css": "postcss ./site/css/styles.css -o dist/css/styles.css",
+    "build:css": "postcss ./site/css/styles.css ./site/css/off.css -d dist/css/",
     "build:deps": "browser-assets @oom/particles @oom/carousel dialog-polyfill @oom/scroll-styles @vimeo/player --dest=dist/vendors",
     "prettier": "prettier config/** ./*.js .eleventy.js site/**/*.{md,js,css} --write",
     "svg": "concurrently npm:svg:what npm:svg:logos npm:svg:assets",

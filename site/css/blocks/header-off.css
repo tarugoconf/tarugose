@@ -1,0 +1,34 @@
+.headerOff {
+    text-align: center;
+    padding: var(--row-gap) 0 0;
+    align-content: center;
+    justify-items: center;
+    margin-bottom: 10vh;
+
+    & .logo {
+        width: 500px;
+        max-width: 40vw;
+        margin-top: 3vh;
+    }
+}
+.headerOff-title {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.headerOff-subtitle {
+    font: var(--font-normal-bold);
+    max-width: 25em;
+    margin-bottom: auto;
+
+    @media (min-width: 900px) {
+      margin-top: -65px;
+    }
+}
+.headerOff-video {
+    background: var(--color-white);
+}

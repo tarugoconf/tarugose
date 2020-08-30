@@ -50,15 +50,17 @@ what:
 
 participate:
   title: Participar
-  text: |
+  intro: |
     Es posible que solo quieras asistir a las sesiones y tener una experiencia en la que pases desapercibido/a, pero si de verdad quieres sacar el mayor partido de la Tarugoff propón una sesión.
     
     Se pueden proponer sesiones de todos los tipos y temáticas, puedes ser novato o experta, puedes proponer una charla magistral o una mesa redonda, que la sesión se lleve a cabo tan solo depende del interés del resto de asistentes.
     
     Al ser online, la presentación de sesiones se realizará grabando un vídeo y enviándolo en el botón que dice "Enviar sesión".
-    
+  
+  footer: |
     [Enviar sesión](#url){.button}
 
+  text: |
     ### ¿Cómo votar las sesiones?
 
     A medida que se vayan recibiendo las sesiones, crearemos una página en donde ver todos los vídeos, y se podrán votar en Twitter con los hashtags asignados a cada sesión. De esa manera daréis más visibilidad a la sesión y podremos calcular fácilmente el interés en cada sesión.
@@ -100,13 +102,15 @@ faq:
 
 {% import "components.njk" as comp %}
 
+<link href="{{ '/css/off.css' | url }}" rel="stylesheet">
+
 {% include "templates/navbar.njk" %}
 
-<header class="ly-section header">
-    {% include "assets/logo.svg" %}
+<header class="ly-section headerOff">
+    {% include "assets/logo-off.svg" %}
 
-    <h1 class="header-title">{{ header.title }}</h1>
-    <p class="header-subtitle">{{ header.subtitle | md(true) | trim | safe }}</p>
+    <h1 class="headerOff-title">{{ header.title }}</h1>
+    <p class="headerOff-subtitle">{{ header.subtitle | md(true) | trim | safe }}</p>
 </header>
 
 <figure class="video ly-section">
@@ -167,14 +171,20 @@ faq:
 </section>
 
 <div class="ly-section">
-  <section class="section is-center" id="participate">
-    <header class="section-header">
-      <h2 class="section-title">{{ participate.title }}</h2>
-    </header>
+  <section class="participate" id="participate">
+      <h2 class="participate-title">{{ participate.title }}</h2>
 
-    <div class="section-text">
-      {{ participate.text | md | safe }}
-    </div>
+      <div class="participate-intro">
+        {{ participate.intro | md | safe }}
+      </div>
+
+      <footer class="participate-footer">
+        {{ participate.footer | md | safe }}
+      </footer>
+
+      <div class="participate-text">
+        {{ participate.text | md | safe }}
+      </div>
   </section>
 </div>
 

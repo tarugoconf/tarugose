@@ -1,0 +1,42 @@
+/* Blocks */
+@import 'blocks/header-off.css';
+@import 'blocks/section.css';
+@import 'blocks/participate.css';
+
+:root {
+  --color-primary: #A697CE; /*hsl(256, 36%, 70%);*/
+  --color-primary-light: hsl(256, 36%, 90%);
+  --color-primary-dark: hsl(256, 36%, 35%);
+}
+
+html {
+    background-color: var(--color-white);
+}
+body {
+    color: var(--color-dark);
+}
+
+/* Overrides */
+.navbar {
+  background: var(--color-white);
+  box-shadow: 0 2px 10px #A697CE44;
+}
+.navbar-menu a {
+  color: var(--color-dark);
+}
+.faq, .footer {
+  background-color: var(--color-primary-dark);
+  color: var(--color-primary-light);
+}
+.button.is-secondary {
+  background: var(--color-primary);
+  box-shadow: 0 1px 1px var(--color-primary-dark);
+
+  &:hover:not(:disabled) {
+      background-color: var(--color-primary-light);
+  }
+}
+.button.is-secondary:hover:not(:disabled),
+.button:hover:not(:disabled) {
+    box-shadow: 0 1px 3px var(--color-primary);
+}
