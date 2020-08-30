@@ -128,7 +128,7 @@
 
         & svg:hover {
             animation-name: shake;
-            animation-duration: .5s;
+            animation-duration: 0.5s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
         }
@@ -138,7 +138,7 @@
         grid-row: 2;
         display: none;
 
-        @media (min-height: 650px) and (min-width: 500px)  {
+        @media (min-height: 650px) and (min-width: 500px) {
             display: block;
             transform: translateY(calc(20px + (var(--scale, 0) * -100px)));
             will-change: transform;
@@ -197,7 +197,6 @@
     }
 }
 
-
 /* Satélite */
 .scene-satellite {
     padding: 80px 0;
@@ -213,7 +212,6 @@
         animation-direction: alternate;
     }
 }
-
 
 /* Papel hixiénico */
 .scene-paper {

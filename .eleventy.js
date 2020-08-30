@@ -16,7 +16,7 @@ module.exports = function (config) {
     config.setLibrary('md', markdown);
 
     // Data extensions
-    config.addDataExtension('yaml', contents => yaml.safeLoad(contents));
+    config.addDataExtension('yaml', (contents) => yaml.safeLoad(contents));
 
     // Copy dirs
     config.addPassthroughCopy('site/img');

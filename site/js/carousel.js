@@ -4,28 +4,28 @@ import Player from '../vendors/@oom/carousel/player.js';
 //Carousel
 customElements.define('tarugo-carousel', Carousel);
 
-document.querySelectorAll('tarugo-carousel').forEach(carousel => {
+document.querySelectorAll('tarugo-carousel').forEach((carousel) => {
     const player = new Player(carousel);
     player.play();
 
     const next = carousel.parentElement.querySelector('.js-carousel-next');
     const prev = carousel.parentElement.querySelector('.js-carousel-prev');
 
-    next.addEventListener('click', e => {
+    next.addEventListener('click', (e) => {
         player.stop();
         carousel.next();
-    })
-    prev.addEventListener('click', e => {
+    });
+    prev.addEventListener('click', (e) => {
         player.stop();
         carousel.prev();
-    })
+    });
 
     //Disable buttons
     let isScrolling;
 
     carousel.addEventListener(
         'scroll',
-        event => {
+        (event) => {
             clearTimeout(isScrolling);
             isScrolling = setTimeout(showHideButtons, 100);
         },
@@ -38,4 +38,4 @@ document.querySelectorAll('tarugo-carousel').forEach(carousel => {
     }
 
     showHideButtons();
-})
+});
