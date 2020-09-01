@@ -1,0 +1,88 @@
+---
+layout: layouts/base.njk
+lang: es
+title: Tarugoff - Sesiones
+description: 
+
+tags:
+  - label: Desarrollo
+    name: desarrollo
+  - label: Java
+    name: java
+  - label: Kafka
+    name: kafka
+sessions:
+  - title: '#Charlaca1: Título de vídeo que puede ir a más de una línea'
+    tags:
+      - desarrollo
+    stars: 12
+    code: BIhhNoYNL40
+  - title: '#Charlaca1: Título de vídeo que puede ir a más de una línea'
+    tags:
+      - java
+      - kafka
+    stars: 12
+    code: BIhhNoYNL40
+  - title: '#Charlaca1: Título de vídeo que puede ir a más de una línea'
+    tags:
+      - desarrollo
+      - kafka
+    stars: 12
+    code: BIhhNoYNL40
+  - title: '#Charlaca1: Título de vídeo que puede ir a más de una línea'
+    tags:
+      - desarrollo
+      - java
+    stars: 12
+    code: BIhhNoYNL40
+  - title: '#Charlaca1: Título de vídeo que puede ir a más de una línea'
+    tags:
+      - kafka
+    stars: 12
+    code: BIhhNoYNL40
+  - title: '#Charlaca1: Título de vídeo que puede ir a más de una línea'
+    tags:
+      - desarrollo
+      - java
+      - kafka
+    stars: 12
+    code: BIhhNoYNL40
+
+---
+
+{% include "templates/navbar.njk" %}
+
+<script type="module" src="{{ '/js/filter.js' | url }}"></script>
+
+<form id="filter">
+  {% for tag in tags %}
+    <label><input type="checkbox" name="{{ tag.name }}" value="1"> {{ tag.label }}</label>
+  {% endfor %}
+
+  <input type="search" name="title">
+</form>
+
+<div id="sessions">
+  {% for session in sessions %}
+  <article class="session" data-filter="{{ session | dump }}">
+    <header>
+      <h2>{{ session.title }}</h2>
+
+      <ul>
+        {% for tag in session.tags %}
+        <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </header>
+
+    <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ session.code }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </figure>
+    <footer>
+      <a href="https://www.youtube.com/watch?v={{ session.code }}">
+        Vota
+      </a>
+    </footer>
+  </article>
+  {% endfor %}
+</div>
