@@ -2,6 +2,8 @@
 @import 'blocks/header-off.css';
 @import 'blocks/section.css';
 @import 'blocks/participate.css';
+@import 'blocks/sessions.css';
+@import 'blocks/filter.css';
 
 :root {
     --color-primary: #a697ce; /*hsl(256, 36%, 70%);*/

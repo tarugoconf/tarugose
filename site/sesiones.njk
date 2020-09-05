@@ -1,8 +1,22 @@
 ---
 layout: layouts/base.njk
 lang: es
-title: Tarugoff - Sesiones
-description: 
+title: Sesiones
+description: |
+  En esta página podrás ver las sesiones propuestas para la Tarugoff, **votar a las que te gustaría asistir** e incluso ¡animarte a enviar la tuya propia!.
+
+  Tienes más info en [la home del evento](/)
+
+menu:
+  - text: ← Volver
+    url: '/'
+  - text: Tarugoff
+    url: '/tarugoff'
+
+ctas:
+  - text: Enviar sesión
+    url: '#tickets'
+    class: button
 
 tags:
   - label: Desarrollo
@@ -49,37 +63,61 @@ sessions:
     code: BIhhNoYNL40
 
 ---
+{% import "components.njk" as comp %}
+
+<link href="{{ '/css/off.css' | url }}" rel="stylesheet">
 
 {% include "templates/navbar.njk" %}
 
 <script type="module" src="{{ '/js/filter.js' | url }}"></script>
 
-<form id="filter">
-  {% for tag in tags %}
-    <label><input type="checkbox" name="{{ tag.name }}" value="1"> {{ tag.label }}</label>
-  {% endfor %}
+<header class="intro ly-section">
+  <h1 class="intro-title">{{ title }}</h1>
+  <div class="intro-text">
+      {{ description | md | safe }}
+  </div>
+</header>
 
-  <input type="search" name="title">
+<form id="filter" class="filter">
+  <div class="filter-title">
+    <label for="search-title" class="filter-label">Filtrar</label>
+    <input type="search" name="title" id="search-title" placeholder="Escribe el título del vídeo">
+  </div>
+
+  <div class="filter-tags">
+  {% for tag in tags %}
+    <label>
+      <input type="checkbox" name="{{ tag.name }}" value="1">
+      <span>{{ tag.label }}</span>
+    </label>
+  {% endfor %}
+  </div>
+
+  <div class="filter-submit">
+    <button class="button">Buscar</button>
+  </div>
 </form>
 
-<div id="sessions">
+<div id="sessions" class="sessions">
   {% for session in sessions %}
   <article class="session" data-filter="{{ session | dump }}">
-    <header>
-      <h2>{{ session.title }}</h2>
+    <header class="session-header">
+      <h2 class="session-title">{{ session.title }}</h2>
 
-      <ul>
+      <ul class="session-tags">
         {% for tag in session.tags %}
         <li>{{ tag }}</li>
         {% endfor %}
       </ul>
+      <strong class="session-stars">{{ session.stars }}★</strong>
     </header>
 
-    <figure>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ session.code }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <figure class="session-video">
+      <iframe width="400" height="300" src="https://www.youtube.com/embed/{{ session.code }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </figure>
-    <footer>
-      <a href="https://www.youtube.com/watch?v={{ session.code }}">
+
+    <footer class="session-footer">
+      <a href="https://www.youtube.com/watch?v={{ session.code }}" class="button">
         Vota
       </a>
     </footer>

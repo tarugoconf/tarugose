@@ -1,0 +1,67 @@
+.filter {
+  padding: var(--row-gap) var(--column-gap);
+  max-width: 36em;
+  margin: auto;
+}
+.filter-label {
+  font: var(--font-normal-bold);
+  display: block;
+  margin: .2em 0;
+}
+.filter-tags {
+  display: flex;
+  margin-top: .5em;
+
+  & label {
+    cursor: pointer;
+    margin: 0 .5em .5em 0;
+    font: var(--font-small-bold);
+    position: relative;
+  }
+  & input {
+    position: absolute;
+    top: 50%;
+    left: .5em;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  & input + span {
+    padding: .2em .5em .2em 2em;
+    border: solid 1px var(--color-primary);
+    border-radius: var(--radius);
+    color: var(--color-primary-dark);
+  }
+  & input:checked + span {
+    background: var(--color-primary);
+    color: black;
+  }
+  & input:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  & input:focus + span,
+  & input:hover + span {
+    box-shadow: 0 0 1px 2px var(--color-primary-light);
+  }
+}
+.filter-title {
+  & input {
+    border: solid 1px var(--color-primary);
+    border-radius: var(--radius);
+    font: var(--font-normal);
+    padding: .5em;
+    width: 100%;
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 1px 2px var(--color-primary-light);
+    }
+
+    &::placeholder {
+      color: var(--color-smoke);
+    }
+  }
+}
+.filter-submit {
+  opacity: 0;
+}

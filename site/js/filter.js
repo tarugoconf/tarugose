@@ -1,16 +1,23 @@
 const form = document.querySelector('#filter');
 const sessions = document.querySelectorAll('.session');
 
+const initialParams = new URLSearchParams(document.location.search);
+
+for (const [name, value] of initialParams) {
+  if (name === "title") {
+    form[name].value = value;
+  } else {
+    form[name].checked = true;
+  }
+}
+onChange();
+
 form.addEventListener('submit', (event) => {
   onChange();
   event.preventDefault();
 })
-form.addEventListener('change', () => {
-  onChange();
-})
-form.addEventListener('input', () => {
-  onChange();
-})
+form.addEventListener('change', onChange)
+form.addEventListener('input', onChange)
 
 function onChange() {
   const data = new FormData(form);
