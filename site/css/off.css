@@ -31,7 +31,16 @@ body {
     background-color: var(--color-primary-dark);
     color: var(--color-primary-light);
 }
+.button {
+    background: var(--color-primary-dark);
+    color: var(--color-white);
+
+    &:hover {
+        background: var(--color-dark);
+    }
+}
 .button.is-secondary {
+    color: var(--color-dark);
     background: var(--color-primary);
     box-shadow: 0 1px 1px var(--color-primary-dark);
 

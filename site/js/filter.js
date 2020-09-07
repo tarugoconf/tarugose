@@ -34,7 +34,7 @@ function filter(data) {
   
   for (const [name, value] of data.entries()) {
     if (name === "title") {
-      filters.title = value;
+      filters.title = clean(value);
       continue;
     }
 
@@ -47,7 +47,7 @@ function filter(data) {
 function matches(session, filters) {
   const data = JSON.parse(session.dataset.filter);
 
-  if (filters.title && !data.title.toLowerCase().includes(filters.title)) {
+  if (filters.title && !clean(data.title).includes(filters.title)) {
     return false;
   }
 
@@ -58,4 +58,14 @@ function matches(session, filters) {
   }
 
   return true;
+}
+
+function clean(text) {
+  return text.toLowerCase()
+    .replace(/à/gm, "a")
+    .replace(/é/gm, "e")
+    .replace(/í/gm, "i")
+    .replace(/ó/gm, "o")
+    .replace(/ú/gm, "u")
+    .replace(/[^\wñ]/gm, "")
 }
