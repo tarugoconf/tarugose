@@ -13,4 +13,8 @@
 .intro-text {
     font: var(--font-normal);
     margin-bottom: auto;
+
+    & a {
+        color: var(--color-primary-dark);
+    }
 }
