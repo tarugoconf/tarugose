@@ -41,11 +41,12 @@ body {
 }
 .button.is-secondary {
     color: var(--color-dark);
-    background: var(--color-primary);
-    box-shadow: 0 1px 1px var(--color-primary-dark);
+    background: var(--color-primary-light);
+    box-shadow: 0 1px 1px var(--color-primary);
 
     &:hover:not(:disabled) {
-        background-color: var(--color-primary-light);
+        background-color: var(--color-primary);
+        box-shadow: 0 1px 1px var(--color-primary-dark) !important;
     }
 }
 .button.is-secondary:hover:not(:disabled),
