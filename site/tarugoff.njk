@@ -46,7 +46,7 @@ what:
     * Acabará cuando tenga que acabar.
     * Cualquier lugar es el lugar correcto.
 
-    Ya, sabemos que se trata de un evento online, así que adaptaremos estas reglas para respetarlas lo máximo posible sin que esto sea un caos :-)
+    Ya, sabemos que se trata de un evento online, así que adaptaremos estos principios para respetarlos lo máximo posible sin que esto sea un caos :-)
 
 participate:
   title: Participar
@@ -63,7 +63,7 @@ participate:
   text: |
     ### ¿Cómo votar las sesiones?
 
-    A medida que se vayan recibiendo las sesiones, crearemos una página en donde ver todos los vídeos, y se podrán votar en Twitter con los hashtags asignados a cada sesión. De esa manera daréis más visibilidad a la sesión y podremos calcular fácilmente el interés en cada sesión.
+    Todas las sesiones presentadas están disponibles [aquí](/sesiones), desde donde podrás votarlas haciendo click en el botón "Votar". Nosotros nos encargaremos de revisar todos los tweets y actualizar las estadísticas.
 
     ### ¿Y la agenda?
 
@@ -73,13 +73,15 @@ participate:
 
 sessions:
   title: Sesiones
+  footer: |
+    [Ver sesiones](/sesiones){.button}
   text: |
-    Acabamos de abrir el chiringuito, dadnos un poco de chance y enviadnos vuestras sesiones para que las podamos colocar en esta sección.
+    Nada más sencillo, todas las sesiones están disponibles en la web en dónde podrás verlas a tu propio ritmo y votarlas fácilmente haciendo uso del botón "Votar".
 
 event:
   title: Día del evento
   text: |
-    Aún es un poco pronto para hablar de ello, os mantendremos informados en esta web y mediante los canales de comunicación habituales.
+    El día de la Tarugoff tendremos un streaming en Brella por cada track, pero si se trata de una sesión colaborativa y quieres participar, tendrás que conectarte a la herramienta de vídeo-conferencia que seleccionemos.
 
 faq:
     id: faq
@@ -90,13 +92,9 @@ faq:
           answer: |
             Es un evento online en donde no estamos restringidos por el espacio, así que nada más fácil. Coméntalo en el chat del evento y, si hay personas interesadas en hacer esa sesión de forma paralela a las propuestas, tan sólo tenéis que crear una sesión en vuestro sistema de video-conferencia favorito y relizar la sesión.
 
-        - question: Si finalmente no puedo asistir, ¿podré cancelar mi entrada?
+        - question: ¿De qué temas se pueden hablar?
           answer: |
-            Claro. Puedes cancelar tu entrada **hasta 30 días antes del evento**.
-
-        - question: ¿Me daréis una factura de mi entrada para que se la pueda pasar a mi empresa o desgravarme el IVA?
-          answer: |
-            Sí. Las entradas se venden vía [Eventbrite](https://www.eventbrite.es/e/entradas-tarugoconf-sofa-edition-110980351218){target=_blank} que te pedirá datos fiscales en el proceso de compra y generará automaticamente una factura.
+            En honor al espíritu abierto de un Open Space, se puede proponer cualquier tema. Pero en un evento basado en desarrollo de producto, es posible que no haya gente experta en el cultivo de la vid, por lo que es más productivo limitarse a la temática propuesta. Desarrollo de producto es una temática bastante amplia que abarca desde aspectos técnicos a logísticos, pasando por marketing, financiación, diseño y un largo etcétera.
 
 ---
 
@@ -195,8 +193,12 @@ faq:
     </header>
 
     <div class="section-text">
-      {{ event.text | md | safe }}
+      {{ sessions.text | md | safe }}
     </div>
+
+    <footer class="participate-footer">
+        {{ sessions.footer | md | safe }}
+      </footer>
   </section>
 </div>
 
