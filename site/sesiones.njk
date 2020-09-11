@@ -5,7 +5,7 @@ title: Sesiones
 description: |
   En esta página podrás ver las sesiones propuestas para la Tarugoff, **votar a las que te gustaría asistir** e incluso ¡animarte a enviar la tuya propia!.
 
-  Tienes más info en [la home del evento](/)
+  Tienes más info en [la home del evento](/tarugoff)
 
 menu:
   - text: ← Volver
@@ -15,52 +15,69 @@ menu:
 
 ctas:
   - text: Enviar sesión
-    url: '#tickets'
+    url: 'https://forms.gle/i2RBFiR6mQApMA7J9'
     class: button
 
 tags:
+  - label: Management
+    name: managements
   - label: Desarrollo
     name: desarrollo
-  - label: Java
-    name: java
-  - label: Kafka
-    name: kafka
+  - label: Datos
+    name: datos
+  - label: Remoto
+    name: remoto
+  - label: Juegos
+    name: juegos
+  - label: Producto
+    name: producto
+  - label: Marketing
+    name: marketing
 sessions:
-  - title: '#Charlaca1: Título de vídeo que puede ir a más de una línea'
+  - title: 'Desarrollo Low-code'
+    hash: '1'
     tags:
       - desarrollo
-    stars: 12
-    code: BIhhNoYNL40
-  - title: '#Charlaca1: Título de vídeo que puede ir a más de una línea'
+    stars: 1
+    code: sPYOHwpf52A
+  - title: '¿Cómo motivas a un equipo en tiempos de crisis?'
+    hash: '2'
     tags:
-      - java
-      - kafka
-    stars: 12
+      - management
+    stars: 1
     code: BIhhNoYNL40
-  - title: '#Charlaca1: Título de vídeo que puede ir a más de una línea'
+  - title: 'Data-mierding'
+    hash: '3'
     tags:
-      - desarrollo
-      - kafka
-    stars: 12
-    code: BIhhNoYNL40
-  - title: '#Charlaca1: Título de vídeo que puede ir a más de una línea'
+      - datos
+    stars: 1
+    code: 8gY0tDeZEqY
+  - title: '¿Cómo llevar las charlas de pasillo al remoto?'
+    hash: '4' 
     tags:
-      - desarrollo
-      - java
-    stars: 12
-    code: BIhhNoYNL40
-  - title: '#Charlaca1: Título de vídeo que puede ir a más de una línea'
+      - management
+      - remoto
+    stars: 1
+    code: N7QWa7Xu020
+  - title: '¿Cómo se diseña un juego de mesa?'
+    hash: '5'
     tags:
-      - kafka
-    stars: 12
-    code: BIhhNoYNL40
-  - title: '#Charlaca1: Título de vídeo que puede ir a más de una línea'
+      - juegos
+      - producto
+    stars: 1
+    code: VmBIn2SJaQI
+  - title: 'Métricas de marketing'
+    hash: '6'
     tags:
-      - desarrollo
-      - java
-      - kafka
-    stars: 12
-    code: BIhhNoYNL40
+      - marketing
+    stars: 1
+    code: wZJ-1pQgmAo
+  - title: 'Bootstraping'
+    hash: '7'
+    tags:
+      - producto
+    stars: 1
+    code: zuXaP4fVNSo
 
 ---
 {% import "components.njk" as comp %}
@@ -102,7 +119,7 @@ sessions:
   {% for session in sessions %}
   <article class="session" data-filter="{{ session | dump }}">
     <header class="session-header">
-      <h2 class="session-title">{{ session.title }}</h2>
+      <h2 class="session-title">#Charlaca{{ session.hash }}: {{ session.title }}</h2>
 
       <ul class="session-tags">
         {% for tag in session.tags %}
@@ -117,7 +134,7 @@ sessions:
     </figure>
 
     <footer class="session-footer">
-      <a href="https://www.youtube.com/watch?v={{ session.code }}" class="button">
+      <a href="https://twitter.com/intent/tweet?text=Asistir%C3%A9+a+la+%23tarugoff%2C+el+open+space+de+la+%40tarugoconf%2C+y+me+gustar%C3%ADa+ver+la+%23Charlaca{{ session.hash }}+https%3A%2F%2Fyoutu.be%2F{{ session.code }}" class="button">
         Vota
       </a>
     </footer>
