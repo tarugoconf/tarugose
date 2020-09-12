@@ -1,5 +1,5 @@
 {% macro link(data) %}
-    <a href="{{ data.url | url }}" {{ data | attr('class', 'rel') | safe }}>
+    <a href="{{ data.url | url }}" {{ data | attr('class', 'rel', 'target') | safe }}>
         {% if data.icon %}
             <span class="icon">
                 {% include "assets/" + data.icon + ".svg" %}

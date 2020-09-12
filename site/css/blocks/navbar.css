@@ -17,7 +17,7 @@
     padding: 0;
     margin: 0;
 
-    @media (max-width: 849px) {
+    @media (max-width: 949px) {
         position: absolute;
         top: 0;
         left: 0;
@@ -47,7 +47,7 @@
         }
     }
 
-    @media (min-width: 850px) {
+    @media (min-width: 950px) {
         display: flex;
 
         li {
@@ -76,7 +76,7 @@
         display: inline-block;
         margin-right: .3em;
     }
-    @media (min-width: 850px) {
+    @media (min-width: 950px) {
         display: none;
     }
 }
