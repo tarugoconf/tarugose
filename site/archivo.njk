@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+lang: es
+title: Archivo
+description: |
+  En esta página podrás ver los emails que hemos ido enviando con las instrucciones del evento.
+
+menu:
+  - text: ← Tarugoconf
+    url: '/'
+
+---
+{% import "components.njk" as comp %}
+
+<link href="{{ '/css/off.css' | url }}" rel="stylesheet">
+
+{% include "templates/navbar.njk" %}
+
+<script type="module" src="{{ '/js/filter.js' | url }}"></script>
+
+<header class="intro ly-section">
+  <h1 class="intro-title">{{ title }}</h1>
+  <div class="intro-text">
+      {{ description | md | safe }}
+  </div>
+</header>
+
+<!-- Style used by generated HTML -->
+<style type="text/css">
+<!--
+.display_archive {font-size: 17px;}
+.campaign {line-height: 125%;}
+//-->
+</style>
+
+<div class="ly-section" style="margin: auto; max-width: 36em; margin-top: 32px;">
+  <section>
+    <script language="javascript" src="//bonillaware.us2.list-manage.com/generate-js/?u=374c664073e1a1fa3deca53b4&fid=5&show=10" type="text/javascript"></script>
+  </section>
+</div>
