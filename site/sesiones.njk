@@ -139,7 +139,7 @@ sessions:
         <li>{{ tag }}</li>
         {% endfor %}
       </ul>
-      <!-- <strong class="session-stars">{{ session.stars }}★</strong> -->
+      <strong id="charlaca-{{session.hash}}-votes" class="session-stars">{{ session.stars }}★</strong>
     </header>
 
     <figure class="session-video">
@@ -154,3 +154,29 @@ sessions:
   </article>
   {% endfor %}
 </div>
+
+<script>
+  let xhr = new XMLHttpRequest();
+
+  xhr.open('GET', 'https://tarugoff.herokuapp.com/sessions');
+
+  xhr.send();
+
+  xhr.onload = function() {
+    if (xhr.status != 200) {
+      console.error(`Error ${xhr.status}: ${xhr.statusText}`);
+    } else { 
+      const sessions = JSON.parse(xhr.response);
+      sessions.forEach(session => {
+        const element = document.getElementById(`charlaca-${session.id}-votes`);
+        if (element) {
+          element.textContent = `${session.votes}★`;
+        }
+      });
+    }
+  };
+
+  xhr.onerror = function() {
+    console.error("Error getting the votes of the sessions");
+  };
+</script>
