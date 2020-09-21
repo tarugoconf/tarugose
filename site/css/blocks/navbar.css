@@ -33,10 +33,6 @@
         opacity: 0;
         min-height: 100vh;
 
-        @media (max-width: 380px) {
-            width: 100%;
-        }
-
         & a {
             display: inline-block;
         }
