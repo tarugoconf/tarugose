@@ -5,7 +5,8 @@
     --color-back: var(--color-primary); 
     --color-front: var(--color-dark); 
 }
-.logo-back {
+.logo-back,
+.logo-powered {
     fill: var(--color-back);
 }
 .logo-front {

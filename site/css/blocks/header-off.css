@@ -28,6 +28,9 @@
     @media (min-width: 900px) {
       margin-top: -65px;
     }
+    @media (min-width: 1100px) {
+      margin-top: -75px;
+    }
 }
 .headerOff-video {
     background: var(--color-white);
