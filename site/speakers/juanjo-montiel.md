@@ -1,7 +1,7 @@
 ---
 title: Juanjo Montiel
-company: Pasiona Consulting
-position: Senior Developer
+company: Travelport
+position: Senior Software Development Engineer
 date: 2020-06-29
 image:
     src: /img/speakers/juanjo-montiel.jpeg
